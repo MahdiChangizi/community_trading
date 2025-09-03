@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->string('uid')->unique();
+            $table->string('phone')->nullable();
+            $table->string('ref_code')->unique();
+            $table->foreignId('referrer_id')->nullable()->constrained('users');
+            $table->string('wallet_address')->nullable();
+            $table->enum('wallet_chain', ['bep20', 'trc20'])->nullable();
+            $table->enum('status', ['active', 'suspended'])->default('active');
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
