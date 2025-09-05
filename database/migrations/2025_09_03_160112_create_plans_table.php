@@ -14,10 +14,9 @@ return new class extends Migration
         Schema::create('plans', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('slug')->unique();
+            $table->text('description')->nullable();
             $table->decimal('price_usdt', 18, 6);
             $table->tinyInteger('duration_months')->nullable();
-            $table->longText('details_html')->nullable();
             $table->boolean('active')->default(true);
             $table->timestamps();
         });

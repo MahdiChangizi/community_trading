@@ -19,7 +19,7 @@ return new class extends Migration
             $table->decimal('paid_usdt', 18, 6)->default(0);
             $table->enum('chain', ['erc20','trc20'])->nullable();
             $table->string('pay_wallet_address');
-            $table->string('tx_hash')->nullable();
+            $table->string('tx_hash')->nullable()->unique();
             $table->integer('confirmations')->default(0);
             $table->enum('status', ['pending','confirmed','failed','refunded'])->default('pending');
             $table->timestamp('purchased_at')->nullable();

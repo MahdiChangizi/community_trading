@@ -26,11 +26,17 @@ Route::post('/reviews', [ReviewController::class, 'store'])->name('reviews.store
 
 // plans
 Route::get('/plans', [PlanController::class, 'index'])->name('plans.index');
-Route::get('/plans/{slug}', [PlanController::class, 'show'])->name('plans.show');
+Route::get('/plans/{plan}', [PlanController::class, 'show'])->name('plans.show');
 
+// purchase
 Route::middleware('auth')->group(function () {
-    Route::post('/purchase', [PurchaseController::class, 'store'])->name('purchase.store');
-    Route::get('/purchase/history', [PurchaseController::class, 'history'])->name('purchase.history');
+    Route::post('/plans/{plan}/purchase', [PurchaseController::class, 'store'])->name('plans.purchase');
+    Route::get('/purchases/{purchase}', [PurchaseController::class, 'show'])->name('purchases.show');
+    Route::post('/purchases/{purchase}/tx', [PurchaseController::class, 'submitTx'])->name('purchases.tx');
+});
+// admin
+Route::middleware(['auth','role:admin'])->group(function () {
+    Route::post('/purchases/{purchase}/confirm', [PurchaseController::class, 'confirm'])->name('admin.purchases.confirm');
 });
 
 // referral
@@ -61,16 +67,37 @@ Route::prefix('admin')->middleware('auth:admin')->group(function () {
     Route::resource('reports', AdminReportController::class)->names('admin.reports');
 });
 
+// api price
+Route::get('/crypto-prices', function () {
+    $response = Http::withHeaders([
+        'X-CMC_PRO_API_KEY' => '7431c5f2-b4f2-4b5d-b41e-d1743b252bb2',
+    ])->get('https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest', [
+        'symbol' => 'BTC,ETH,BNB,ADA,SOL,DOT,AVAX,MATIC',
+        'convert' => 'USD',
+    ]);
+
+    return response()->json($response->json());
+});
+
+
 
 // main
-
 Route::get('/', function () {
     return view('welcome');
 });
 
+
+//Community
+Route::get('/community', function () {
+    return view('pages/community');
+})->name('community');
+
+
 Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+    // return view('dashboard');
+    return view('dashboard/index');
+})->name('dashboard');
+// ->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -6,14 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Plan extends Model
 {
-    
+
     protected $fillable = [
-        'name',
-        'slug',
-        'price_usdt',
-        'duration_months',
-        'details_html',
-        'active'
+        'name','description','price_usdt','duration_months','active'
     ];
 
     public function purchases()

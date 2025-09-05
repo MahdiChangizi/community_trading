@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('wallet_address')->nullable();
             $table->enum('wallet_chain', ['bep20', 'trc20'])->nullable();
             $table->enum('status', ['active', 'suspended'])->default('active');
+            $table->boolean('is_admin')->default(false);
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();

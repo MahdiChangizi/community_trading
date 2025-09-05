@@ -21,6 +21,14 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'uid',
+        'phone',
+        'ref_code',
+        'referrer_id',
+        'wallet_address',
+        'wallet_chain',
+        'status',
+        'is_admin'
     ];
 
     /**
