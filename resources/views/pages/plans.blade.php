@@ -1,390 +1,366 @@
 @extends('layouts.app')
 @section('title', 'Plans')
 @section('content')
- <!-- Header Section -->
 
-    @if (session('message'))
-        {{-- disable after 5 secend --}}
-        <div id="toast-message" class="fixed top-10 right-4 flex justify-end z-50">
-            <div class="max-w-xs bg-white border border-green-200 rounded-xl shadow-lg" role="alert" tabindex="-1" aria-labelledby="toast-backend-fix-label">
-            <div class="flex p-4">
-                <div class="shrink-0">
-                <svg class="shrink-0 w-4 h-4 text-green-500 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-                </svg>
-                </div>
-                <div class="ms-3">
-                <p id="toast-backend-fix-label" class="text-sm text-green-700">
-                    {{ session('message') }}
-                </p>
-                </div>
-            </div>
-            </div>
-        </div>
-        <script>
-            setTimeout(() => {
-            const toast = document.getElementById('toast-message');
-            if (toast) toast.style.display = 'none';
-            }, 2000);
-        </script>
-    @endif
+<script>
+function payAlert(type, message) {
+    const oldToast = document.getElementById("toast-message");
+    if (oldToast) oldToast.remove();
 
+    let borderColor = type === "success" ? "border-green-200" : "border-red-200";
+    let textColor   = type === "success" ? "text-green-700" : "text-red-700";
+    let iconColor   = type === "success" ? "text-green-500" : "text-red-500";
 
-    <section class="py-16 bg-gradient-to-br from-gray-50 to-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="fade-in">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                    Choose Your <span class="text-primary-green">Trading</span> Journey
-                </h1>
-                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-                    Select the perfect plan that matches your trading experience and goals. All plans include lifetime access and our exclusive community support.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <div class="flex items-center text-gray-600">
-                        <svg class="w-5 h-5 text-primary-green mr-2" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                        </svg>
-                        30-Day Money Back Guarantee
-                    </div>
-                    <div class="flex items-center text-gray-600">
-                        <svg class="w-5 h-5 text-primary-purple mr-2" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                        </svg>
-                        Instant Access
-                    </div>
+    const toastHtml = `
+        <div id="toast-message" class="fixed top-10 right-4 flex justify-end z-50 animate-fadeIn">
+            <div class="max-w-xs bg-white border ${borderColor} rounded-xl shadow-lg" role="alert">
+                <div class="flex p-4">
+                    <svg class="w-4 h-4 ${iconColor} mt-0.5" fill="currentColor" viewBox="0 0 16 16">
+                        ${type === "success"
+                            ? '<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>'
+                            : '<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"></path>'
+                        }
+                    </svg>
+                    <div class="ml-3 text-sm ${textColor}">${message}</div>
                 </div>
             </div>
         </div>
-    </section>
+    `;
 
-    <!-- Plans Grid -->
-    <section class="py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    document.body.insertAdjacentHTML("beforeend", toastHtml);
+    setTimeout(() => {
+        const el = document.getElementById("toast-message");
+        if (el) el.remove();
+    }, 4000);
+}
+</script>
 
-                <!-- Beginner Plan -->
-                @foreach ($plans as $plan)
-                <div class="plan-card bg-white rounded-xl shadow-lg overflow-hidden hover-scale slide-up border border-gray-200">
-                    <div class="bg-gradient-to-br from-primary-green to-green-600 text-white p-6">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-2xl font-bold">Beginner Bootcamp</h3>
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                            </svg>
+
+@if (session('message'))
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            payAlert("success", "{{ session('message') }}");
+        });
+    </script>
+@endif
+
+<section class="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-4">
+                Choose Your Trading Journey
+            </h2>
+            <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                Transform your trading skills with our comprehensive courses designed for every level
+            </p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto">
+            @foreach ($plans as $index => $plan)
+            @php
+                $colors = [
+                    0 => [
+                        'gradient' => 'from-blue-600 to-cyan-500',
+                        'accent' => 'blue-600',
+                        'bg' => 'blue-50',
+                        'border' => 'blue-200',
+                        'popular' => false
+                    ],
+                    1 => [
+                        'gradient' => 'from-purple-600 to-pink-500',
+                        'accent' => 'purple-600',
+                        'bg' => 'purple-50',
+                        'border' => 'purple-200',
+                        'popular' => true
+                    ]
+                ];
+                $color = $colors[$index % 2];
+            @endphp
+
+            <div class="relative group">
+                @if($color['popular'])
+                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+                    <span class="bg-gradient-to-r {{ $color['gradient'] }} text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
+                        🔥 Most Popular
+                    </span>
+                </div>
+                @endif
+
+                <div class="bg-white rounded-2xl shadow-xl border border-{{ $color['border'] }} hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden {{ $color['popular'] ? 'ring-2 ring-purple-200' : '' }}">
+
+                    <!-- Header Section -->
+                    <div class="bg-gradient-to-br {{ $color['gradient'] }} text-white p-8 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                        <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
+
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-bold mb-3 leading-tight">{{ $plan->name }}</h3>
+                            <div class="flex items-baseline gap-2 mb-2">
+                                <span class="text-4xl font-black">${{ number_format($plan->price_usdt, 0) }}</span>
+                                <span class="text-lg opacity-80">USDT</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-white/90">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                                <span class="font-medium">{{ $plan->duration_months }} Months Program</span>
+                            </div>
                         </div>
-                        <div class="price-highlight text-3xl font-bold mb-2">199 USDT</div>
-                        <div class="text-green-100">Perfect for newcomers</div>
                     </div>
 
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-6">Master the fundamentals of crypto trading with step-by-step guidance from our expert instructors.</p>
+                    <!-- Content Section -->
+                    <div class="p-8">
+                        <div class="prose prose-gray max-w-none mb-8">
+                            @php
+                                $lines = explode('.', $plan->description);
+                                $features = [];
+                                foreach($lines as $line) {
+                                    $line = trim($line);
+                                    if(!empty($line) && !str_starts_with($line, '6-Month')) {
+                                        $features[] = $line;
+                                    }
+                                }
+                            @endphp
 
-                        <div class="space-y-4 mb-8">
-                            <div class="flex items-start">
-                                <svg class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div>
-                                    <div class="font-medium text-gray-900">12+ Video Lessons</div>
-                                    <div class="text-sm text-gray-500">4 hours of premium content</div>
+                            <div class="space-y-4">
+                                @foreach(array_slice($features, 0, 6) as $feature)
+                                <div class="flex items-start gap-3">
+                                    <div class="w-6 h-6 rounded-full bg-{{ $color['bg'] }} flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <svg class="w-3 h-3 text-{{ $color['accent'] }}" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-gray-700 text-sm leading-relaxed">{{ trim($feature, ': ') }}</span>
                                 </div>
-                            </div>
-
-                            <div class="flex items-start">
-                                <svg class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div>
-                                    <div class="font-medium text-gray-900">Trading Simulator</div>
-                                    <div class="text-sm text-gray-500">Practice without risk</div>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start">
-                                <svg class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div>
-                                    <div class="font-medium text-gray-900">Community Access</div>
-                                    <div class="text-sm text-gray-500">24/7 support chat</div>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start">
-                                <svg class="w-5 h-5 text-primary-green mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div>
-                                    <div class="font-medium text-gray-900">Certificate</div>
-                                    <div class="text-sm text-gray-500">Upon completion</div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
 
-                        <button onclick="openPurchaseModal('{{ $plan->id }}', '{{ $plan->name }}', '{{ $plan->price_usdt }}')" class="w-full bg-primary-green text-white py-3 rounded-xl hover:bg-green-600 transition shadow-lg font-semibold">
-                            Choose {{ $plan->name }}
+                        <!-- CTA Button -->
+                        <button onclick="openPurchaseModal('{{ $plan->id }}','{{ $plan->name }}','{{ $plan->price_usdt }}')"
+                                class="w-full bg-gradient-to-r {{ $color['gradient'] }} text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group">
+                            <span class="flex items-center justify-center gap-2">
+                                Start Learning Now
+                                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </span>
                         </button>
 
-
-                        <div class="mt-4 text-center">
-                            <a href="#" onclick="openDetailModal('beginner')" class="text-primary-green hover:text-green-600 text-sm font-medium">View Full Details →</a>
+                        <!-- Additional Info -->
+                        <div class="mt-6 pt-6 border-t border-gray-100">
+                            <div class="flex items-center justify-center gap-6 text-sm text-gray-500">
+                                <div class="flex items-center gap-1">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                    </svg>
+                                    <span>24/7 Support</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"/>
+                                    </svg>
+                                    <span>Certificate</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                @endforeach
-
             </div>
+            @endforeach
         </div>
-    </section>
-    <!-- Purchase Modal -->
-    <div id="purchaseModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center z-50">
-        <div class="bg-white rounded-2xl shadow-xl w-full max-w-sm relative">
 
-            <!-- Close Button -->
-            <button onclick="closePurchaseModal()"
-            class="absolute top-3 right-3 text-gray-400 hover:text-gray-600 transition">
-            ✕
-            </button>
-
-            <!-- Header -->
-            <div class="p-6 text-center">
-            <h2 class="text-xl font-semibold text-gray-800">Connect Wallet</h2>
-            <p class="text-gray-500 text-sm mt-1">Connect your wallet to complete purchase</p>
-            </div>
-
-            <!-- Plan Info -->
-            <div class="px-6 mb-4">
-            <div class="bg-gray-100 rounded-xl p-3 text-center">
-                <p id="selectedPlanName" class="text-gray-700 font-medium"></p>
-                <p id="selectedPlanPrice" class="text-gray-900 font-semibold text-lg"></p>
-            </div>
-            </div>
-
-            <!-- Form -->
-            <form id="purchaseForm" method="POST" action="" class="px-6 pb-6">
-                @csrf
-                <input type="hidden" name="chain" id="chainInput" value="erc20">
-                <input type="hidden" name="pay_wallet_address" id="walletAddressInput">
-                <input type="hidden" name="tx_hash" id="txHashInput">
-
-                <!-- Network Selection -->
-                <div class="mb-4">
-                    <label class="block text-gray-700 font-medium mb-1">Choose Network</label>
-                    <select id="chainSelect"
-                    class="w-full border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-purple-400">
-                        <option value="erc20">ERC20</option>
-                        <option value="trc20">TRC20</option>
-                    </select>
+        <!-- Trust Indicators -->
+        <div class="mt-16 text-center">
+            <div class="inline-flex items-center gap-8 text-gray-500 text-sm">
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                    </svg>
+                    <span>Secure Payment</span>
                 </div>
-
-                <!-- Connect MetaMask Button -->
-                <div class="mb-4">
-                    <button type="button" onclick="connectWallet()"
-                    class="flex items-center w-full border border-gray-200 rounded-xl p-3 hover:bg-gray-50 transition">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/768px-MetaMask_Fox.svg.png"
-                            alt="MetaMask" class="w-7 h-7">
-                        <div class="ml-3 text-left">
-                            <p class="text-gray-800 font-medium">Connect MetaMask</p>
-                            <p class="text-gray-500 text-sm">Connect to your MetaMask wallet</p>
-                        </div>
-                    </button>
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/>
+                    </svg>
+                    <span>Money Back Guarantee</span>
                 </div>
-
-                {{-- بعد از کانکت و ساخت دیتافیک، دکمه فعال میشه --}}
-                <button id="confirmBtn" type="submit" disabled
-                    class="w-full text-black py-3 rounded-xl bg-gray-300 cursor-not-allowed transition shadow-xl font-semibold">
-                    Confirm Purchase
-                </button>
-            </form>
-
-            {{-- fake data for pay --}}
-            <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
-            <script>
-            let selectedPlanId = null;
-            let userWallet = null;
-
-            // وقتی روی Choose Plan کلیک میشه
-            function openPurchaseModal(planId, planName, planPrice) {
-                selectedPlanId = planId;
-
-                // اینجا اکشن فرم رو درست ست می‌کنیم
-                document.getElementById('purchaseForm').action = `/plans/${planId}/purchase`;
-
-                document.getElementById('selectedPlanName').innerText = planName;
-                document.getElementById('selectedPlanPrice').innerText = planPrice + ' USDT';
-
-                document.getElementById('purchaseModal').classList.remove('hidden');
-            }
-
-            // بستن مودال
-            function closePurchaseModal() {
-                document.getElementById('purchaseModal').classList.add('hidden');
-            }
-
-            // وصل شدن به متامسک
-            async function connectWallet() {
-                if (window.ethereum) {
-                    try {
-                        const provider = new ethers.providers.Web3Provider(window.ethereum);
-                        await provider.send("eth_requestAccounts", []);
-                        const signer = provider.getSigner();
-                        userWallet = await signer.getAddress();
-
-                        // 👇 اینجا دیتافیک رو می‌سازیم (فعلاً الکی)
-                        document.getElementById('walletAddressInput').value = userWallet;
-                        document.getElementById('txHashInput').value = "0xFAKE_TX_HASH_" + Date.now(); // fake hash
-
-                        // فعال کردن دکمه Confirm Purchase
-                        let confirmBtn = document.getElementById('confirmBtn');
-                        confirmBtn.disabled = false;
-                        confirmBtn.classList.remove('bg-gray-300','cursor-not-allowed');
-                        confirmBtn.classList.add('bg-green-500','hover:bg-green-600','text-white');
-
-                        alert("Wallet connected! Fake TX hash generated. Now you can confirm purchase.");
-
-                    } catch (err) {
-                        console.error(err);
-                        alert("Connection failed");
-                    }
-                } else {
-                    alert("MetaMask not detected!");
-                }
-            }
-            </script>
-            {{-- fake data for pay --}}
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                    </svg>
+                    <span>Expert Instructors</span>
+                </div>
+            </div>
         </div>
     </div>
+</section>
 
+<div id="purchaseModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden z-50 flex items-center justify-center">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-6 relative">
+        <button onclick="closePurchaseModal()" class="absolute top-3 right-3 text-gray-400">✕</button>
+        <h2 class="text-xl font-semibold mb-2">Connect Wallet</h2>
+        <p class="text-gray-500 text-sm mb-4">Pay with BEP20 USDT on Binance Smart Chain</p>
 
-
-    <!-- Features Comparison -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 slide-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Compare All Plans</h2>
-                <p class="text-xl text-gray-600">See what's included in each trading plan</p>
-            </div>
-
-            <div class="overflow-x-auto">
-                <table class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
-                    <thead class="bg-gray-50">
-                        <tr>
-                            <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900">Features</th>
-                            <th class="px-6 py-4 text-center text-sm font-semibold text-primary-green">Beginner</th>
-                            <th class="px-6 py-4 text-center text-sm font-semibold text-primary-purple">Advanced</th>
-                            <th class="px-6 py-4 text-center text-sm font-semibold text-primary-red">Professional</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-200">
-                        <tr>
-                            <td class="px-6 py-4 text-sm text-gray-900">Video Lessons</td>
-                            <td class="px-6 py-4 text-center text-sm text-gray-600">12+</td>
-                            <td class="px-6 py-4 text-center text-sm text-gray-600">24+</td>
-                            <td class="px-6 py-4 text-center text-sm text-gray-600">50+</td>
-                        </tr>
-                        <tr class="bg-gray-50">
-                            <td class="px-6 py-4 text-sm text-gray-900">Trading Simulator</td>
-                            <td class="px-6 py-4 text-center">
-                                <svg class="w-5 h-5 text-primary-green mx-auto" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                            </td>
-                            <td class="px-6 py-4 text-center">
-                                <svg class="w-5 h-5 text-primary-purple mx-auto" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                            </td>
-                            <td class="px-6 py-4 text-center">
-                                <svg class="w-5 h-5 text-primary-red mx-auto" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-sm text-gray-900">Community Access</td>
-                            <td class="px-6 py-4 text-center">
-                                <svg class="w-5 h-5 text-primary-green mx-auto" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                            </td>
-                            <td class="px-6 py-4 text-center text-sm text-primary-purple font-medium">VIP Access</td>
-                            <td class="px-6 py-4 text-center text-sm text-primary-red font-medium">VIP + Private</td>
-                        </tr>
-                        <tr class="bg-gray-50">
-                            <td class="px-6 py-4 text-sm text-gray-900">1-on-1 Mentorship</td>
-                            <td class="px-6 py-4 text-center text-sm text-gray-400">—</td>
-                            <td class="px-6 py-4 text-center">
-                                <svg class="w-5 h-5 text-primary-purple mx-auto" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                            </td>
-                            <td class="px-6 py-4 text-center text-sm text-primary-red font-medium">Weekly Sessions</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-sm text-gray-900">Premium Signals</td>
-                            <td class="px-6 py-4 text-center text-sm text-gray-400">—</td>
-                            <td class="px-6 py-4 text-center">
-                                <svg class="w-5 h-5 text-primary-purple mx-auto" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                            </td>
-                            <td class="px-6 py-4 text-center">
-                                <svg class="w-5 h-5 text-primary-red mx-auto" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="bg-gray-100 rounded-xl p-3 text-center mb-4">
+            <p id="selectedPlanName" class="text-gray-700 font-medium"></p>
+            <p id="selectedPlanPrice" class="text-gray-900 font-semibold text-lg"></p>
         </div>
-    </section>
 
+        <form id="purchaseForm" method="POST" action="">
+            @csrf
+            <input type="hidden" name="chain" value="bep20">
+            <input type="hidden" name="pay_wallet_address" id="walletAddressInput">
+            <input type="hidden" name="tx_hash" id="txHashInput">
 
-    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
-    <script>
-    let selectedPlanId = null;
+            <button type="button" id="payWithMetamaskBtn" class="w-full border border-gray-200 rounded-xl p-3 mb-4 hover:bg-gray-50 flex items-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg" class="w-7 h-7" alt="MetaMask">
+                <span class="ml-3">Connect with MetaMask</span>
+            </button>
 
-    function openPurchaseModal(planId, planName, planPrice) {
-        selectedPlanId = planId;
-        document.getElementById('selectedPlanName').innerText = planName;
-        document.getElementById('selectedPlanPrice').innerText = planPrice + ' USDT';
-        document.getElementById('purchaseForm').action = `/plans/${planId}/purchase`;
-        document.getElementById('purchaseModal').classList.remove('hidden');
-    }
+            <button id="confirmBtn" type="submit" disabled
+                class="w-full py-3 rounded-xl bg-gray-300 cursor-not-allowed font-semibold">
+                Confirm Purchase
+            </button>
+        </form>
+    </div>
+</div>
 
-    function closePurchaseModal() {
-        document.getElementById('purchaseModal').classList.add('hidden');
-    }
-    </script>
-    <script>
-    let userWallet = null;
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+<script>
+let selectedPlanId = null;
+let selectedPlanPrice = null;
+let userWallet = null;
+let provider, signer;
+const receiverWallet = "0x39fcd9b123644a9ae18745622ecafd735281071f";
+const usdtBep20Address = "0x55d398326f99059fF775485246999027B3197955";
 
-    async function connectWallet() {
-        if (window.ethereum) {
-            try {
-                const provider = new ethers.providers.Web3Provider(window.ethereum);
-                await provider.send("eth_requestAccounts", []);
-                const signer = provider.getSigner();
-                userWallet = await signer.getAddress();
+function openPurchaseModal(planId, planName, planPrice) {
+    selectedPlanId = planId;
+    selectedPlanPrice = planPrice;
+    document.getElementById('selectedPlanName').innerText = planName;
+    document.getElementById('selectedPlanPrice').innerText = planPrice + ' USDT';
+    document.getElementById('purchaseForm').action = `/plans/${planId}/purchase`;
+    document.getElementById('purchaseModal').classList.remove('hidden');
+}
 
-                document.getElementById('walletAddressInput').value = userWallet;
-                alert("Wallet connected: " + userWallet);
+function closePurchaseModal() {
+    document.getElementById('purchaseModal').classList.add('hidden');
+}
 
-                // اینجا میتونی قرارداد USDT رو صدا بزنی و payment بزنی
-                // ولی فعلا ساده نگه میداریم
-                // بعد از پرداخت txHash رو اینجوری میگیری:
-                // let tx = await signer.sendTransaction({ to: "OUR_RECEIVER_WALLET", value: ethers.utils.parseEther("0.1") });
-                // document.getElementById('txHashInput').value = tx.hash;
-
-            } catch (err) {
-                console.error(err);
-                alert("Connection failed");
-            }
+// ===== Force switch to Binance Smart Chain =====
+async function switchToBSC() {
+    const chainId = '0x38'; // 56 in decimal for BSC Mainnet
+    try {
+        await window.ethereum.request({
+            method: 'wallet_switchEthereumChain',
+            params: [{ chainId }],
+        });
+    } catch (switchError) {
+        if (switchError.code === 4902) { // chain not found
+            await window.ethereum.request({
+                method: 'wallet_addEthereumChain',
+                params: [{
+                    chainId,
+                    chainName: 'Binance Smart Chain',
+                    nativeCurrency: { name: 'BNB', symbol: 'BNB', decimals: 18 },
+                    rpcUrls: ['https://bsc-dataseed.binance.org/'],
+                    blockExplorerUrls: ['https://bscscan.com']
+                }],
+            });
         } else {
-            alert("MetaMask not detected!");
+            console.error(switchError);
+            payAlert('error', 'Failed to switch network: ' + switchError.message);
         }
     }
-    </script>
+}
 
+// ajax-pay /plans/{plan}/purchase
+function planPurchasePay(id, pay_wallet_address, tx_hash) {
+    fetch(`/plans/${id}/purchase`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN': '{{ csrf_token() }}'
+        },
+        body: JSON.stringify({
+            chain: 'bep20',
+            pay_wallet_address,
+            tx_hash
+        })
+    }).then(response => response.json())
+      .then(data => {
+          if (data.message) {
+              payAlert('success', data.message);
+          }
+      }).catch(error => {
+          console.error('Error:', error);
+          payAlert('error', 'Purchase confirmation failed: ' + error.message);
+      });
+}
+
+// ===== Step 1: Connect Wallet =====
+async function connectWalletBep20() {
+    if (!window.ethereum) return alert("MetaMask not detected!");
+    try {
+        await switchToBSC();
+        provider = new ethers.providers.Web3Provider(window.ethereum);
+        await provider.send("eth_requestAccounts", []);
+        signer = provider.getSigner();
+        userWallet = await signer.getAddress();
+
+        document.getElementById('walletAddressInput').value = userWallet;
+        payAlert('success', "Wallet connected");
+
+        let confirmBtn = document.getElementById('confirmBtn');
+        confirmBtn.disabled = false;
+        confirmBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+        confirmBtn.classList.add('bg-green-500', 'hover:bg-green-600', 'text-white');
+
+    } catch (err) {
+        console.error(err);
+        payAlert('error', 'Connection failed: ' + err.message);
+    }
+}
+
+// ===== Step 2: Pay USDT =====
+async function payUsdtBep20(amountUsdt) {
+    if (!signer || !userWallet) {
+        return payAlert('error', 'Please connect your wallet first.');
+    }
+    try {
+        const abi = ["function transfer(address to, uint amount) public returns (bool)"];
+        const contract = new ethers.Contract(usdtBep20Address, abi, signer);
+
+        let decimals = 18;
+        payAlert('success', `Paying ${amountUsdt.toString()} USDT...`);
+
+        let value = ethers.utils.parseUnits('0.01', decimals);
+
+        const tx = await contract.transfer(receiverWallet, value);
+
+        document.getElementById("txHashInput").value = tx.hash;
+        planPurchasePay(selectedPlanId, userWallet, tx.hash);
+    } catch (err) {
+        console.error(err);
+        payAlert('error', 'Payment failed Please try again.');
+
+    }
+}
+
+
+document.getElementById('payWithMetamaskBtn').addEventListener('click', connectWalletBep20);
+document.getElementById('confirmBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    if (selectedPlanPrice) {
+        payUsdtBep20(selectedPlanPrice);
+    } else {
+        payAlert('error', 'No plan selected.');
+    }
+});
+
+</script>
 @endsection
+
+
+{{-- WalletConnect v2 + Web3Modal Standalone --}}

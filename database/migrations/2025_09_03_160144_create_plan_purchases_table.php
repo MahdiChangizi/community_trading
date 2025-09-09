@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('plan_id')->constrained('plans');
             $table->decimal('amount_usdt', 18, 6);
             $table->decimal('paid_usdt', 18, 6)->default(0);
-            $table->enum('chain', ['erc20','trc20'])->nullable();
+            $table->enum('chain', ['bep20', 'erc20'])->nullable();
             $table->string('pay_wallet_address');
             $table->string('tx_hash')->nullable()->unique();
             $table->integer('confirmations')->default(0);
