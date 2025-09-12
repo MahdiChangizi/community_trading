@@ -11,8 +11,8 @@
                 extend: {
                     colors: {
                         primary: {
-                            green: '#82df6a',
-                            purple: '#836adf',
+                            green: '#FFD700',
+                            purple: '#FFA500',
                             red: '#df6a6a',
                             yellow: '#d7df6a'
                         }
@@ -29,72 +29,72 @@
         * {
             font-family: 'Inter', sans-serif;
         }
-        
+
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
             animation: fadeInUp 0.8s ease-out forwards;
         }
-        
+
         @keyframes fadeInUp {
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         .slide-up {
             opacity: 0;
             transform: translateY(20px);
             transition: all 0.6s ease;
         }
-        
+
         .slide-up.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .hover-scale {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .hover-scale:hover {
             transform: scale(1.02);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
         }
-        
+
         .btn-primary {
             transition: all 0.3s ease;
         }
-        
+
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
         }
-        
+
         .dashboard-card {
             background: white;
             border-radius: 12px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
-        
+
         .dashboard-card:hover {
             box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
         }
-        
+
         .profile-avatar {
-            background: linear-gradient(135deg, #82df6a, #836adf);
+            background: linear-gradient(135deg, #FFD700, #FFA500);
             transition: all 0.3s ease;
         }
-        
+
         .profile-avatar:hover {
             transform: scale(1.05);
             box-shadow: 0 10px 20px rgba(130, 223, 106, 0.3);
         }
-        
+
         .plan-badge {
-            background: linear-gradient(135deg, #82df6a, #836adf);
+            background: linear-gradient(135deg, #FFD700, #FFA500);
             color: white;
             padding: 4px 12px;
             border-radius: 20px;
@@ -102,57 +102,57 @@
             font-weight: 600;
             display: inline-block;
         }
-        
+
         .status-active {
-            color: #82df6a;
-            background-color: rgba(130, 223, 106, 0.1);
+            color: #FFD700;
+            background-color: rgba(255, 215, 0, 0.1);
             border: 1px solid rgba(130, 223, 106, 0.2);
         }
-        
+
         .status-expired {
             color: #df6a6a;
             background-color: rgba(223, 106, 106, 0.1);
             border: 1px solid rgba(223, 106, 106, 0.2);
         }
-        
+
         .status-pending {
             color: #d7df6a;
             background-color: rgba(215, 223, 106, 0.1);
             border: 1px solid rgba(215, 223, 106, 0.2);
         }
-        
+
         .referral-tree {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s ease-in-out;
         }
-        
+
         .referral-tree.expanded {
             max-height: 2000px;
         }
-        
+
         .referral-level {
             border-left: 3px solid;
             padding-left: 20px;
             margin-left: 10px;
         }
-        
-        .referral-level-1 { border-color: #82df6a; }
-        .referral-level-2 { border-color: #836adf; }
+
+        .referral-level-1 { border-color: #FFD700; }
+        .referral-level-2 { border-color: #FFA500; }
         .referral-level-3 { border-color: #df6a6a; }
         .referral-level-4 { border-color: #d7df6a; }
         .referral-level-5 { border-color: #9ca3af; }
-        
+
         .copy-animation {
             animation: copySuccess 0.3s ease-in-out;
         }
-        
+
         @keyframes copySuccess {
             0% { transform: scale(1); }
             50% { transform: scale(1.1); }
             100% { transform: scale(1); }
         }
-        
+
         .wallet-address {
             font-family: monospace;
             font-size: 0.875rem;
@@ -161,7 +161,7 @@
             border-radius: 8px;
             border: 1px solid #e2e8f0;
         }
-        
+
         .chain-badge {
             padding: 4px 8px;
             border-radius: 6px;
@@ -171,25 +171,25 @@
             align-items: center;
             gap: 4px;
         }
-        
+
         .chain-ethereum {
             background: rgba(98, 126, 234, 0.1);
             color: #627eea;
         }
-        
+
         .progress-bar {
             height: 6px;
             background: #e5e7eb;
             border-radius: 3px;
             overflow: hidden;
         }
-        
+
         .progress-fill {
             height: 100%;
             border-radius: 3px;
             transition: width 1s ease;
         }
-        
+
         .notification-badge {
             background: #ef4444;
             color: white;
@@ -203,58 +203,58 @@
             min-width: 18px;
             text-align: center;
         }
-        
+
         .sidebar {
             transition: transform 0.3s ease;
         }
-        
+
         .sidebar-overlay {
             background: rgba(0, 0, 0, 0.5);
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s ease;
         }
-        
+
         .sidebar-overlay.active {
             opacity: 1;
             visibility: visible;
         }
-        
+
         @media (max-width: 768px) {
             .sidebar {
                 transform: translateX(-100%);
             }
-            
+
             .sidebar.active {
                 transform: translateX(0);
             }
         }
-        
+
         .stats-card {
-            background: linear-gradient(135deg, rgba(130, 223, 106, 0.1), rgba(131, 106, 223, 0.1));
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.1));
             border: 1px solid rgba(130, 223, 106, 0.2);
         }
-        
+
         .quick-action-btn {
             background: white;
             border: 2px solid #e5e7eb;
             transition: all 0.3s ease;
         }
-        
+
         .quick-action-btn:hover {
-            border-color: #82df6a;
+            border-color: #FFD700;
             background: rgba(130, 223, 106, 0.05);
             transform: translateY(-2px);
         }
-        
+
         .tab-active {
-            border-color: #82df6a;
-            color: #82df6a;
+            border-color: #FFD700;
+            color: #FFD700;
             background: rgba(130, 223, 106, 0.05);
         }
-        
+
         .gradient-text {
-            background: linear-gradient(135deg, #82df6a, #836adf);
+            background: linear-gradient(135deg, #FFD700, #FFA500);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -264,7 +264,7 @@
 <body class="bg-gray-50 text-gray-800 font-inter">
     <!-- Mobile Sidebar Overlay -->
     <div class="sidebar-overlay fixed inset-0 z-40 lg:hidden" onclick="closeSidebar()"></div>
-    
+
     <!-- Sidebar -->
     <div class="sidebar fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg lg:translate-x-0">
         <div class="flex items-center justify-between p-6 border-b border-gray-200">
@@ -275,7 +275,7 @@
                 </svg>
             </button>
         </div>
-        
+
         <nav class="mt-6 px-3">
             <div class="space-y-1">
                 <a href="#" class="flex items-center px-3 py-2 text-gray-900 bg-primary-green bg-opacity-10 rounded-md border-l-4 border-primary-green">
@@ -285,14 +285,14 @@
                     </svg>
                     Dashboard
                 </a>
-                
+
                 <a href="#" class="flex items-center px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors">
                     <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                     </svg>
                     Trading
                 </a>
-                
+
                 <a href="#" class="flex items-center px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors relative">
                     <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
@@ -300,14 +300,14 @@
                     Community
                     <span class="notification-badge">3</span>
                 </a>
-                
+
                 <a href="#" class="flex items-center px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors">
                     <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
                     </svg>
                     Billing
                 </a>
-                
+
                 <a href="#" class="flex items-center px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors">
                     <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
@@ -316,7 +316,7 @@
                     Settings
                 </a>
             </div>
-            
+
             <div class="mt-8 pt-6 border-t border-gray-200">
                 <div class="px-3 mb-2">
                     <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Support</p>
@@ -335,7 +335,7 @@
                 </a>
             </div>
         </nav>
-        
+
         <div class="absolute bottom-0 left-0 right-0 p-4">
             <button class="w-full flex items-center px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors">
                 <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -345,7 +345,7 @@
             </button>
         </div>
     </div>
-    
+
     <!-- Main Content -->
     <div class="lg:ml-64">
         <!-- Top Navigation -->
@@ -359,7 +359,7 @@
                     </button>
                     <h1 class="text-xl font-semibold text-gray-900">Dashboard</h1>
                 </div>
-                
+
                 <div class="flex items-center space-x-4">
                     <button class="relative p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -367,7 +367,7 @@
                         </svg>
                         <span class="notification-badge">2</span>
                     </button>
-                    
+
                     <button class="relative p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5-5-5h5V1h0z"></path>
@@ -376,7 +376,7 @@
                 </div>
             </div>
         </header>
-        
+
         <!-- Dashboard Content -->
         <main class="p-4 sm:p-6 lg:p-8">
             <!-- Welcome Section & Profile -->
@@ -410,7 +410,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Stats Overview -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                 <div class="stats-card p-6 rounded-lg slide-up">
@@ -427,7 +427,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="bg-white p-6 rounded-lg shadow-sm slide-up">
                     <div class="flex items-center justify-between">
                         <div>
@@ -442,7 +442,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="bg-white p-6 rounded-lg shadow-sm slide-up">
                     <div class="flex items-center justify-between">
                         <div>
@@ -457,7 +457,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="bg-white p-6 rounded-lg shadow-sm slide-up">
                     <div class="flex items-center justify-between">
                         <div>
@@ -473,7 +473,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Main Content Grid -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Purchased Plans Section -->
@@ -511,7 +511,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="border border-gray-200 rounded-lg p-4">
                                 <div class="flex items-center justify-between mb-3">
                                     <div class="flex items-center">
@@ -525,7 +525,7 @@
                                     <p><strong>Price:</strong> $99/month</p>
                                 </div>
                             </div>
-                            
+
                             <div class="border border-gray-200 rounded-lg p-4">
                                 <div class="flex items-center justify-between mb-3">
                                     <div class="flex items-center">
@@ -541,13 +541,13 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <button class="w-full mt-4 bg-primary-purple text-white px-4 py-2 rounded-md btn-primary">
                             View All Plans
                         </button>
                     </div>
                 </div>
-                
+
                 <!-- Wallet Info Section -->
                 <div class="dashboard-card slide-up">
                     <div class="p-6 border-b border-gray-200">
@@ -581,7 +581,7 @@
                                     Disconnect
                                 </button>
                             </div>
-                            
+
                             <div class="space-y-2">
                                 <label class="text-sm font-medium text-gray-700">Wallet Address</label>
                                 <div class="flex items-center space-x-2">
@@ -593,13 +593,13 @@
                                     </button>
                                 </div>
                             </div>
-                            
+
                             <div class="space-y-2">
                                 <label class="text-sm font-medium text-gray-700">Balance</label>
                                 <div class="text-2xl font-bold text-gray-900">24.58 ETH</div>
                                 <div class="text-sm text-gray-500">≈ $45,890 USD</div>
                             </div>
-                            
+
                             <div class="grid grid-cols-2 gap-3 pt-4">
                                 <button class="quick-action-btn px-4 py-2 rounded-md text-sm font-medium flex items-center justify-center">
                                     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -618,7 +618,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Referral Section -->
             <div class="dashboard-card mt-8 slide-up">
                 <div class="p-6 border-b border-gray-200">
@@ -629,7 +629,7 @@
                         Referral Program
                     </h3>
                 </div>
-                
+
                 <div class="p-6">
                     <!-- Referral Stats -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -646,21 +646,21 @@
                             <div class="text-sm opacity-90">Commission Rate</div>
                         </div>
                     </div>
-                    
+
                     <!-- Referral Link -->
                     <div class="space-y-4">
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Your Referral Link</label>
                             <div class="flex items-center space-x-2">
-                                <input 
-                                    type="text" 
-                                    readonly 
+                                <input
+                                    type="text"
+                                    readonly
                                     value="https://cryptotrade.com/ref/CT2024-8472"
                                     class="flex-1 px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-sm font-mono"
                                     id="referralLink"
                                 >
-                                <button 
-                                    onclick="copyReferralLink()" 
+                                <button
+                                    onclick="copyReferralLink()"
                                     class="bg-primary-green text-white px-4 py-2 rounded-md btn-primary flex items-center"
                                     id="copyButton"
                                 >
@@ -671,12 +671,12 @@
                                 </button>
                             </div>
                         </div>
-                        
+
                         <!-- Referral Tree Toggle -->
                         <div class="flex items-center justify-between">
                             <h4 class="text-md font-semibold text-gray-900">Referral Network</h4>
-                            <button 
-                                onclick="toggleReferralTree()" 
+                            <button
+                                onclick="toggleReferralTree()"
                                 class="text-primary-purple text-sm font-medium hover:text-purple-700 flex items-center"
                                 id="toggleButton"
                             >
@@ -686,7 +686,7 @@
                                 </svg>
                             </button>
                         </div>
-                        
+
                         <!-- Referral Tree -->
                         <div id="referralTree" class="referral-tree">
                             <div class="space-y-4 pt-4">
@@ -721,7 +721,7 @@
                                         <div class="text-xs text-gray-500">+ 9 more users...</div>
                                     </div>
                                 </div>
-                                
+
                                 <!-- Level 2 -->
                                 <div class="referral-level referral-level-2">
                                     <div class="flex items-center justify-between py-2">
@@ -738,7 +738,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <!-- Level 3 -->
                                 <div class="referral-level referral-level-3">
                                     <div class="flex items-center justify-between py-2">
@@ -755,7 +755,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <!-- Level 4 -->
                                 <div class="referral-level referral-level-4">
                                     <div class="flex items-center justify-between py-2">
@@ -772,7 +772,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <!-- Level 5 -->
                                 <div class="referral-level referral-level-5">
                                     <div class="flex items-center justify-between py-2">
@@ -813,10 +813,10 @@
         function copyReferralLink() {
             const input = document.getElementById('referralLink');
             const button = document.getElementById('copyButton');
-            
+
             input.select();
             document.execCommand('copy');
-            
+
             button.classList.add('copy-animation');
             button.innerHTML = `
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -824,7 +824,7 @@
                 </svg>
                 Copied!
             `;
-            
+
             setTimeout(() => {
                 button.classList.remove('copy-animation');
                 button.innerHTML = `
@@ -853,9 +853,9 @@
             const button = document.getElementById('toggleButton');
             const text = document.getElementById('toggleText');
             const icon = document.getElementById('toggleIcon');
-            
+
             tree.classList.toggle('expanded');
-            
+
             if (tree.classList.contains('expanded')) {
                 text.textContent = 'Hide Network';
                 icon.style.transform = 'rotate(180deg)';
@@ -910,13 +910,13 @@
             const toast = document.createElement('div');
             toast.className = 'fixed top-4 right-4 bg-primary-green text-white px-4 py-2 rounded-md shadow-lg z-50 transform translate-x-full transition-transform';
             toast.textContent = event.detail.message;
-            
+
             document.body.appendChild(toast);
-            
+
             setTimeout(() => {
                 toast.style.transform = 'translateX(0)';
             }, 100);
-            
+
             setTimeout(() => {
                 toast.style.transform = 'translateX(full)';
                 setTimeout(() => {

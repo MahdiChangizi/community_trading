@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            theme: { extend: { colors: { primary: { green: '#82df6a', purple: '#836adf', red: '#df6a6a', yellow: '#d7df6a' } }, fontFamily: { 'inter': ['Inter', 'sans-serif'] } } }
+            theme: { extend: { colors: { primary: { green: '#FFD700', purple: '#FFA500', red: '#df6a6a', yellow: '#d7df6a' } }, fontFamily: { 'inter': ['Inter', 'sans-serif'] } } }
         }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,10 +15,10 @@
         * { font-family: 'Inter', sans-serif; }
         .fade-in { opacity: 0; transform: translateY(20px); animation: fadeInUp 0.8s ease-out forwards; }
         @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
-        .input-focus:focus { border-color: #82df6a; box-shadow: 0 0 0 3px rgba(130,223,106,0.1); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4); }
+        .input-focus:focus { border-color: #FFD700; box-shadow: 0 0 0 3px rgba(130,223,106,0.1); }
         .auth-card { backdrop-filter: blur(10px); background: rgba(255,255,255,0.95); border: 1px solid rgba(255,255,255,0.2); }
-        .gradient-text { background: linear-gradient(135deg, #82df6a, #836adf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gradient-text { background: linear-gradient(135deg, #FFD700, #FFA500); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .auth-bg { background: linear-gradient(135deg, rgba(130,223,106,0.05)0%, rgba(131,106,223,0.05)50%, rgba(223,106,106,0.05)100%); }
     </style>
 </head>

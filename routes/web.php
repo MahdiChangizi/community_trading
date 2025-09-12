@@ -76,7 +76,7 @@ Route::get('/crypto-prices', function () {
     $response = Http::withHeaders([
         'X-CMC_PRO_API_KEY' => '7431c5f2-b4f2-4b5d-b41e-d1743b252bb2',
     ])->get('https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest', [
-        'symbol' => 'BTC,ETH,BNB,ADA,SOL,DOT,AVAX,MATIC',
+        'symbol' => 'BTC,ETH,XRP,SOL,BNB,DOGE,TRX,ADA,HYPE,LINK',
         'convert' => 'USD',
     ]);
 

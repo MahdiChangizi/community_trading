@@ -121,8 +121,8 @@ async function loadPrices() {
     try {
         const res = await fetch("/crypto-prices");
         const data = await res.json();
-
-        const symbols = ["BTC", "ETH", "BNB", "ADA", "SOL", "DOT", "AVAX", "MATIC"];
+        // 'BTC,ETH,XRP,SOL,BNB,DOGE,TRX,ADA,HYPE,LINK'
+        const symbols = ["BTC", "ETH", "XRP", "SOL", "BNB", "DOGE", "TRX", "ADA", "HYPE", "LINK"];
         let html = "";
 
         symbols.forEach(symbol => {

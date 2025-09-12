@@ -59,22 +59,25 @@ function payAlert(type, message) {
             @foreach ($plans as $index => $plan)
             @php
                 $colors = [
-                    0 => [
-                        'gradient' => 'from-blue-600 to-cyan-500',
-                        'accent' => 'blue-600',
-                        'bg' => 'blue-50',
-                        'border' => 'blue-200',
-                        'popular' => false
-                    ],
-                    1 => [
-                        'gradient' => 'from-purple-600 to-pink-500',
-                        'accent' => 'purple-600',
-                        'bg' => 'purple-50',
-                        'border' => 'purple-200',
-                        'popular' => true
-                    ]
-                ];
-                $color = $colors[$index % 2];
+    0 => [
+        // کارت اول → طلایی کلاسیک و روشن
+        'gradient' => 'from-yellow-400 to-yellow-600', // روشن → تیره
+        'accent'   => 'yellow-600',
+        'bg'       => 'yellow-50',
+        'border'   => 'yellow-200',
+        'popular'  => false
+    ],
+    1 => [
+        // کارت دوم → طلایی لاکچری با کمی قهوه‌ای برنز
+        'gradient' => 'from-amber-700 to-yellow-500',  // برنز → طلایی روشن
+        'accent'   => 'amber-700',
+        'bg'       => 'amber-50',
+        'border'   => 'amber-300',
+        'popular'  => true
+    ]
+];
+$color = $colors[$index % 2];
+
             @endphp
 
             <div class="relative group">

@@ -12,8 +12,8 @@
                 extend: {
                     colors: {
                         primary: {
-                            green: '#82df6a',
-                            purple: '#836adf',
+                            green: '#FFD700',
+                            purple: '#FFA500',
                             red: '#df6a6a',
                             yellow: '#d7df6a'
                         }
@@ -33,7 +33,7 @@
         }
 
         .crypto-bg {
-            background: linear-gradient(135deg, rgba(130, 223, 106, 0.1) 0%, rgba(131, 106, 223, 0.1) 100%);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 165, 0, 0.1) 100%);
         }
 
         @keyframes cryptoFloat {
@@ -66,17 +66,18 @@
 
         .hover-scale:hover {
             transform: scale(1.05);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
         }
 
         .btn-primary {
-            transition: all 0.3s ease;
-        }
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #fff;
+    border: none;
+}
+.btn-primary:hover {
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+}
 
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        }
 
         .counter {
             transition: all 0.5s ease;
@@ -91,12 +92,9 @@
         }
 
         .shape {
-            position: absolute;
-            background: linear-gradient(45deg, #82df6a, #836adf);
-            border-radius: 50%;
-            opacity: 0.1;
-            animation: float 20s infinite ease-in-out;
-        }
+        background: linear-gradient(45deg, #FFD700, #FFA500);
+     }
+
 
         .shape:nth-child(1) {
             width: 80px;

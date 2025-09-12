@@ -12,8 +12,8 @@
                 extend: {
                     colors: {
                         primary: {
-                            green: '#82df6a',
-                            purple: '#836adf',
+                            green: '#FFD700',
+                            purple: '#FFA500',
                             red: '#df6a6a',
                             yellow: '#d7df6a'
                         }
@@ -58,8 +58,8 @@
         }
 
         .input-focus:focus {
-            border-color: #82df6a;
-            box-shadow: 0 0 0 3px rgba(130, 223, 106, 0.1);
+            border-color: #FFD700;
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
         }
 
         .auth-card {
@@ -79,7 +79,7 @@
         }
 
         .gradient-text {
-            background: linear-gradient(135deg, #82df6a, #836adf);
+            background: linear-gradient(135deg, #FFD700, #FFA500);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -91,12 +91,12 @@
         }
 
         .password-toggle:hover {
-            color: #82df6a;
+            color: #FFD700;
         }
 
         .remember-checkbox:checked {
-            background-color: #82df6a;
-            border-color: #82df6a;
+            background-color: #FFD700;
+            border-color: #FFD700;
         }
 
         .auth-bg {
