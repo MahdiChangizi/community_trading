@@ -137,6 +137,18 @@ function payAlert(type, message) {
                         </div>
 
                         <!-- CTA Button -->
+                        {{-- if user isn't login he should go login page --}}
+                        @if (!Auth::check())
+                        <button onclick="window.location.href='{{ route('login') }}'"
+                                class="w-full bg-gradient-to-r {{ $color['gradient'] }} text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group">
+                            <span class="flex items-center justify-center gap-2">
+                                Start Learning Now
+                                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </span>
+                        </button>
+                        @else
                         <button onclick="openPurchaseModal('{{ $plan->id }}','{{ $plan->name }}','{{ $plan->price_usdt }}')"
                                 class="w-full bg-gradient-to-r {{ $color['gradient'] }} text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group">
                             <span class="flex items-center justify-center gap-2">
@@ -146,7 +158,7 @@ function payAlert(type, message) {
                                 </svg>
                             </span>
                         </button>
-
+                        @endif
                         <!-- Additional Info -->
                         <div class="mt-6 pt-6 border-t border-gray-100">
                             <div class="flex items-center justify-center gap-6 text-sm text-gray-500">
@@ -217,6 +229,8 @@ function payAlert(type, message) {
                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg" class="w-7 h-7" alt="MetaMask">
                 <span class="ml-3">Connect with MetaMask</span>
             </button>
+
+            {{-- Connect with Coinbase Wallet or Trust Wallet on mobile. --}}
 
             <button id="confirmBtn" type="submit" disabled
                 class="w-full py-3 rounded-xl bg-gray-300 cursor-not-allowed font-semibold">
@@ -301,17 +315,47 @@ function planPurchasePay(id, pay_wallet_address, tx_hash) {
 
 // ===== Step 1: Connect Wallet =====
 async function connectWalletBep20() {
-    if (!window.ethereum) return alert("MetaMask not detected!");
+    let wallet_type = "coinbase";
     try {
+        const ua = navigator.userAgent.toLowerCase();
+        const isMobile = /android|iphone|ipad/.test(ua);
+
+        // ۱. موبایل بدون window.ethereum → ارسال به deeplink
+        if (!window.ethereum) {
+            if (isMobile) {
+                // سعی کن MetaMask موبایل رو باز کنی
+                const currentUrl = encodeURIComponent(window.location.href);
+                //
+                if (wallet_type === "coinbase") {
+                    window.location.href = `cbwallet://dapp?url=${currentUrl}`;
+                } else if (wallet_type === "trust") {
+                  window.location.href = `trust://open_url?coin_id=60&url=${currentUrl}`;
+                }
+
+                // اگر متامسک نبود میشه Trust Wallet رو تست کرد
+                // setTimeout(() => {
+                //     window.location.href = `trust://browser_redirect?url=${currentUrl}`;
+                // }, 2000);
+            } else {
+                alert("MetaMask or other Ethereum wallet not detected!");
+            }
+            return;
+        }
+
+        // ۲. دسکتاپ یا موبایل با افزونه window.ethereum
         await switchToBSC();
+
         provider = new ethers.providers.Web3Provider(window.ethereum);
         await provider.send("eth_requestAccounts", []);
+
         signer = provider.getSigner();
         userWallet = await signer.getAddress();
 
+        // ۳. نمایش والت در input
         document.getElementById('walletAddressInput').value = userWallet;
         payAlert('success', "Wallet connected");
 
+        // ۴. فعال‌کردن دکمه تأیید
         let confirmBtn = document.getElementById('confirmBtn');
         confirmBtn.disabled = false;
         confirmBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
@@ -322,6 +366,7 @@ async function connectWalletBep20() {
         payAlert('error', 'Connection failed: ' + err.message);
     }
 }
+
 
 // ===== Step 2: Pay USDT =====
 async function payUsdtBep20(amountUsdt) {
@@ -361,6 +406,7 @@ document.getElementById('confirmBtn').addEventListener('click', function(e) {
 
 </script>
 @endsection
+
 
 
 {{-- WalletConnect v2 + Web3Modal Standalone --}}

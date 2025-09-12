@@ -21,8 +21,12 @@
     "dependencies": {
         "@reown/appkit": "^1.8.3",
         "@reown/appkit-adapter-wagmi": "^1.8.3",
-        "@walletconnect/client": "^1.8.0",
+        "@reown/walletkit": "^1.2.10",
+        "@walletconnect/client": "^2.0.0-beta.55",
+        "@walletconnect/core": "^2.21.8",
         "@walletconnect/qrcode-modal": "^1.8.0",
+        "@walletconnect/universal-provider": "^2.21.8",
+        "@walletconnect/utils": "^2.21.8",
         "ethers": "^6.15.0",
         "viem": "^2.37.4",
         "wagmi": "^2.16.9"

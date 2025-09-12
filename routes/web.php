@@ -28,6 +28,10 @@ Route::post('/reviews', [ReviewController::class, 'store'])->name('reviews.store
 Route::get('/plans', [PlanController::class, 'index'])->name('plans.index');
 Route::get('/plans/{plan}', [PlanController::class, 'show'])->name('plans.show');
 
+Route::get('test', function () {
+    return view('pages.test');
+});
+
 // purchase
 Route::middleware('auth')->group(function () {
     Route::post('/plans/{plan}/purchase', [PurchaseController::class, 'store'])->name('plans.purchase');

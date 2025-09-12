@@ -1,4 +1,3 @@
-import './appkit';
 import './bootstrap';
 
 import Alpine from 'alpinejs';
