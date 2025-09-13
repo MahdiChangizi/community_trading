@@ -58,15 +58,13 @@ class RegisteredUserController extends Controller
                 'uid' => uniqid('U'),
                 'ref_code' => strtoupper(Str::random(8)),
                 'referrer_id' => $referrerId,
-                'wallet_address' => null,
-                'wallet_chain' => null,
                 'status' => 'active',
                 'is_admin' => $request->is_admin ?? false
             ]);
             if ($referrerId) {
                 $currentReferrer = $referrer;
                 $level = 1;
-        
+
                 // submit referral
                 while ($currentReferrer && $level <= 5) {
                     DB::table('referral_paths')->insert([
@@ -74,21 +72,21 @@ class RegisteredUserController extends Controller
                         'descendant_id' => $user->id,
                         'level' => $level,
                     ]);
-    
+
                     $currentReferrer = $currentReferrer->referrer_id
                         ? User::find($currentReferrer->referrer_id)
                         : null;
-        
+
                     $level++;
                 }
             }
             DB::commit();
             event(new Registered($user));
-    
+
             Auth::login($user);
-    
+
             return redirect(route('dashboard', absolute: false));
-            
+
         }
         catch (\Exception $e) {
             DB::rollBack();

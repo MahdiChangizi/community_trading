@@ -25,8 +25,6 @@ class User extends Authenticatable
         'phone',
         'ref_code',
         'referrer_id',
-        'wallet_address',
-        'wallet_chain',
         'status',
         'is_admin'
     ];
@@ -52,5 +50,28 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+
+    public function purchases()
+    {
+        return $this->hasMany(PlanPurchase::class);
+    }
+
+    // referrals
+    public function referrals()
+    {
+        return $this->hasMany(ReferralPath::class, 'ancestor_id');
+    }
+
+    public function wallet()
+    {
+        return $this->hasOne(Wallet::class);
+    }
+
+    // commissions
+    public function commissions()
+    {
+        return $this->hasMany(ReferralCommission::class, 'earner_user_id');
     }
 }

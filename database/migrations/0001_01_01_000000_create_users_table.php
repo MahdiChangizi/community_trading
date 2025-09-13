@@ -17,8 +17,6 @@ return new class extends Migration
             $table->string('phone')->nullable();
             $table->string('ref_code')->unique();
             $table->foreignId('referrer_id')->nullable()->constrained('users');
-            $table->string('wallet_address')->nullable();
-            $table->enum('wallet_chain', ['bep20', 'trc20'])->nullable();
             $table->enum('status', ['active', 'suspended'])->default('active');
             $table->boolean('is_admin')->default(false);
             $table->string('name');

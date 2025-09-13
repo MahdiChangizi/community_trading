@@ -31,4 +31,9 @@ class ReferralCommission extends Model
     {
         return $this->belongsTo(PlanPurchase::class, 'source_purchase_id');
     }
+
+    public function planPurchase()
+    {
+        return $this->belongsTo(PlanPurchase::class, 'source_purchase_id');
+    }
 }

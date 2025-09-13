@@ -4,6 +4,7 @@ namespace App\Services;
 use App\Models\ReferralPath;
 use App\Models\ReferralTier;
 use App\Models\ReferralCommission;
+use App\Models\User;
 use Illuminate\Support\Facades\DB;
 
 class ReferralService
@@ -74,6 +75,17 @@ class ReferralService
                     'amount_usdt' => $commissionAmount,
                     'status' => 'paid',
                 ]);
+
+                $user = User::where('id', $path->ancestor_id)->first();
+
+                if ($user->wallet()->first())
+                    $user->wallet()->update(['balance' => DB::raw('balance + ' . $commissionAmount)]);
+                else {
+                    $user->wallet()->create([
+                        'wallet_address' => null,
+                        'balance' => $commissionAmount
+                    ]);
+                }
             }
         });
     }

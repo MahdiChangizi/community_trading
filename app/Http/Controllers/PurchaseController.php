@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Plan;
 use App\Models\PlanPurchase;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Services\ReferralService;
+use Illuminate\Support\Facades\DB;
 
 class PurchaseController extends Controller
 {
@@ -24,21 +26,40 @@ class PurchaseController extends Controller
             'pay_wallet_address' => 'required|string|max:255',
             "tx_hash" => 'nullable|string|min:10|max:200|unique:plan_purchases,tx_hash',
         ]);
-        $purchase = PlanPurchase::create([
-            'user_id' => Auth::id(),
-            'tx_hash' => $data['tx_hash'],
-            'paid_usdt' => $plan->price_usdt,
-            'confirmations' => 12,
-            'plan_id' => $plan->id,
-            'amount_usdt' => $plan->price_usdt,
-            'chain' => $data['chain'],
-            'pay_wallet_address' => $data['pay_wallet_address'],
-            'status' => 'confirmed',
-        ]);
 
-        $this->referralService->distributeForPurchase($purchase);
+        $user_id = Auth::id();
 
-        return response()->json(['message' => 'Plan bought confirmed successfully.']);
+        try {
+            DB::beginTransaction();
+
+            $user = User::where('id', $user_id)->first();
+            if(!$user->wallet()->first()) {
+                $user->wallet()->updateOrCreate([], [
+                    'wallet_address' => $data['pay_wallet_address'],
+                    'balance' => 0
+                ]);
+            }
+
+
+            $purchase = PlanPurchase::create([
+                'user_id' => $user_id,
+                'tx_hash' => $data['tx_hash'],
+                'paid_usdt' => $plan->price_usdt,
+                'confirmations' => 12,
+                'plan_id' => $plan->id,
+                'amount_usdt' => $plan->price_usdt,
+                'chain' => $data['chain'],
+                'pay_wallet_address' => $data['pay_wallet_address'],
+                'status' => 'confirmed',
+            ]);
+
+            $this->referralService->distributeForPurchase($purchase);
+            DB::commit();
+            return response()->json(['message' => 'Plan bought confirmed successfully.']);
+        } catch (\Exception $e) {
+            DB::rollBack();
+            return response()->json(['message' => 'Failed to process purchase.'], 500);
+        }
     }
 
     // public function show(PlanPurchase $purchase)

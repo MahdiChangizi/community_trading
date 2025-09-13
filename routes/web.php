@@ -97,11 +97,7 @@ Route::get('/community', function () {
 })->name('community');
 
 
-Route::get('/dashboard', function () {
-    // return view('dashboard');
-    return view('dashboard/index');
-})->name('dashboard');
-// ->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [HomeController::class, 'index'])->middleware(['auth'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
