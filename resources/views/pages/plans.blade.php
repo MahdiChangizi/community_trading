@@ -228,9 +228,17 @@ $color = $colors[$index % 2];
             <input type="hidden" name="pay_wallet_address" id="walletAddressInput">
             <input type="hidden" name="tx_hash" id="txHashInput">
 
-            <button type="button" id="payWithMetamaskBtn" class="w-full border border-gray-200 rounded-xl p-3 mb-4 hover:bg-gray-50 flex items-center">
+            <button type="button" id="payWithMetamaskBtn" class="hidden md:flex w-full border border-gray-200 rounded-xl p-3 mb-4 hover:bg-gray-50 items-center">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg" class="w-7 h-7" alt="MetaMask">
                 <span class="ml-3">Connect with MetaMask</span>
+            </button>
+            <button type="button" id="payWithCoinbaseBtn" class="md:hidden w-full border border-gray-200 rounded-xl p-3 mb-4 hover:bg-gray-50 items-center flex">
+                <img src="https://avatars.githubusercontent.com/u/18060234?s=200&v=4" class="w-7 h-7" alt="Coinbase Wallet">
+                <span class="ml-3">Connect with Coinbase Wallet</span>
+            </button>
+            <button type="button" id="payWithTrustBtn" class="md:hidden w-full border border-gray-200 rounded-xl p-3 mb-4 hover:bg-gray-50 items-center flex">
+                <img src="https://trustwallet.com/assets/images/media/assets/TWT.png" class="w-7 h-7" alt="Trust Wallet">
+                <span class="ml-3">Connect with Trust Wallet</span>
             </button>
 
             {{-- Connect with Coinbase Wallet or Trust Wallet on mobile. --}}
@@ -317,28 +325,22 @@ function planPurchasePay(id, pay_wallet_address, tx_hash) {
 }
 
 // ===== Step 1: Connect Wallet =====
-async function connectWalletBep20() {
-    let wallet_type = "coinbase";
+async function connectWalletBep20(type) {
+    let wallet_type = type;
     try {
         const ua = navigator.userAgent.toLowerCase();
         const isMobile = /android|iphone|ipad/.test(ua);
 
-        // ۱. موبایل بدون window.ethereum → ارسال به deeplink
         if (!window.ethereum) {
             if (isMobile) {
-                // سعی کن MetaMask موبایل رو باز کنی
+
                 const currentUrl = encodeURIComponent(window.location.href);
-                //
+
                 if (wallet_type === "coinbase") {
                     window.location.href = `cbwallet://dapp?url=${currentUrl}`;
                 } else if (wallet_type === "trust") {
-                  window.location.href = `trust://open_url?coin_id=60&url=${currentUrl}`;
+                    window.location.href = `trust://open_url?coin_id=60&url=${currentUrl}`;
                 }
-
-                // اگر متامسک نبود میشه Trust Wallet رو تست کرد
-                // setTimeout(() => {
-                //     window.location.href = `trust://browser_redirect?url=${currentUrl}`;
-                // }, 2000);
             } else {
                 alert("MetaMask or other Ethereum wallet not detected!");
             }
@@ -389,6 +391,7 @@ async function payUsdtBep20(amountUsdt) {
 
         document.getElementById("txHashInput").value = tx.hash;
         planPurchasePay(selectedPlanId, userWallet, tx.hash);
+        closePurchaseModal();
     } catch (err) {
         console.error(err);
         payAlert('error', 'Payment failed Please try again.');
@@ -397,7 +400,16 @@ async function payUsdtBep20(amountUsdt) {
 }
 
 
-document.getElementById('payWithMetamaskBtn').addEventListener('click', connectWalletBep20);
+document.getElementById('payWithMetamaskBtn')
+    .addEventListener('click', () => connectWalletBep20("metamask"));
+
+document.getElementById('payWithCoinbaseBtn')
+    .addEventListener('click', () => connectWalletBep20("coinbase"));
+
+document.getElementById('payWithTrustBtn')
+    .addEventListener('click', () => connectWalletBep20("trust"));
+
+
 document.getElementById('confirmBtn').addEventListener('click', function(e) {
     e.preventDefault();
     if (selectedPlanPrice) {
@@ -411,5 +423,3 @@ document.getElementById('confirmBtn').addEventListener('click', function(e) {
 @endsection
 
 
-
-{{-- WalletConnect v2 + Web3Modal Standalone --}}
