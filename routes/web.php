@@ -90,6 +90,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/referral', function() {
+    return view("pages/referral");
+});
 
 //Community
 Route::get('/community', function () {

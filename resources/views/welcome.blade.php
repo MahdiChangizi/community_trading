@@ -19,18 +19,12 @@
                     Join thousands of successful traders in our premium community. Learn, grow, and profit from the crypto revolution with our proven strategies and expert mentorship.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <button class="bg-primary-green text-white px-8 py-4 rounded-md text-lg font-semibold btn-primary hover:bg-green-600 flex items-center">
-                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.01M15 10h1.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        Watch Intro Video
-                    </button>
-                    <button class="bg-primary-purple text-white px-8 py-4 rounded-md text-lg font-semibold btn-primary hover:bg-purple-600 flex items-center">
+                    <a href='/dashboard' class="bg-primary-purple text-white px-8 py-4 rounded-md text-lg font-semibold btn-primary hover:bg-purple-600 flex items-center">
                         <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
-                        Start Free Trial
-                    </button>
+                        TRADE CRYPTO
+                    </a>
                 </div>
             </div>
         </div>
