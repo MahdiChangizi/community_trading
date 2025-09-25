@@ -46,7 +46,7 @@ function payAlert(type, message) {
 
 <section class="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
+        <div class="text-center mb-16" data-aos="fade-up">
             <h2 class="text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-4">
                 Choose Your Trading Journey
             </h2>
@@ -55,7 +55,7 @@ function payAlert(type, message) {
             </p>
         </div>
 
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto">
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="100">
             @foreach ($plans as $index => $plan)
             @php
                 $colors = [
@@ -211,7 +211,7 @@ $color = $colors[$index % 2];
     </div>
 </section>
 
-<div id="purchaseModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden z-50 flex items-center justify-center">
+<div id="purchaseModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden z-50 flex items-center justify-center" data-aos="fade-up" data-aos-delay="150">
     <div class="bg-white rounded-2xl max-w-sm w-full p-6 relative">
         <button onclick="closePurchaseModal()" class="absolute top-3 right-3 text-gray-400">✕</button>
         <h2 class="text-xl font-semibold mb-2">Connect Wallet</h2>
@@ -419,6 +419,13 @@ document.getElementById('confirmBtn').addEventListener('click', function(e) {
     }
 });
 
+</script>
+<script>
+  AOS.init({
+    duration: 900,
+    once: true,
+    offset: 100
+  });
 </script>
 @endsection
 
