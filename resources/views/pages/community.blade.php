@@ -192,6 +192,131 @@
     </div>
 </section>
 
+<!-- 🌍 Global Network Section -->
+<section class="py-20 bg-gradient-to-br from-white to-gray-50" data-aos="fade-up">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Title -->
+    <div class="text-center mb-16" data-aos="zoom-in">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+        Our Global Network
+      </h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        ITI Academy is now connected with <span class="font-semibold text-primary-green">25 countries</span> worldwide.
+        Join our synchronized events across different time zones.
+      </p>
+    </div>
+
+    <!-- Grid of Countries -->
+    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
+      <!-- Country Card Example -->
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+        <span class="text-2xl mr-3">🇯🇵</span><div><h3 class="font-semibold">Japan</h3><p class="text-sm text-gray-600">31 Aug, 00:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="120">
+        <span class="text-2xl mr-3">🇲🇾</span><div><h3 class="font-semibold">Malaysia</h3><p class="text-sm text-gray-600">30 Aug, 22:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="140">
+        <span class="text-2xl mr-3">🇸🇬</span><div><h3 class="font-semibold">Singapore</h3><p class="text-sm text-gray-600">30 Aug, 22:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="160">
+        <span class="text-2xl mr-3">🇨🇳</span><div><h3 class="font-semibold">China</h3><p class="text-sm text-gray-600">30 Aug, 22:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="180">
+        <span class="text-2xl mr-3">🇭🇰</span><div><h3 class="font-semibold">Hong Kong</h3><p class="text-sm text-gray-600">30 Aug, 22:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+        <span class="text-2xl mr-3">🇦🇺</span><div><h3 class="font-semibold">Australia (Sydney)</h3><p class="text-sm text-gray-600">31 Aug, 02:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="220">
+        <span class="text-2xl mr-3">🇳🇿</span><div><h3 class="font-semibold">New Zealand</h3><p class="text-sm text-gray-600">31 Aug, 02:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="240">
+        <span class="text-2xl mr-3">🇸🇦</span><div><h3 class="font-semibold">Saudi Arabia</h3><p class="text-sm text-gray-600">30 Aug, 17:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="260">
+        <span class="text-2xl mr-3">🇰🇼</span><div><h3 class="font-semibold">Kuwait</h3><p class="text-sm text-gray-600">30 Aug, 17:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="280">
+        <span class="text-2xl mr-3">🇶🇦</span><div><h3 class="font-semibold">Qatar</h3><p class="text-sm text-gray-600">30 Aug, 17:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="300">
+        <span class="text-2xl mr-3">🇺🇬</span><div><h3 class="font-semibold">Uganda</h3><p class="text-sm text-gray-600">30 Aug, 17:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="320">
+        <span class="text-2xl mr-3">🇦🇪</span><div><h3 class="font-semibold">Dubai (UAE)</h3><p class="text-sm text-gray-600">30 Aug, 18:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="340">
+        <span class="text-2xl mr-3">🇴🇲</span><div><h3 class="font-semibold">Oman</h3><p class="text-sm text-gray-600">30 Aug, 18:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="360">
+        <span class="text-2xl mr-3">🇲🇻</span><div><h3 class="font-semibold">Maldives</h3><p class="text-sm text-gray-600">30 Aug, 19:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="380">
+        <span class="text-2xl mr-3">🇷🇼</span><div><h3 class="font-semibold">Rwanda</h3><p class="text-sm text-gray-600">30 Aug, 16:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="400">
+        <span class="text-2xl mr-3">🇵🇹</span><div><h3 class="font-semibold">Portugal</h3><p class="text-sm text-gray-600">30 Aug, 13:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="420">
+        <span class="text-2xl mr-3">🇳🇬</span><div><h3 class="font-semibold">Nigeria</h3><p class="text-sm text-gray-600">30 Aug, 14:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="440">
+        <span class="text-2xl mr-3">🇩🇪</span><div><h3 class="font-semibold">Germany</h3><p class="text-sm text-gray-600">30 Aug, 14:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="460">
+        <span class="text-2xl mr-3">🇬🇧</span><div><h3 class="font-semibold">United Kingdom</h3><p class="text-sm text-gray-600">30 Aug, 15:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="480">
+        <span class="text-2xl mr-3">🇱🇺</span><div><h3 class="font-semibold">Luxembourg</h3><p class="text-sm text-gray-600">30 Aug, 16:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="500">
+        <span class="text-2xl mr-3">🇿🇦</span><div><h3 class="font-semibold">South Africa</h3><p class="text-sm text-gray-600">30 Aug, 16:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="520">
+        <span class="text-2xl mr-3">🇮🇹</span><div><h3 class="font-semibold">Italy</h3><p class="text-sm text-gray-600">30 Aug, 16:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="540">
+        <span class="text-2xl mr-3">🇰🇷</span><div><h3 class="font-semibold">South Korea</h3><p class="text-sm text-gray-600">31 Aug, 00:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="560">
+        <span class="text-2xl mr-3">🇨🇦</span><div><h3 class="font-semibold">Canada (Toronto)</h3><p class="text-sm text-gray-600">30 Aug, 10:45</p></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="580">
+        <span class="text-2xl mr-3">🇺🇸</span><div><h3 class="font-semibold">USA (New York)</h3><p class="text-sm text-gray-600">30 Aug, 10:45</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
 <!-- Downloadable Resources -->
 <section class="py-20 bg-gradient-to-br from-gray-50 to-white" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
