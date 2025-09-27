@@ -81,13 +81,6 @@ $color = $colors[$index % 2];
             @endphp
 
             <div class="relative group">
-                @if($color['popular'])
-                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                    <span class="bg-gradient-to-r {{ $color['gradient'] }} text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
-                        🔥 Most Popular
-                    </span>
-                </div>
-                @endif
 
                 <div class="bg-white rounded-2xl shadow-xl border border-{{ $color['border'] }} hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden {{ $color['popular'] ? 'ring-2 ring-purple-200' : '' }}">
 

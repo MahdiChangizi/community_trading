@@ -166,8 +166,8 @@ setInterval(loadPrices, 60000);
                     <div class="flex items-baseline space-x-4">
                         <a href="/#" class="text-gray-900 hover:text-primary-green px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
                         <a href="/referral" class="text-gray-600 hover:text-primary-purple px-3 py-2 rounded-md text-sm font-medium transition-colors">Referral</a>
-                        <a href="/plans" class="text-gray-600 hover:text-primary-purple px-3 py-2 rounded-md text-sm font-medium transition-colors">Plans</a>
-                        <a href="{{ route('community') }}" class="text-gray-600 hover:text-primary-green px-3 py-2 rounded-md text-sm font-medium transition-colors">Community</a>
+                        <a href="/plans" class="text-gray-600 hover:text-primary-purple px-3 py-2 rounded-md text-sm font-medium transition-colors">Iti course plan</a>
+                        <a href="{{ route('community') }}" class="text-gray-600 hover:text-primary-green px-3 py-2 rounded-md text-sm font-medium transition-colors">Iti community plan</a>
                         <a href="/#about" class="text-gray-600 hover:text-primary-purple px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
                         <a href="/#contact" class="text-gray-600 hover:text-primary-green px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
                     </div>
@@ -213,11 +213,11 @@ setInterval(loadPrices, 60000);
         </a>
         <a href="/plans"
            class="block px-4 py-3 rounded-xl text-base font-semibold text-gray-700 hover:bg-gray-100 hover:text-primary-purple transition">
-            Plans
+            Iti course plan
         </a>
         <a href="{{ route('community') }}"
            class="block px-4 py-3 rounded-xl text-base font-semibold text-gray-700 hover:bg-gray-100 hover:text-primary-green transition">
-            Community
+            Iti community plan
         </a>
         <a href="/#about"
            class="block px-4 py-3 rounded-xl text-base font-semibold text-gray-700 hover:bg-gray-100 hover:text-primary-purple transition">

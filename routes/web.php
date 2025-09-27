@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminRewardController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -61,14 +62,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/payouts/request', [PayoutController::class, 'store'])->name('payouts.store');
 });
 
-Route::prefix('admin')->middleware('auth:admin')->group(function () {
-    Route::get('/', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
-    Route::resource('plans', AdminPlanController::class)->names('admin.plans');
-    Route::resource('users', AdminUserController::class)->names('admin.users');
-    Route::get('/payouts', [AdminPayoutController::class, 'index'])->name('admin.payouts.index');
-    Route::post('/payouts/{id}/approve', [AdminPayoutController::class, 'approve'])->name('admin.payouts.approve');
-    Route::post('/payouts/{id}/reject', [AdminPayoutController::class, 'reject'])->name('admin.payouts.reject');
-    Route::resource('reports', AdminReportController::class)->names('admin.reports');
+Route::prefix('admin')->group(function () {
+    Route::get('/rewards', [AdminRewardController::class, 'index'])->name('admin.rewards');
 });
 
 // api price

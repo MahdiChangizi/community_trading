@@ -1,7 +1,7 @@
 <!-- Sidebar -->
 <div class="sidebar fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg lg:translate-x-0">
     <div class="flex items-center justify-between p-6 border-b border-gray-200">
-        <h1 class="text-xl font-bold text-gray-900">CryptoTrade</h1>
+        <h1 class="text-xl font-bold text-gray-900">Dashboard</h1>
         <button onclick="closeSidebar()" class="lg:hidden text-gray-500 hover:text-gray-700">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>

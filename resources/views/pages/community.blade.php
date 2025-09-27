@@ -2,16 +2,16 @@
 
 @section('content')
 <!-- Hero Section -->
-<section class="py-16 bg-gradient-to-br from-gray-50 to-white">
+<section class="py-16 bg-gradient-to-br from-gray-50 to-white" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div class="fade-in">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6" data-aos="zoom-in">
                 Join Our <span class="gradient-text">Trading</span> Community
             </h1>
-            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
                 Connect with thousands of traders worldwide. Share strategies, learn from experts, and track your progress on your trading journey.
             </p>
-            <div class="flex flex-wrap justify-center items-center gap-8 text-sm text-gray-500">
+            <div class="flex flex-wrap justify-center items-center gap-8 text-sm text-gray-500" data-aos="fade-up" data-aos-delay="200">
                 <div class="flex items-center">
                     <div class="w-2 h-2 bg-primary-green rounded-full pulse-dot mr-2"></div>
                     <span class="counter-animation" data-target="25847">0</span>+ Active Members
@@ -32,14 +32,14 @@
 <!-- Community Links -->
 <section class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12 slide-up">
+        <div class="text-center mb-12 slide-up" data-aos="fade-up">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Connect With Our Community</h2>
             <p class="text-xl text-gray-600">Join thousands of traders on your preferred platform</p>
         </div>
 
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
             <!-- Telegram -->
-            <a href="#"
+            <a href="#" data-aos="zoom-in" data-aos-delay="50"
                 class="group flex flex-col items-center bg-white/70 backdrop-blur-md rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
                 <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
                     <!-- Telegram Icon -->
@@ -55,7 +55,7 @@
 
 
             <!-- Discord -->
-            <a href="#"
+            <a href="#" data-aos="zoom-in" data-aos-delay="100"
                class="group flex flex-col items-center bg-white/70 backdrop-blur-md rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
                 <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
                     <!-- Discord Icon -->
@@ -68,7 +68,7 @@
             </a>
 
             <!-- Twitter -->
-            <a href="#"
+            <a href="#" data-aos="zoom-in" data-aos-delay="150"
                class="group flex flex-col items-center bg-white/70 backdrop-blur-md rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
                 <div class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
                     <!-- Twitter Icon -->
@@ -81,7 +81,7 @@
             </a>
 
             <!-- YouTube -->
-            <a href="#"
+            <a href="#" data-aos="zoom-in" data-aos-delay="200"
                class="group flex flex-col items-center bg-white/70 backdrop-blur-md rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
                 <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
                     <!-- YouTube Icon -->
@@ -97,11 +97,11 @@
 </section>
 
 <!-- Progress Timeline -->
-<section class="relative bg-gradient-to-b from-gray-50 via-white to-gray-50 py-24 overflow-hidden">
+<section class="relative bg-gradient-to-b from-gray-50 via-white to-gray-50 py-24 overflow-hidden" data-aos="fade-up">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Title -->
-        <div class="text-center mb-20">
+        <div class="text-center mb-20" data-aos="zoom-in">
             <h2 class="text-5xl font-extrabold text-black">
                 Community Milestones
             </h2>
@@ -114,63 +114,143 @@
         <div class="relative border-l border-white/20 backdrop-blur-sm">
 
             <!-- Milestone -->
-            <div class="mb-12 ml-6 relative group">
+            <div class="mb-12 ml-6 relative group" data-aos="fade-right" data-aos-delay="100">
                 <div class="absolute -left-3 w-6 h-6 rounded-full bg-gradient-to-r from-primary-green to-green-500 shadow-lg ring-4 ring-primary-green/30 group-hover:scale-110 transition"></div>
                 <div class="bg-white/60 backdrop-blur-xl border border-white/40 shadow-xl rounded-2xl p-6 transition transform group-hover:-translate-y-1">
-                    <h3 class="text-xl font-bold text-gray-900">Community Launch <span class="text-sm text-gray-500 font-medium">(Jan 2023)</span></h3>
-                    <p class="mt-2 text-gray-700">The very first step in building our global trader network.</p>
+                    <h3 class="text-xl font-bold text-gray-900">
+                        Community Launch <span class="text-sm text-gray-500 font-medium">(Jan 2023)</span>
+                    </h3>
+                    <p class="mt-2 text-gray-700">
+                        The very first step in building our global trader network.
+                    </p>
                 </div>
             </div>
 
             <!-- Milestone -->
-            <div class="mb-12 ml-6 relative group">
+            <div class="mb-12 ml-6 relative group" data-aos="fade-right" data-aos-delay="200">
                 <div class="absolute -left-3 w-6 h-6 rounded-full bg-gradient-to-r from-primary-purple to-purple-500 shadow-lg ring-4 ring-primary-purple/30 group-hover:scale-110 transition"></div>
                 <div class="bg-white/60 backdrop-blur-xl border border-white/40 shadow-xl rounded-2xl p-6 transition transform group-hover:-translate-y-1">
-                    <h3 class="text-xl font-bold text-gray-900">Premium Features <span class="text-sm text-gray-500 font-medium">(Mar 2023)</span></h3>
-                    <p class="mt-2 text-gray-700">Exclusive analytics and real-time alerts for subscribed members.</p>
+                    <h3 class="text-xl font-bold text-gray-900">
+                        Premium Features <span class="text-sm text-gray-500 font-medium">(Mar 2023)</span>
+                    </h3>
+                    <p class="mt-2 text-gray-700">
+                        Exclusive analytics and real-time alerts for subscribed members.
+                    </p>
                 </div>
             </div>
 
             <!-- Milestone -->
-            <div class="mb-12 ml-6 relative group">
+            <div class="mb-12 ml-6 relative group" data-aos="fade-right" data-aos-delay="300">
                 <div class="absolute -left-3 w-6 h-6 rounded-full bg-gradient-to-r from-primary-red to-rose-500 shadow-lg ring-4 ring-primary-red/30 group-hover:scale-110 transition"></div>
                 <div class="bg-white/60 backdrop-blur-xl border border-white/40 shadow-xl rounded-2xl p-6 transition transform group-hover:-translate-y-1">
-                    <h3 class="text-xl font-bold text-gray-900">Global Expansion <span class="text-sm text-gray-500 font-medium">(Sep 2024)</span></h3>
-                    <p class="mt-2 text-gray-700">Welcoming traders from over 50 countries worldwide.</p>
+                    <h3 class="text-xl font-bold text-gray-900">
+                        Global Expansion <span class="text-sm text-gray-500 font-medium">(Sep 2024)</span>
+                    </h3>
+                    <p class="mt-2 text-gray-700">
+                        Welcoming traders from over 50 countries worldwide.
+                    </p>
                 </div>
             </div>
 
             <!-- Milestone -->
-            <div class="ml-6 relative group">
+            <div class="ml-6 relative group" data-aos="fade-right" data-aos-delay="400">
                 <div class="absolute -left-3 w-6 h-6 rounded-full bg-gradient-to-r from-gray-400 to-gray-300 shadow-lg ring-4 ring-gray-300/40 group-hover:scale-110 transition"></div>
                 <div class="bg-white/60 backdrop-blur-xl border border-white/40 shadow-xl rounded-2xl p-6 transition transform group-hover:-translate-y-1">
-                    <h3 class="text-xl font-bold text-gray-900">AI Trading Bot <span class="text-sm text-gray-500 font-medium">(Q4 2024)</span></h3>
-                    <p class="mt-2 text-gray-700">Smart automation tools for faster and smarter trading.</p>
+                    <h3 class="text-xl font-bold text-gray-900">
+                        AI Trading Bot <span class="text-sm text-gray-500 font-medium">(Q4 2024)</span>
+                    </h3>
+                    <p class="mt-2 text-gray-700">
+                        Smart automation tools for faster and smarter trading.
+                    </p>
                 </div>
             </div>
         </div>
 
         <!-- Stats Section -->
         <div class="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="bg-gradient-to-br from-primary-green/90 to-primary-green/70 backdrop-blur-lg rounded-3xl shadow-lg p-8 text-center text-white transform hover:scale-[1.02] transition">
+            <div class="bg-gradient-to-br from-primary-green/90 to-primary-green/70 backdrop-blur-lg rounded-3xl shadow-lg p-8 text-center text-white transform hover:scale-[1.02] transition"
+                 data-aos="flip-left" data-aos-delay="100">
                 <div class="text-4xl font-extrabold counter" data-target="50000">0</div>
                 <p class="mt-2">Total Members</p>
             </div>
-            <div class="bg-gradient-to-br from-primary-purple/90 to-primary-purple/70 backdrop-blur-lg rounded-3xl shadow-lg p-8 text-center text-white transform hover:scale-[1.02] transition">
+            <div class="bg-gradient-to-br from-primary-purple/90 to-primary-purple/70 backdrop-blur-lg rounded-3xl shadow-lg p-8 text-center text-white transform hover:scale-[1.02] transition"
+                 data-aos="flip-left" data-aos-delay="200">
                 <div class="text-4xl font-extrabold counter" data-target="120">0</div>
                 <p class="mt-2">Countries Reached</p>
             </div>
-            <div class="bg-gradient-to-br from-primary-red/90 to-primary-red/70 backdrop-blur-lg rounded-3xl shadow-lg p-8 text-center text-white transform hover:scale-[1.02] transition">
+            <div class="bg-gradient-to-br from-primary-red/90 to-primary-red/70 backdrop-blur-lg rounded-3xl shadow-lg p-8 text-center text-white transform hover:scale-[1.02] transition"
+                 data-aos="flip-left" data-aos-delay="300">
                 <div class="text-4xl font-extrabold counter" data-target="1500">0</div>
                 <p class="mt-2">Premium Users</p>
             </div>
-            <div class="bg-gradient-to-br from-gray-700/90 to-gray-600/70 backdrop-blur-lg rounded-3xl shadow-lg p-8 text-center text-white transform hover:scale-[1.02] transition">
+            <div class="bg-gradient-to-br from-gray-700/90 to-gray-600/70 backdrop-blur-lg rounded-3xl shadow-lg p-8 text-center text-white transform hover:scale-[1.02] transition"
+                 data-aos="flip-left" data-aos-delay="400">
                 <div class="text-4xl font-extrabold counter" data-target="35">0</div>
                 <p class="mt-2">Team Members</p>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Downloadable Resources -->
+<section class="py-20 bg-gradient-to-br from-gray-50 to-white" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12" data-aos="zoom-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                📄 Study Resources
+            </h2>
+            <p class="text-lg text-gray-600">
+                Download our whitepapers, course outlines, and community plans
+            </p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- PDF 1 -->
+            <a href="{{asset('pdfs/ITI ACCADEMY PRESENTATION.pdf')}}" target="_blank"
+               class="group flex flex-col items-start p-6 bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+               data-aos="fade-up" data-aos-delay="100">
+                <div class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-indigo-500 to-blue-500 text-white mb-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-1">ITI Course Outline</h3>
+                <p class="text-sm text-gray-600 mb-3">Full 6-month syllabus overview</p>
+                <span class="text-primary-green font-medium group-hover:underline">Download PDF →</span>
+            </a>
+
+            <!-- PDF 2 -->
+            <a href="{{asset('pdfs/ITI MILLIONAIRE PLAN.pdf')}}" target="_blank"
+               class="group flex flex-col items-start p-6 bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+               data-aos="fade-up" data-aos-delay="200">
+                <div class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 text-white mb-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-1">ITI Millionaire Plan</h3>
+                <p class="text-sm text-gray-600 mb-3">Community growth and wealth strategy</p>
+                <span class="text-primary-green font-medium group-hover:underline">Download PDF →</span>
+            </a>
+
+            <!-- PDF 3 -->
+            <a href="{{asset('pdfs/ITI RANK PLAN.pdf')}}" target="_blank"
+               class="group flex flex-col items-start p-6 bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+               data-aos="fade-up" data-aos-delay="300">
+                <div class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 text-white mb-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-1">ITI Rank Plan</h3>
+                <p class="text-sm text-gray-600 mb-3">Ranking system and benefits explained</p>
+                <span class="text-primary-green font-medium group-hover:underline">Download PDF →</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
 
 <script>
     // Simple counter animation
@@ -341,7 +421,6 @@
 </script>
 
 
-
 <script>
     // Counter Animation Function
     function animateCounter(element, target, duration = 2000) {
@@ -444,5 +523,13 @@
             }
         });
     });
+</script>
+
+<script>
+  AOS.init({
+    duration: 900,
+    once: true,
+    offset: 100
+  });
 </script>
 @endsection

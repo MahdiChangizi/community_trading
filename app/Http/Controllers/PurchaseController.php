@@ -53,6 +53,11 @@ class PurchaseController extends Controller
                 'status' => 'confirmed',
             ]);
 
+            $user->wallet()->update([
+                'balance' => DB::raw('balance + ' . $plan->price_usdt)
+            ]);
+
+
             $this->referralService->distributeForPurchase($purchase);
             DB::commit();
             return response()->json(['message' => 'Plan bought confirmed successfully.']);
