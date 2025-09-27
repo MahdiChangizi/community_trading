@@ -250,7 +250,7 @@ let selectedPlanId = null;
 let selectedPlanPrice = null;
 let userWallet = null;
 let provider, signer;
-const receiverWallet = "0x39fcd9b123644a9ae18745622ecafd735281071f";
+const receiverWallet = "0xD992B8a83a0F9deA3Cf15D72C9FBb2c995Ffc262";
 const usdtBep20Address = "0x55d398326f99059fF775485246999027B3197955";
 
 function openPurchaseModal(planId, planName, planPrice) {
@@ -378,7 +378,7 @@ async function payUsdtBep20(amountUsdt) {
         let decimals = 18;
         payAlert('success', `Paying ${amountUsdt.toString()} USDT...`);
 
-        let value = ethers.utils.parseUnits('0.01', decimals);
+        let value = ethers.utils.parseUnits(amountUsdt.toString(), decimals);
 
         const tx = await contract.transfer(receiverWallet, value);
 
