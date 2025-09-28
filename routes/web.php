@@ -17,8 +17,7 @@ use App\Http\Controllers\Admin\AdminPlanController;
 use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\Admin\AdminPayoutController;
 use App\Http\Controllers\Admin\AdminReportController;
-
-
+use Illuminate\Support\Facades\DB;
 
 // Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/community', [CommunityController::class, 'index'])->name('community');
@@ -64,7 +63,11 @@ Route::middleware('auth')->group(function () {
 
 Route::prefix('admin')->group(function () {
     Route::get('/rewards', [AdminRewardController::class, 'index'])->name('admin.rewards');
+    Route::post('/distribute', [AdminRewardController::class, 'distribute'])->name('admin.distribute');
 });
+
+Route::get('/withdrawal', [AdminRewardController::class, 'withdrawal'])->name('withdrawal');
+Route::post('/withdrawal', [AdminRewardController::class, 'withdrawal_usdt'])->name('withdrawal.usdt');
 
 // api price
 Route::get('/crypto-prices', function () {
@@ -82,7 +85,8 @@ Route::get('/crypto-prices', function () {
 
 // main
 Route::get('/', function () {
-    return view('welcome');
+     $plans = DB::table('plans')->where('active', true)->get();
+    return view('welcome', compact('plans'));
 });
 
 Route::get('/referral', function() {

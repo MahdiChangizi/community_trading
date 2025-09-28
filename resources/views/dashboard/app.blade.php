@@ -316,7 +316,7 @@
         }
 
         function copyAddress() {
-            const address = "{{ $data->wallet_address ?? 'none' }}";
+            const address = "{{ $data->wallet->wallet_address ?? 'none' }}";
             navigator.clipboard.writeText(address).then(() => {
                 // Show success feedback
                 const event = new CustomEvent('showToast', {

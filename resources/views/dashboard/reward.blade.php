@@ -77,7 +77,25 @@
                 </div>
 
                 <!-- Form -->
-                <form class="space-y-6" id="profitForm">
+                <form class="space-y-6" id="profitForm" method="POST" action="{{ url('admin/distribute') }}">
+                    @csrf
+
+                    @if(session('success'))
+                        <div class="p-3 mb-4 text-sm text-green-700 bg-green-100 rounded">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                    @if($errors->any())
+                        <div class="p-3 mb-4 text-sm text-red-700 bg-red-100 rounded">
+                            <ul class="list-disc pl-5">
+                                @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
                     <!-- Total Profit Input -->
                     <div class="space-y-2">
                         <label for="profit" class="block text-sm font-semibold text-black">
@@ -86,11 +104,12 @@
                         <input
                             type="number"
                             id="profit"
-                            name="profit"
+                            name="total_profit"
                             step="0.01"
                             min="0"
                             placeholder="Enter total profit amount"
                             class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl form-input focus:outline-none focus:ring-0 text-black bg-gray-50"
+                            value="{{ old('profit') }}"
                             required
                         >
                     </div>

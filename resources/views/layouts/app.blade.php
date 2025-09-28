@@ -128,6 +128,23 @@
             50% { transform: translateY(-10px) translateX(-10px); }
             75% { transform: translateY(-30px) translateX(5px); }
         }
+        /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #ffd700, #ffd700);
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(to bottom, #ffd700, #ffd700);
+    }
     </style>
 </head>
 <body class="bg-white text-gray-800 font-inter">

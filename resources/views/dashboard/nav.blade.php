@@ -2,11 +2,11 @@
         <header class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-30">
             <div class="flex items-center justify-between px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center">
-                    {{-- <button onclick="openSidebar()" class="lg:hidden -ml-2 mr-2 p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md">
+                    <button onclick="openSidebar()" class="lg:hidden -ml-2 mr-2 p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
-                    </button> --}}
+                    </button>
                     <a href="{{ url('/') }}">
                         <img class="h-16 w-auto sm:h-20 object-contain" src="{{ asset('images/Logo-bg.png') }}" alt="Community Trading Logo" loading="lazy">
                     </a>

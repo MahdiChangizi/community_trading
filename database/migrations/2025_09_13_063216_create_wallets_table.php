@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained('users');
             $table->string('wallet_address', 255)->nullable();
             $table->decimal('balance', 16, 8)->default(0);
+            $table->decimal('usdt_balance', 16, 8)->default(0);
             $table->timestamps();
         });
     }

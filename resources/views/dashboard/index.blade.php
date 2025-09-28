@@ -130,7 +130,7 @@
                     <div class="space-y-2">
                         <label class="text-sm font-medium text-gray-700">Wallet Address</label>
                         <div class="flex items-center space-x-2">
-                            <div class="wallet-address flex-1">{{ $data->wallet_address ?? 'No Wallet Address' }}</div>
+                            <div class="wallet-address flex-1">{{ $data->wallet->wallet_address ?? 'No Wallet Address' }}</div>
                             <button onclick="copyAddress()" class="p-2 text-gray-500 hover:text-primary-green transition-colors">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
@@ -142,15 +142,15 @@
                     <div class="flex items-center justify-between space-x-2">
                         <div>
                             <label class="text-sm font-medium text-gray-700">Balance</label>
-                            <div class="text-xl font-bold text-gray-900">{{ number_format($data->wallet->balance ?? 0, 2) }} USDT</div>
+                            <div class="text-xl font-bold text-gray-900">{{ number_format($data->wallet->usdt_balance ?? 0, 2) }} USDT</div>
                         </div>
 
-                        <button class="quick-action-btn px-4 py-2 rounded-md text-sm font-medium flex items-center justify-center">
+                        <a href="/withdraw" class="quick-action-btn px-4 py-2 rounded-md text-sm font-medium flex items-center justify-center">
                             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
                             </svg>
                             Withdraw
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

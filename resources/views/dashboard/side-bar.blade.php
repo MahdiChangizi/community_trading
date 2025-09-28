@@ -11,15 +11,42 @@
 
     <nav class="mt-6 px-3">
         <div class="space-y-1">
-            <a href="#" class="flex items-center px-3 py-2 text-gray-900 bg-primary-green bg-opacity-10 rounded-md border-l-4 border-primary-green">
-                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5a2 2 0 012-2h4a2 2 0 012 2v4H8V5z"></path>
-                </svg>
-                Dashboard
+            <a href="/dashboard" class="flex items-center px-3 py-2 rounded-md border-l-4
+                {{ request()->routeIs('dashboard')
+                    ? 'text-gray-900 bg-primary-green bg-opacity-10 border-primary-green'
+                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100 border-transparent' }}">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5a2 2 0 012-2h4a2 2 0 012 2v4H8V5z"></path>
+                    </svg>
+                    Dashboard
             </a>
 
-            <a href="#" class="flex items-center px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors">
+           @if (auth()->user()->is_admin == 1)
+                <a href="/admin/rewards"
+                    class="flex items-center px-3 py-2 rounded-md border-l-4
+                    {{ request()->routeIs('admin.rewards')
+                        ? 'text-gray-900 bg-primary-green bg-opacity-10 border-primary-green'
+                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100 border-transparent' }}">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                        Rewards
+                </a>
+           @endif
+
+           <a href="/withdrawal"
+                    class="flex items-center px-3 py-2 rounded-md border-l-4
+                    {{ request()->routeIs('withdrawal')
+                        ? 'text-gray-900 bg-primary-green bg-opacity-10 border-primary-green'
+                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100 border-transparent' }}">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                        </svg>
+                        Withdrawal
+                </a>
+
+            {{-- <a href="#" class="flex items-center px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors">
                 <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                 </svg>
@@ -47,10 +74,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
                 Settings
-            </a>
+            </a> --}}
         </div>
 
-        <div class="mt-8 pt-6 border-t border-gray-200">
+        {{-- <div class="mt-8 pt-6 border-t border-gray-200">
             <div class="px-3 mb-2">
                 <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Support</p>
             </div>
@@ -66,7 +93,7 @@
                 </svg>
                 Contact Support
             </a>
-        </div>
+        </div> --}}
     </nav>
 
     <div class="absolute bottom-0 left-0 right-0 p-4">
