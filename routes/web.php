@@ -64,10 +64,14 @@ Route::middleware('auth')->group(function () {
 Route::prefix('admin')->group(function () {
     Route::get('/rewards', [AdminRewardController::class, 'index'])->name('admin.rewards');
     Route::post('/distribute', [AdminRewardController::class, 'distribute'])->name('admin.distribute');
+    Route::get('/users', [AdminRewardController::class, 'users'])->name('admin.users');
 });
 
 Route::get('/withdrawal', [AdminRewardController::class, 'withdrawal'])->name('withdrawal');
 Route::post('/withdrawal', [AdminRewardController::class, 'withdrawal_usdt'])->name('withdrawal.usdt');
+
+// Route::post('/users', [AdminRewardController::class, 'withdrawal_usdt'])->name('withdrawal.usdt');
+
 
 // api price
 Route::get('/crypto-prices', function () {

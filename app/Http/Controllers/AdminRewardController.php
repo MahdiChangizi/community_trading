@@ -123,4 +123,12 @@ class AdminRewardController extends Controller
         $result = $response->json();
 
     }
+
+    public function users() {
+        $data = User::select(["id", "uid", "status", "is_admin", "name", "email", "ref_code"])
+        ->with("wallet")
+        ->paginate(20);
+
+        return view("dashboard.users", compact('data'));
+    }
 }
