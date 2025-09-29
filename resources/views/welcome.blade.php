@@ -72,7 +72,7 @@
 
             <!-- Image -->
             <div class="relative group fade-in-right">
-                <div class="absolute -inset-4 bg-gradient-to-r from-green-500 to-purple-600 rounded-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-500 blur"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-purple-600 rounded-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-500 blur"></div>
                 <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&auto=format"
                      alt="Trading Team"
                      class="relative rounded-3xl shadow-2xl transition-transform duration-500 group-hover:scale-105">
