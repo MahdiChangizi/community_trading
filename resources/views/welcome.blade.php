@@ -396,7 +396,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 fade-in">
             <h2 class="text-5xl font-bold text-gray-900 mb-6">Choose Your Plan</h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-green-500 to-purple-600 rounded-full mx-auto mb-6"></div>
+            <div class="w-24 h-1 bg-gradient-to-r from-yellow-500 to-yellow-200 rounded-full mx-auto mb-6"></div>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                 Select the perfect plan for your trading journey. Start free and upgrade as you grow.
             </p>
@@ -404,58 +404,65 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-    @foreach($plans as $plan)
-        <a href="/plans"
-           class="group block bg-white rounded-2xl shadow-xl border
-           @if($plan->price_usdt > 1000) border-amber-300 ring-2 ring-purple-200
-           @else border-yellow-200 @endif
-           hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden">
+            @foreach($plans as $plan)
+                @php
+                    // تبدیل توضیحات به لیست (مثل سکشن طلایی)
+                    $features = explode("\n", $plan->description);
+                @endphp
 
-            <!-- Header -->
-            <div class="bg-gradient-to-br
-                @if($plan->price_usdt > 1000) from-amber-700 to-yellow-500
-                @else from-yellow-400 to-yellow-600 @endif
-                text-white p-8 relative overflow-hidden">
+                <a href="/plans"
+                   class="group flex flex-col bg-white rounded-2xl shadow-xl border
+                   @if($plan->price_usdt > 1000) border-amber-300 ring-2 ring-purple-200
+                   @else border-yellow-200 @endif
+                   hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden">
 
-                <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                    <!-- Header -->
+                    <div class="bg-gradient-to-br
+                        @if($plan->price_usdt > 1000) from-amber-700 to-yellow-500
+                        @else from-yellow-400 to-yellow-600 @endif
+                        text-white p-8 relative overflow-hidden">
 
-                <h3 class="text-2xl font-bold mb-3">{{ $plan->name }}</h3>
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
 
-                <div class="flex items-baseline gap-2 mb-2">
-                    <span class="text-4xl font-black">${{ number_format($plan->price_usdt, 0) }}</span>
-                    <span class="text-lg opacity-80">USDT</span>
-                </div>
+                        <h3 class="text-2xl font-bold mb-3">{{ $plan->name }}</h3>
 
-                <p class="opacity-90 line-clamp-3">{{ $plan->description }}</p>
-            </div>
+                        <div class="flex items-baseline gap-2 mb-2">
+                            <span class="text-4xl font-black">${{ number_format($plan->price_usdt, 0) }}</span>
+                            <span class="text-lg opacity-80">USDT</span>
+                        </div>
+                    </div>
 
-            <!-- Body -->
-            <div class="p-8">
-                <ul class="space-y-3 text-gray-700 text-sm leading-relaxed">
-                    <li class="flex items-start gap-2">
-                        <span class="w-2 h-2 bg-yellow-500 rounded-full mt-2"></span>
-                        {{ $plan->duration_months }}-Month Access
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="w-2 h-2 bg-yellow-500 rounded-full mt-2"></span>
-                        {{ Str::limit($plan->description, 80) }}
-                    </li>
-                </ul>
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-8">
+                        <ul class="space-y-3 text-gray-700 text-sm leading-relaxed flex-grow">
+                            <li class="flex items-start gap-2">
+                                <span class="w-2 h-2 bg-yellow-500 rounded-full mt-2"></span>
+                                {{ $plan->duration_months }}-Month Access
+                            </li>
+                            @foreach($features as $feature)
+                                @if(trim($feature) !== '')
+                                    <li class="flex items-start gap-2">
+                                        <span class="w-2 h-2 bg-yellow-500 rounded-full mt-2"></span>
+                                        {{ trim($feature) }}
+                                    </li>
+                                @endif
+                            @endforeach
+                        </ul>
 
-                <button class="mt-8 w-full bg-gradient-to-r
-                    @if($plan->price_usdt > 1000) from-amber-700 to-yellow-500
-                    @else from-yellow-400 to-yellow-600 @endif
-                    text-white py-3 rounded-xl font-semibold shadow-lg group-hover:scale-[1.02] transition-all duration-300">
-                    Choose Plan →
-                </button>
-            </div>
-        </a>
-    @endforeach
+                        <button class="mt-8 w-full bg-gradient-to-r
+                            @if($plan->price_usdt > 1000) from-amber-700 to-yellow-500
+                            @else from-yellow-400 to-yellow-600 @endif
+                            text-white py-3 rounded-xl font-semibold shadow-lg group-hover:scale-[1.02] transition-all duration-300">
+                            Choose Plan →
+                        </button>
+                    </div>
+                </a>
+            @endforeach
 
-</div>
-
+        </div>
     </div>
 </section>
+
 
 {{-- <!-- Contact Section -->
 <section id="contact" class="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-50">
