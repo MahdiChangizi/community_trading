@@ -30,6 +30,8 @@
 </section>
 
 <!-- Community Links -->
+@auth
+@if(Auth::user()->purchases()->where('status', 'confirmed')->exists())
 <section class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12 slide-up" data-aos="fade-up">
@@ -37,7 +39,7 @@
             <p class="text-xl text-gray-600">Join thousands of traders on your preferred platform</p>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <!-- Telegram -->
             <a href="#" data-aos="zoom-in" data-aos-delay="50"
                 class="group flex flex-col items-center bg-white/70 backdrop-blur-md rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
@@ -51,33 +53,6 @@
                 <span class="text-xs text-gray-500">
                     <span class="counter-animation" data-target="18230">0</span> members
                 </span>
-            </a>
-
-
-            <!-- Discord -->
-            <a href="#" data-aos="zoom-in" data-aos-delay="100"
-               class="group flex flex-col items-center bg-white/70 backdrop-blur-md rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-                <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-                    <!-- Discord Icon -->
-                    <svg class="w-6 h-6" fill="white" viewBox="0 0 24 24">
-                        <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0002 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1568 2.4189Z"></path>
-                    </svg>
-                </div>
-                <span class="font-semibold text-gray-800 text-sm">Discord</span>
-                <span class="text-xs text-gray-500"><span class="counter-animation" data-target="12480">0</span> members</span>
-            </a>
-
-            <!-- Twitter -->
-            <a href="#" data-aos="zoom-in" data-aos-delay="150"
-               class="group flex flex-col items-center bg-white/70 backdrop-blur-md rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-                <div class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-                    <!-- Twitter Icon -->
-                    <svg class="w-6 h-6" fill="white" viewBox="0 0 24 24">
-                        <path d="M23.953 4.57C23.073 4.95 22.14 5.21 21.17 5.34C22.15 4.76 22.9 3.85 23.26 2.78C22.33 3.32 21.31 3.71 20.23 3.92C19.34 2.98 18.05 2.4 16.65 2.4C13.99 2.4 11.84 4.55 11.84 7.21C11.84 7.58 11.88 7.93 11.95 8.26C8.28 8.09 4.97 6.38 2.64 3.79C2.23 4.45 2 5.22 2 6.04C2 7.6 2.84 8.98 4.1 9.77C3.3 9.75 2.53 9.53 1.85 9.16V9.22C1.85 11.53 3.46 13.43 5.65 13.86C5.26 13.97 4.84 14.03 4.4 14.03C4.1 14.03 3.81 14.01 3.52 13.96C4.12 15.83 5.84 17.17 7.88 17.21C6.29 18.44 4.29 19.17 2.12 19.17C1.77 19.17 1.43 19.15 1.09 19.1C3.15 20.43 5.6 21.2 8.22 21.2C16.64 21.2 21.5 14.69 21.5 8.26C21.5 8.07 21.5 7.89 21.49 7.7C22.44 7.05 23.26 6.22 24 5.3L23.953 4.57Z"/>
-                    </svg>
-                </div>
-                <span class="font-semibold text-gray-800 text-sm">Twitter</span>
-                <span class="text-xs text-gray-500"><span class="counter-animation" data-target="45620">0</span> followers</span>
             </a>
 
             <!-- YouTube -->
@@ -95,6 +70,8 @@
         </div>
     </div>
 </section>
+@endif
+@endauth
 
 <!-- Progress Timeline -->
 <section class="relative bg-gradient-to-b from-gray-50 via-white to-gray-50 py-24 overflow-hidden" data-aos="fade-up">

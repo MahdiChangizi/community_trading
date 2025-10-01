@@ -2,49 +2,58 @@
 @section('content')
 
 <main class="p-4 sm:p-6 lg:p-8">
-    <!-- Welcome Section & Profile -->
-    <div class="mb-8">
-        <div class="dashboard-card p-4 sm:p-6 slide-up">
-            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-                <div class="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <div class="profile-avatar w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto sm:mx-0">
-                        {{ strtoupper(substr($data->name, 0, 2)) }}
-                    </div>
-                    <div class="text-center sm:text-left">
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900">Welcome {{ $data->name }}</h2>
-                        <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-sm text-gray-600 mt-1 space-y-1 sm:space-y-0">
-                            <span class="block sm:inline">UID: #{{ $data->uid }}</span>
-                            <span class="block sm:inline">Member since: {{ $data->created_at->format('Y-M-D') }}</span>
-                            <div class="flex justify-center sm:justify-start lg:justify-end">
-                                <span
-                                    @class([
-                                        'plan-badge inline-block',
-                                        'w-56' => !empty($data->purchases[0]->plan->name),
-                                        'w-18' => empty($data->purchases[0]->plan->name),
-                                    ])>
-                                    {{ $data->purchases[0]->plan->name ?? 'No Plan' }}
-                                </span>
-                            </div>
-                        </div>
+<!-- Welcome Section & Profile -->
+<div class="mb-8">
+    <div class="dashboard-card p-4 sm:p-6 slide-up">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+
+            <!-- Profile + Info -->
+            <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                <div class="profile-avatar w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto sm:mx-0 bg-gradient-to-br from-purple-600 to-indigo-500 shadow-md">
+                    {{ strtoupper(substr($data->name, 0, 2)) }}
+                </div>
+                <div class="text-center sm:text-left">
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-900">Welcome, {{ $data->name }}</h2>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-sm text-gray-600 mt-2 space-y-1 sm:space-y-0">
+                        <span class="whitespace-nowrap">UID: #{{ $data->uid }}</span>
+                        <span class="whitespace-nowrap">Member since: {{ $data->created_at->format('Y-M-D') }}</span>
+                        <span class="plan-badge inline-block px-2 py-1 rounded-full bg-green-500 text-white text-xs font-semibold">
+                            {{ $data->purchases[0]->plan->name ?? 'No Plan' }}
+                        </span>
                     </div>
                 </div>
-                @if ($data->purchases->isEmpty())
-                    <div class="flex justify-center sm:justify-start lg:justify-end">
-                        <a href="/plans" class="bg-primary-green text-white px-4 py-2 rounded-md text-sm font-medium btn-primary w-full sm:w-auto text-center">
+            </div>
+
+            <!-- Tokens + Upgrade -->
+            <div class="flex flex-col items-center sm:items-end gap-4">
+
+                <!-- Tokens Card -->
+                <div class="flex items-center gap-3 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 px-5 py-3 rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300">
+                    <svg class="w-6 h-6 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-3.5 2 1-4-3-2.5h4l1-4 1 4h4l-3 2.5 1 4-3.5-2z"/></svg>
+                    <div class="text-white">
+                        <div class="text-xs uppercase font-semibold opacity-80">Your Tokens</div>
+                        <div class="text-2xl sm:text-3xl font-extrabold">{{ number_format($data->wallet->balance ?? 0, 2) }}</div>
+                    </div>
+                </div>
+
+                <!-- Upgrade Button -->
+                <div class="w-full sm:w-auto">
+                    @if ($data->purchases->isEmpty())
+                        <a href="/plans" class="bg-primary-green text-white px-5 py-2 rounded-xl text-sm font-medium btn-primary w-full sm:w-auto text-center shadow-md hover:brightness-110 transition-all duration-200">
                             Upgrade Plan
                         </a>
-                    </div>
-                @else
-                    <div class="flex justify-center sm:justify-start lg:justify-end">
-                        <button class="bg-primary-green text-white px-4 py-2 rounded-md text-sm font-medium btn-primary w-44 sm:w-auto" disabled>
-                            Upgrade Plan (paid)
+                    @else
+                        <button class="bg-gray-400 text-white px-5 py-2 rounded-xl text-sm font-medium w-full sm:w-auto cursor-not-allowed opacity-70">
+                            Upgrade Plan (Paid)
                         </button>
-                    </div>
-                @endif
+                    @endif
+                </div>
+
             </div>
+
         </div>
     </div>
-
+</div>
 
 
     <!-- Main Content Grid -->
