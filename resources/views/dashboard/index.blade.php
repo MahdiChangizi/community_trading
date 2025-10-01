@@ -189,7 +189,7 @@
                 {{-- Total Earnings --}}
                 <div class="text-center p-4 bg-gradient-to-br from-primary-purple to-purple-400 text-white rounded-lg">
                     <div class="text-2xl font-bold">
-                        ${{ number_format(optional($data->commissions)->sum('amount_usdt') ?? 0, 2) }}
+                        {{ number_format(optional($data->commissions)->sum('amount_usdt') ?? 0, 2) }}
                     </div>
                     <div class="text-sm opacity-90">Total Earnings</div>
                 </div>
