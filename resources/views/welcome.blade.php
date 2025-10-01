@@ -1,10 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- Hero Section -->
 <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
-    <!-- Three.js Globe Background -->
-    <div id="globe-container" class="absolute inset-0"></div>
+    <!-- Three.js / Vanta.js Background -->
+    <div id="vanta-bg" class="absolute inset-0 opacity-80"></div>
 
     <!-- Animated Crypto Coins Flying to Globe -->
     <div class="absolute inset-0 pointer-events-none flex items-center justify-center">
@@ -573,67 +572,26 @@
 
 <!-- Scripts for 3D Globe -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
 
 <script>
-    // Three.js Globe Setup
-    const container = document.getElementById('globe-container');
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.5, 1000);
-    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+      // Initialize Vanta.js Globe Background
+    VANTA.GLOBE({
+    el: "#vanta-bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0xFFD700,       // Golden nodes
+    color2: 0xFFA500,      // Amber-golden links
+    backgroundColor: 0xffffff, // White background
+    size: 1.00,
+    spacing: 15.00
+});
 
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0x000000, 0);
-    container.appendChild(renderer.domElement);
-
-    // Create Enhanced Globe
-    const geometry = new THREE.SphereGeometry(2, 64, 64);
-
-    const material = new THREE.MeshPhongMaterial({
-        color: 0xFFD700,
-        emissive: 0xFFA500,
-        emissiveIntensity: 0.6,
-        shininess: 120,
-        wireframe: true,
-        transparent: false,
-        opacity: 1
-    });
-
-    const globe = new THREE.Mesh(geometry, material);
-    scene.add(globe);
-
-    // Enhanced Lighting
-    const ambientLight = new THREE.AmbientLight(0xffffff, 1.0);
-    scene.add(ambientLight);
-
-    const light1 = new THREE.DirectionalLight(0xFFD700, 1.5);
-    light1.position.set(5, 3, 5);
-    scene.add(light1);
-
-    const light2 = new THREE.DirectionalLight(0xFFA500, 1.2);
-    light2.position.set(-5, -3, -5);
-    scene.add(light2);
-
-    const pointLight = new THREE.PointLight(0xFFFFFF, 2, 100);
-    pointLight.position.set(0, 0, 5);
-    scene.add(pointLight);
-
-    camera.position.z = 5;
-
-    // Animation Loop
-    function animate() {
-        requestAnimationFrame(animate);
-        globe.rotation.y += 0.002;
-        globe.rotation.x += 0.001;
-        renderer.render(scene, camera);
-    }
-    animate();
-
-    // Handle Resize
-    window.addEventListener('resize', () => {
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-    });
 
     // Intersection Observer for fade-in animations
     const observerOptions = {
@@ -650,6 +608,7 @@
         });
     }, observerOptions);
 
+    // Apply fade-in animation to elements
     document.addEventListener('DOMContentLoaded', function() {
         const fadeElements = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
 
@@ -669,6 +628,7 @@
         });
     });
 
+    // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
