@@ -330,7 +330,7 @@ async function connectWalletBep20(type) {
                 const currentUrl = encodeURIComponent(window.location.href);
 
                 if (wallet_type === "coinbase") {
-                    window.location.href = `cbwallet://dapp?url=${currentUrl}`;
+                    window.location.href = `https://go.cb-w.com/dapp?cb_url=${currentUrl}`;
                 } else if (wallet_type === "trust") {
                     window.location.href = `trust://open_url?coin_id=60&url=${currentUrl}`;
                 }
@@ -372,13 +372,16 @@ async function payUsdtBep20(amountUsdt) {
         return payAlert('error', 'Please connect your wallet first.');
     }
     try {
-        const abi = ["function transfer(address to, uint amount) public returns (bool)"];
+        const abi = [
+    "function decimals() view returns (uint8)",
+    "function transfer(address to, uint amount) public returns (bool)"
+];
         const contract = new ethers.Contract(usdtBep20Address, abi, signer);
 
-        let decimals = 18;
+        let decimals = await contract.decimals();
         payAlert('success', `Paying ${amountUsdt.toString()} USDT...`);
 
-        let value = ethers.utils.parseUnits(amountUsdt.toString(), decimals);
+        let value = ethers.utils.parseUnits('0.01', decimals);
 
         const tx = await contract.transfer(receiverWallet, value);
 
