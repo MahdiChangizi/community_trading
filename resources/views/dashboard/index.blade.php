@@ -197,102 +197,42 @@
 
 
             <!-- Referral Link -->
-            <div class="space-y-4">
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Your Referral Code</label>
-                    <div class="flex items-center space-x-2">
-                        <input
-                            type="text"
-                            readonly
-                            value="{{ $data->ref_code }}"
-                            class="flex-1 px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-sm font-mono"
-                            id="referralLink"
-                        >
-                        <button
-                            onclick="copyReferralLink()"
-                            class="bg-primary-green text-white px-4 py-2 rounded-md btn-primary flex items-center"
-                            id="copyButton"
-                        >
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                            </svg>
-                            Copy
-                        </button>
-                    </div>
-                </div>
+            <div>
+    <label class="block text-sm font-medium text-gray-700 mb-2">Your Referral Link</label>
+    <div class="flex items-center space-x-2">
+        <input
+            type="text"
+            readonly
+            value="{{ url('/register') . '?code=' . $data->ref_code }}"
+            class="flex-1 px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-sm font-mono"
+            id="referralLink"
+        >
+        <button
+            onclick="copyReferralLink()"
+            class="bg-primary-green text-white px-4 py-2 rounded-md btn-primary flex items-center"
+            id="copyButton"
+        >
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+            Copy
+        </button>
+    </div>
+</div>
+<script>
+    function copyReferralLink() {
+        const copyText = document.getElementById("referralLink");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyText.value);
 
-                <!-- Referral Tree Toggle -->
-                <div class="flex items-center justify-between">
-                    <h4 class="text-md font-semibold text-gray-900">Referral Network</h4>
-                    <button
-                        onclick="toggleReferralTree()"
-                        class="text-primary-purple text-sm font-medium hover:text-purple-700 flex items-center"
-                        id="toggleButton"
-                    >
-                        <span id="toggleText">Show Network</span>
-                        <svg class="w-4 h-4 ml-1 transition-transform" id="toggleIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                </div>
+        const btn = document.getElementById("copyButton");
+        btn.innerText = "Copied!";
+        setTimeout(() => btn.innerText = "Copy", 2000);
+    }
+</script>
 
-                <!-- Referral Tree -->
-                <div id="referralTree" class="referral-tree">
-                    <div class="space-y-4 pt-4">
-                        @php
-                            $levelColors = [
-                                1 => 'primary-green',
-                                2 => 'primary-purple',
-                                3 => 'primary-red',
-                                4 => 'primary-yellow',
-                                5 => 'gray-400',
-                            ];
-                        @endphp
-
-                        @for($level = 1; $level <= 5; $level++)
-                            @php
-                                $referrals = optional($data->referrals)->where('level', $level) ?? collect();
-                                $commissions = optional($data->commissions)->where('level', $level) ?? collect();
-                                $totalEarned = $commissions->sum('amount_usdt') ?? 0;
-                                $referralCount = $referrals->count();
-                            @endphp
-
-                            <div class="referral-level referral-level-{{ $level }}">
-                                <div class="flex items-center justify-between py-2">
-                                    <div class="flex items-center">
-                                        <div class="w-8 h-8 bg-{{ $levelColors[$level] ?? 'gray-400' }} rounded-full flex items-center justify-center text-white text-xs font-bold mr-3">L{{ $level }}</div>
-                                        <div>
-                                            <div class="font-medium text-gray-900">
-                                                Level {{ $level }} <span class="text-gray-600">({{ $referralCount }} referrals)</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-right">
-                                        <div class="font-bold text-{{ $levelColors[$level] ?? 'gray-600' }}">
-                                            ${{ number_format($totalEarned, 2) }}
-                                        </div>
-                                        <div class="text-sm text-gray-500">earned</div>
-                                    </div>
-                                </div>
-
-                                {{-- لیست ایمیل‌ها برای هر لول --}}
-                                <div class="ml-11 space-y-2">
-                                    @foreach ($referrals->sortBy('created_at')->take(5) as $referral)
-                                        <div class="flex items-center justify-between py-1 text-sm">
-                                            <span class="text-gray-600">{{ optional($referral->descendant)->email ?? 'N/A' }}</span>
-                                        </div>
-                                    @endforeach
-
-                                    @if ($referralCount > 5)
-                                        <div class="text-sm text-gray-500">and {{ $referralCount - 5 }} more...</div>
-                                    @endif
-                                </div>
-                            </div>
-                        @endfor
-                    </div>
-
-                </div>
-            </div>
         </div>
     </div>
 </main>

@@ -189,5 +189,15 @@
             }
         }
     </script>
+    <script>
+    // گرفتن پارامتر referral code از URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const referralCode = urlParams.get('code');
+
+    if (referralCode) {
+        document.getElementById('ref_code').value = referralCode;
+    }
+</script>
+
 </body>
 </html>
