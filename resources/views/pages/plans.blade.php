@@ -67,11 +67,11 @@ function payAlert(type, message) {
                         'popular'  => false
                     ],
                     1 => [
-                        'gradient' => 'linear-gradient(135deg, #B76E79 0%, #FFD7D7 100%)', // رزگلد مشتری
-                        'accent'   => '#C97F8C',
-                        'bg'       => '#FFF0F3',
-                        'border'   => '#FFD7D7',
-                        'popular'  => true
+                            'gradient' => 'linear-gradient(135deg, #CD7F32 0%, #FFD700 100%)',
+                            'accent'   => '#D4AF37',
+                            'bg'       => '#FFF5E1',
+                            'border'   => '#F0E68C',
+                            'popular'  => false
                     ],
                     2 => [
                         'gradient' => 'linear-gradient(135deg, #CD7F32 0%, #FFD700 100%)', // برنز به طلایی

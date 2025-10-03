@@ -649,11 +649,11 @@
                             'popular'  => false
                         ],
                         1 => [
-                            'gradient' => 'linear-gradient(135deg, #B76E79 0%, #FFD7D7 100%)',
-                            'accent'   => '#C97F8C',
-                            'bg'       => '#FFF0F3',
-                            'border'   => '#FFD7D7',
-                            'popular'  => true
+                            'gradient' => 'linear-gradient(135deg, #CD7F32 0%, #FFD700 100%)',
+                            'accent'   => '#D4AF37',
+                            'bg'       => '#FFF5E1',
+                            'border'   => '#F0E68C',
+                            'popular'  => false
                         ],
                         2 => [
                             'gradient' => 'linear-gradient(135deg, #CD7F32 0%, #FFD700 100%)',
@@ -667,7 +667,7 @@
                 @endphp
 
                 <div class="relative group">
-                   
+
 
                     <a href="/plans" class="block bg-white rounded-2xl shadow-xl border-2 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden {{ $color['popular'] ? 'ring-2 ring-purple-200' : '' }}" style="border-color: {{ $color['border'] }}">
 
