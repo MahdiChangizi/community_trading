@@ -43,14 +43,14 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div class="fade-in">
             <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-                Welcome to <span class="bg-gradient-to-r from-[#B76E79] to-[#FFD7D7] bg-clip-text text-transparent">INTERNATIONAL TRADE AND IT</span>
+                Welcome to <span class="bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">INTERNATIONAL TRADE AND IT</span>
                 <span class="block text-2xl md:text-3xl mt-2">The home of Millionaires</span>
             </h1>
             <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
                 Join our structured programs to learn trading across Crypto, Stocks, Forex and Commodities — theory, live practice and psychology included.
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <a href="/dashboard" class="group bg-gradient-to-r from-[#B76E79] to-[#FFD7D7] text-black px-10 py-5 rounded-2xl text-lg font-bold shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center">
+                <a href="/dashboard" class="group bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-10 py-5 rounded-2xl text-lg font-bold shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center">
                     <svg class="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                     </svg>
