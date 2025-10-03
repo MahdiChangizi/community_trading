@@ -38,24 +38,25 @@
              class="coin-fly w-10 h-10 absolute" style="--tx: 110px; --ty: -90px; animation-delay: 3.6s;" alt="ETH">
     </div>
 
+
     <!-- Hero Content -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div class="fade-in">
-            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-                Master Crypto Trading with
-                <span class="bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">Expert</span>
-                <span class="bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent">Guidance</span>
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+                Welcome to <span class="bg-gradient-to-r from-[#B76E79] to-[#FFD7D7] bg-clip-text text-transparent">INTERNATIONAL TRADE AND IT</span>
+                <span class="block text-2xl md:text-3xl mt-2">The home of Millionaires</span>
             </h1>
-            <p class="text-xl md:text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
-                Join thousands of successful traders in our premium community. Learn, grow, and profit from the crypto revolution with our proven strategies and expert mentorship.
+            <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
+                Join our structured programs to learn trading across Crypto, Stocks, Forex and Commodities — theory, live practice and psychology included.
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <a href="/dashboard" class="group bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-10 py-5 rounded-2xl text-lg font-bold shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center">
+                <a href="/dashboard" class="group bg-gradient-to-r from-[#B76E79] to-[#FFD7D7] text-black px-10 py-5 rounded-2xl text-lg font-bold shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center">
                     <svg class="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                     </svg>
                     TRADE CRYPTO
                 </a>
+
                 <a href="#about" class="group border-2 border-gray-300 text-gray-700 px-10 py-5 rounded-2xl text-lg font-semibold hover:border-purple-400 hover:text-purple-600 transition-all duration-300 flex items-center">
                     Learn More
                     <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,32 +121,29 @@
             <!-- Text Content -->
             <div class="space-y-8 fade-in-left">
                 <div>
-                    <h2 class="text-5xl font-bold bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent mb-6">
-                        Our Mission And Vision
+                    <h2 class="text-5xl font-bold bg-gradient-to-r from-[#B76E79] to-[#FFD7D7] bg-clip-text text-transparent mb-6">
+                        Mission & Vision
                     </h2>
-                    <div class="w-24 h-1 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full mb-8"></div>
+                    <div class="w-24 h-1 bg-gradient-to-r from-[#B76E79] to-[#FFD7D7] rounded-full mb-8"></div>
                 </div>
-                <p class="text-gray-600 text-xl leading-relaxed">
-                    We believe everyone deserves access to professional-grade crypto trading education and tools. Our mission is to democratize financial success through blockchain technology and expert mentorship.
-                </p>
-                <p class="text-gray-600 text-xl leading-relaxed">
-                    With over 10 years of combined experience in traditional and crypto markets, our team has helped thousands of traders achieve financial independence.
-                </p>
+                <!-- Mission -->
+                <div>
+                    <p class="text-gray-800 text-xl leading-relaxed font-medium">
+                        To establish a global trading and ITI training academy that empowers 1 million traders across 25 countries by 2025 - 2026
+                    </p>
+                    <p class="text-[#B76E79] text-xl font-bold leading-relaxed mt-4">
+                        We aim to equip individuals with the knowledge and tools to achieve a monthly income of 1 lac to 1c+.
+                    </p>
+                </div>
 
-                <!-- Stats -->
-                <div class="grid grid-cols-3 gap-6 pt-8">
-                    <div class="text-center p-6 bg-white rounded-3xl shadow-lg border hover:shadow-xl transition-shadow duration-300">
-                        <div class="text-4xl font-bold bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">10+</div>
-                        <div class="text-gray-500 text-sm font-medium mt-2">Years Experience</div>
-                    </div>
-                    <div class="text-center p-6 bg-white rounded-3xl shadow-lg border hover:shadow-xl transition-shadow duration-300">
-                        <div class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent">50K+</div>
-                        <div class="text-gray-500 text-sm font-medium mt-2">Students Taught</div>
-                    </div>
-                    <div class="text-center p-6 bg-white rounded-3xl shadow-lg border hover:shadow-xl transition-shadow duration-300">
-                        <div class="text-4xl font-bold bg-gradient-to-r from-yellow-600 to-orange-400 bg-clip-text text-transparent">95%</div>
-                        <div class="text-gray-500 text-sm font-medium mt-2">Satisfaction Rate</div>
-                    </div>
+                <!-- Vision -->
+                <div class="pt-8">
+                    <p class="text-gray-800 text-xl leading-relaxed">
+                        To be the premier international academy that bridges the gap between trading and technology, enabling traders worldwide to excel.
+                    </p>
+                    <p class="text-gray-800 text-xl leading-relaxed mt-4">
+                        Our vision is to foster a global community where traders thrive in a digitally-driven marketplace.
+                    </p>
                 </div>
             </div>
 
@@ -160,12 +158,13 @@
     </div>
 </section>
 
+
 <!-- Features Section -->
 <section id="features" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 fade-in">
             <h2 class="text-5xl font-bold text-gray-900 mb-6">Why Choose Our Platform</h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full mx-auto mb-6"></div>
+            <div class="w-24 h-1 bg-gradient-to-r from-[#FFD7D7] to-[#B76E79] rounded-full mx-auto mb-6"></div>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                 Discover the tools and features that make us the preferred choice for crypto traders worldwide
             </p>
@@ -174,7 +173,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Feature 1 -->
             <div class="group p-8 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-3xl border border-yellow-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 fade-in">
-                <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div class="w-16 h-16 bg-gradient-to-r from-[#FFD7D7] to-[#B76E79] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                     </svg>
@@ -196,7 +195,7 @@
 
             <!-- Feature 3 -->
             <div class="group p-8 bg-gradient-to-br from-orange-50 to-red-50 rounded-3xl border border-orange-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 fade-in">
-                <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div class="w-16 h-16 bg-gradient-to-r from-[#B76E79] to-red-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                     </svg>
@@ -219,7 +218,135 @@
     </div>
 </section>
 
+<!-- 🌍 Global Network Section -->
+<section class="py-20 bg-gradient-to-br from-white to-gray-50" data-aos="fade-up">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
+    <!-- Title -->
+    <div class="text-center mb-16" data-aos="zoom-in">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+        Our Global Network
+      </h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        ITI Academy is now connected with <span class="font-semibold text-primary-green">25 countries</span> worldwide.
+        Join our synchronized events across different time zones.
+      </p>
+    </div>
+
+    <!-- Grid of Countries -->
+    <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Country Card Example -->
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+        <span class="text-2xl mr-3">🇯🇵</span><div><h3 class="font-semibold">Japan</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="120">
+        <span class="text-2xl mr-3">🇲🇾</span><div><h3 class="font-semibold">Malaysia</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="140">
+        <span class="text-2xl mr-3">🇸🇬</span><div><h3 class="font-semibold">Singapore</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="160">
+        <span class="text-2xl mr-3">🇨🇳</span><div><h3 class="font-semibold">China</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="180">
+        <span class="text-2xl mr-3">🇭🇰</span><div><h3 class="font-semibold">Hong Kong</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+        <span class="text-2xl mr-3">🇦🇺</span><div><h3 class="font-semibold">Australia (Sydney)</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="220">
+        <span class="text-2xl mr-3">🇳🇿</span><div><h3 class="font-semibold">New Zealand</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="240">
+        <span class="text-2xl mr-3">🇸🇦</span><div><h3 class="font-semibold">Saudi Arabia</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="260">
+        <span class="text-2xl mr-3">🇰🇼</span><div><h3 class="font-semibold">Kuwait</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="280">
+        <span class="text-2xl mr-3">🇶🇦</span><div><h3 class="font-semibold">Qatar</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="300">
+        <span class="text-2xl mr-3">🇺🇬</span><div><h3 class="font-semibold">Uganda</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="320">
+        <span class="text-2xl mr-3">🇦🇪</span><div><h3 class="font-semibold">Dubai (UAE)</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="340">
+        <span class="text-2xl mr-3">🇴🇲</span><div><h3 class="font-semibold">Oman</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="360">
+        <span class="text-2xl mr-3">🇲🇻</span><div><h3 class="font-semibold">Maldives</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="380">
+        <span class="text-2xl mr-3">🇷🇼</span><div><h3 class="font-semibold">Rwanda</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="400">
+        <span class="text-2xl mr-3">🇵🇹</span><div><h3 class="font-semibold">Portugal</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="420">
+        <span class="text-2xl mr-3">🇳🇬</span><div><h3 class="font-semibold">Nigeria</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="440">
+        <span class="text-2xl mr-3">🇩🇪</span><div><h3 class="font-semibold">Germany</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="460">
+        <span class="text-2xl mr-3">🇬🇧</span><div><h3 class="font-semibold">United Kingdom</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="480">
+        <span class="text-2xl mr-3">🇱🇺</span><div><h3 class="font-semibold">Luxembourg</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="500">
+        <span class="text-2xl mr-3">🇿🇦</span><div><h3 class="font-semibold">South Africa</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="520">
+        <span class="text-2xl mr-3">🇮🇹</span><div><h3 class="font-semibold">Italy</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="540">
+        <span class="text-2xl mr-3">🇰🇷</span><div><h3 class="font-semibold">South Korea</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="560">
+        <span class="text-2xl mr-3">🇨🇦</span><div><h3 class="font-semibold">Canada (Toronto)</h3></div>
+      </div>
+
+      <div class="flex items-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-gray-100" data-aos="fade-up" data-aos-delay="580">
+        <span class="text-2xl mr-3">🇺🇸</span><div><h3 class="font-semibold">USA (New York)</h3></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<script>
+  AOS.init({
+    duration: 900,
+    once: true,
+    offset: 100
+  });
+</script>
 <section class="py-16">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12 slide-up">
@@ -500,72 +627,154 @@
 </script>
 
 <!-- Pricing Section -->
-<section id="pricing" class="py-24 bg-white">
+<section id="pricing" class="py-24 bg-gradient-to-br from-slate-50 to-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 fade-in">
             <h2 class="text-5xl font-bold text-gray-900 mb-6">Choose Your Plan</h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-yellow-500 to-yellow-200 rounded-full mx-auto mb-6"></div>
+            <div class="w-24 h-1 bg-gradient-to-r from-[#B76E79] to-[#FFD7D7] rounded-full mx-auto mb-6"></div>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                 Select the perfect plan for your trading journey. Start free and upgrade as you grow.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-            @foreach($plans as $plan)
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            @foreach($plans as $index => $plan)
                 @php
-                    $features = explode("\n", $plan->description);
+                    $colors = [
+                        0 => [
+                            'gradient' => 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)',
+                            'accent'   => '#DAA520',
+                            'bg'       => '#FFF9E6',
+                            'border'   => '#FFE5A0',
+                            'popular'  => false
+                        ],
+                        1 => [
+                            'gradient' => 'linear-gradient(135deg, #B76E79 0%, #FFD7D7 100%)',
+                            'accent'   => '#C97F8C',
+                            'bg'       => '#FFF0F3',
+                            'border'   => '#FFD7D7',
+                            'popular'  => true
+                        ],
+                        2 => [
+                            'gradient' => 'linear-gradient(135deg, #CD7F32 0%, #FFD700 100%)',
+                            'accent'   => '#D4AF37',
+                            'bg'       => '#FFF5E1',
+                            'border'   => '#F0E68C',
+                            'popular'  => false
+                        ]
+                    ];
+                    $color = $colors[$index % 3];
                 @endphp
 
-                <a href="/plans"
-                   class="group flex flex-col bg-white rounded-2xl shadow-xl border
-                   @if($plan->price_usdt > 1000) border-amber-300 ring-2 ring-purple-200
-                   @else border-yellow-200 @endif
-                   hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden">
+                <div class="relative group">
+                   
 
-                    <!-- Header -->
-                    <div class="bg-gradient-to-br
-                        @if($plan->price_usdt > 1000) from-amber-700 to-yellow-500
-                        @else from-yellow-400 to-yellow-600 @endif
-                        text-white p-8 relative overflow-hidden">
+                    <a href="/plans" class="block bg-white rounded-2xl shadow-xl border-2 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden {{ $color['popular'] ? 'ring-2 ring-purple-200' : '' }}" style="border-color: {{ $color['border'] }}">
 
-                        <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                        <!-- Header Section -->
+                        <div class="text-white p-8 relative overflow-hidden" style="background: {{ $color['gradient'] }}">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                            <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
 
-                        <h3 class="text-2xl font-bold mb-3">{{ $plan->name }}</h3>
-
-                        <div class="flex items-baseline gap-2 mb-2">
-                            <span class="text-4xl font-black">${{ number_format($plan->price_usdt, 0) }}</span>
-                            <span class="text-lg opacity-80">USDT</span>
+                            <div class="relative z-10">
+                                <h3 class="text-2xl font-bold mb-3 leading-tight">{{ $plan->name }}</h3>
+                                <div class="flex items-baseline gap-2 mb-2">
+                                    <span class="text-4xl font-black">${{ number_format($plan->price_usdt, 0) }}</span>
+                                    <span class="text-lg opacity-80">USDT</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-white/90">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                    </svg>
+                                    <span class="font-medium">{{ $plan->duration_months }} Months Program</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Body -->
-                    <div class="flex flex-col flex-grow p-8">
-                        <ul class="space-y-3 text-gray-700 text-sm leading-relaxed flex-grow">
-                            <li class="flex items-start gap-2">
-                                <span class="w-2 h-2 bg-yellow-500 rounded-full mt-2"></span>
-                                {{ $plan->duration_months }}-Month Access
-                            </li>
-                            @foreach($features as $feature)
-                                @if(trim($feature) !== '')
-                                    <li class="flex items-start gap-2">
-                                        <span class="w-2 h-2 bg-yellow-500 rounded-full mt-2"></span>
-                                        {{ trim($feature) }}
-                                    </li>
-                                @endif
-                            @endforeach
-                        </ul>
+                        <!-- Content Section -->
+                        <div class="p-8">
+                            <div class="prose prose-gray max-w-none mb-8">
+                                @php
+                                    $lines = explode('.', $plan->description);
+                                    $features = [];
+                                    foreach($lines as $line) {
+                                        $line = trim($line);
+                                        if(!empty($line)) {
+                                            $features[] = $line;
+                                        }
+                                    }
+                                @endphp
 
-                        <button class="mt-8 w-full bg-gradient-to-r
-                            @if($plan->price_usdt > 1000) from-amber-700 to-yellow-500
-                            @else from-yellow-400 to-yellow-600 @endif
-                            text-white py-3 rounded-xl font-semibold shadow-lg group-hover:scale-[1.02] transition-all duration-300">
-                            Choose Plan →
-                        </button>
-                    </div>
-                </a>
+                                <div class="space-y-4">
+                                    @foreach(array_slice($features, 0, 5) as $feature)
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background-color: {{ $color['bg'] }}">
+                                            <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" style="color: {{ $color['accent'] }}">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                            </svg>
+                                        </div>
+                                        <span class="text-gray-700 text-sm leading-relaxed">{{ trim($feature, ': ') }}</span>
+                                    </div>
+                                    @endforeach
+                                </div>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <button class="w-full text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group"
+                                    style="background: {{ $color['gradient'] }}">
+                                <span class="flex items-center justify-center gap-2">
+                                    View Details
+                                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <!-- Additional Info -->
+                            <div class="mt-6 pt-6 border-t border-gray-100">
+                                <div class="flex items-center justify-center gap-6 text-sm text-gray-500">
+                                    <div class="flex items-center gap-1">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                        </svg>
+                                        <span>24/7 Support</span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"/>
+                                        </svg>
+                                        <span>Certificate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             @endforeach
+        </div>
 
+        <!-- Trust Indicators -->
+        <div class="mt-16 text-center">
+            <div class="inline-flex items-center gap-8 text-gray-500 text-sm flex-wrap justify-center">
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                    </svg>
+                    <span>Secure Payment</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/>
+                    </svg>
+                    <span>Money Back Guarantee</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                    </svg>
+                    <span>Expert Instructors</span>
+                </div>
+            </div>
         </div>
     </div>
 </section>

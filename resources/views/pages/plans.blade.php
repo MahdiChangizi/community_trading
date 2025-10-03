@@ -55,37 +55,41 @@ function payAlert(type, message) {
             </p>
         </div>
 
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="100">
             @foreach ($plans as $index => $plan)
             @php
                 $colors = [
-    0 => [
-        // کارت اول → طلایی کلاسیک و روشن
-        'gradient' => 'from-yellow-400 to-yellow-600', // روشن → تیره
-        'accent'   => 'yellow-600',
-        'bg'       => 'yellow-50',
-        'border'   => 'yellow-200',
-        'popular'  => false
-    ],
-    1 => [
-        // کارت دوم → طلایی لاکچری با کمی قهوه‌ای برنز
-        'gradient' => 'from-amber-700 to-yellow-500',  // برنز → طلایی روشن
-        'accent'   => 'amber-700',
-        'bg'       => 'amber-50',
-        'border'   => 'amber-300',
-        'popular'  => true
-    ]
-];
-$color = $colors[$index % 2];
-
+                    0 => [
+                        'gradient' => 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)', // طلایی کلاسیک
+                        'accent'   => '#DAA520',
+                        'bg'       => '#FFF9E6',
+                        'border'   => '#FFE5A0',
+                        'popular'  => false
+                    ],
+                    1 => [
+                        'gradient' => 'linear-gradient(135deg, #B76E79 0%, #FFD7D7 100%)', // رزگلد مشتری
+                        'accent'   => '#C97F8C',
+                        'bg'       => '#FFF0F3',
+                        'border'   => '#FFD7D7',
+                        'popular'  => true
+                    ],
+                    2 => [
+                        'gradient' => 'linear-gradient(135deg, #CD7F32 0%, #FFD700 100%)', // برنز به طلایی
+                        'accent'   => '#D4AF37',
+                        'bg'       => '#FFF5E1',
+                        'border'   => '#F0E68C',
+                        'popular'  => false
+                    ]
+                ];
+                $color = $colors[$index % 3];
             @endphp
 
             <div class="relative group">
 
-                <div class="bg-white rounded-2xl shadow-xl border border-{{ $color['border'] }} hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden {{ $color['popular'] ? 'ring-2 ring-purple-200' : '' }}">
+                <div class="bg-white rounded-2xl shadow-xl border-2 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden {{ $color['popular'] ? 'ring-2 ring-purple-200' : '' }}" style="border-color: {{ $color['border'] }}">
 
                     <!-- Header Section -->
-                    <div class="bg-gradient-to-br {{ $color['gradient'] }} text-white p-8 relative overflow-hidden">
+                    <div class="text-white p-8 relative overflow-hidden" style="background: {{ $color['gradient'] }}">
                         <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
                         <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
 
@@ -112,7 +116,7 @@ $color = $colors[$index % 2];
                                 $features = [];
                                 foreach($lines as $line) {
                                     $line = trim($line);
-                                    if(!empty($line) && !str_starts_with($line, '6-Month')) {
+                                    if(!empty($line)) {
                                         $features[] = $line;
                                     }
                                 }
@@ -121,8 +125,8 @@ $color = $colors[$index % 2];
                             <div class="space-y-4">
                                 @foreach(array_slice($features, 0, 6) as $feature)
                                 <div class="flex items-start gap-3">
-                                    <div class="w-6 h-6 rounded-full bg-{{ $color['bg'] }} flex items-center justify-center flex-shrink-0 mt-0.5">
-                                        <svg class="w-3 h-3 text-{{ $color['accent'] }}" fill="currentColor" viewBox="0 0 20 20">
+                                    <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background-color: {{ $color['bg'] }}">
+                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" style="color: {{ $color['accent'] }}">
                                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
                                         </svg>
                                     </div>
@@ -133,10 +137,10 @@ $color = $colors[$index % 2];
                         </div>
 
                         <!-- CTA Button -->
-                        {{-- if user isn't login he should go login page --}}
                         @if (!Auth::check())
                         <button onclick="window.location.href='{{ route('login') }}'"
-                                class="w-full bg-gradient-to-r {{ $color['gradient'] }} text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group">
+                                class="w-full text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group"
+                                style="background: {{ $color['gradient'] }}">
                             <span class="flex items-center justify-center gap-2">
                                 Start Learning Now
                                 <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -146,7 +150,8 @@ $color = $colors[$index % 2];
                         </button>
                         @else
                         <button onclick="openPurchaseModal('{{ $plan->id }}','{{ $plan->name }}','{{ $plan->price_usdt }}')"
-                                class="w-full bg-gradient-to-r {{ $color['gradient'] }} text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group">
+                                class="w-full text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group"
+                                style="background: {{ $color['gradient'] }}">
                             <span class="flex items-center justify-center gap-2">
                                 Start Learning Now
                                 <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -155,6 +160,7 @@ $color = $colors[$index % 2];
                             </span>
                         </button>
                         @endif
+
                         <!-- Additional Info -->
                         <div class="mt-6 pt-6 border-t border-gray-100">
                             <div class="flex items-center justify-center gap-6 text-sm text-gray-500">
@@ -203,7 +209,6 @@ $color = $colors[$index % 2];
         </div>
     </div>
 </section>
-
 <div id="purchaseModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden z-50 flex items-center justify-center" data-aos="fade-up" data-aos-delay="150">
     <div class="bg-white rounded-2xl max-w-sm w-full p-6 relative">
         <button onclick="closePurchaseModal()" class="absolute top-3 right-3 text-gray-400">✕</button>
