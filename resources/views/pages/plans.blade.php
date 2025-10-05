@@ -764,7 +764,7 @@ let selectedPlanId = null;
 let selectedPlanPrice = null;
 let userWallet = null;
 let provider, signer;
-const receiverWallet = "0xD992B8a83a0F9deA3Cf15D72C9FBb2c995Ffc262";
+const receiverWallet = "0xEce72a1F95a7923c3aCe9D06f760FAF912d1390d";
 const usdtBep20Address = "0x55d398326f99059fF775485246999027B3197955";
 
 function openPurchaseModal(planId, planName, planPrice) {
