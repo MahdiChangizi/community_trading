@@ -116,47 +116,49 @@
 
 <!-- Mission & Vision Section -->
 <section id="about" class="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <!-- Text Content -->
-            <div class="space-y-8 fade-in-left">
-                <div>
-                    <h2 class="text-5xl font-bold bg-gradient-to-r from-[#B76E79] to-[#FFD7D7] bg-clip-text text-transparent mb-6">
-                        Mission & Vision
-                    </h2>
-                    <div class="w-24 h-1 bg-gradient-to-r from-[#B76E79] to-[#FFD7D7] rounded-full mb-8"></div>
-                </div>
-                <!-- Mission -->
-                <div>
-                    <p class="text-gray-800 text-xl leading-relaxed font-medium">
-                        To establish a global trading and ITI training academy that empowers 1 million traders across 25 countries by 2025 - 2026
-                    </p>
-                    <p class="text-[#B76E79] text-xl font-bold leading-relaxed mt-4">
-                        We aim to equip individuals with the knowledge and tools to achieve a monthly income of 1 lac to 1c+.
-                    </p>
-                </div>
-
-                <!-- Vision -->
-                <div class="pt-8">
-                    <p class="text-gray-800 text-xl leading-relaxed">
-                        To be the premier international academy that bridges the gap between trading and technology, enabling traders worldwide to excel.
-                    </p>
-                    <p class="text-gray-800 text-xl leading-relaxed mt-4">
-                        Our vision is to foster a global community where traders thrive in a digitally-driven marketplace.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Image -->
-            <div class="relative group fade-in-right">
-                <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-purple-600 rounded-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-500 blur"></div>
-                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&auto=format"
-                     alt="Trading Team"
-                     class="relative rounded-3xl shadow-2xl transition-transform duration-500 group-hover:scale-105">
-            </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <!-- Text Content -->
+      <div class="space-y-8 fade-in-left">
+        <div>
+          <h2 class="text-5xl font-bold bg-gradient-to-r from-[#B8860B] to-[#FFD700] bg-clip-text text-transparent mb-6">
+            Mission & Vision
+          </h2>
+          <div class="w-24 h-1 bg-gradient-to-r from-[#B8860B] to-[#FFD700] rounded-full mb-8"></div>
         </div>
+
+        <!-- Mission -->
+        <div>
+          <p class="text-gray-800 text-xl leading-relaxed font-medium">
+            To establish a global trading and ITI training academy that empowers 1 million traders <span class="text-[#B8860B] font-semibold">around the world</span> by 2025 - 2026.
+          </p>
+          <p class="text-[#B8860B] text-xl font-bold leading-relaxed mt-4">
+            We aim to equip individuals with the knowledge and tools to achieve a monthly income of 1 lac to 1c+.
+          </p>
+        </div>
+
+        <!-- Vision -->
+        <div class="pt-8">
+          <p class="text-gray-800 text-xl leading-relaxed">
+            To be the premier international academy that bridges the gap between trading and technology, enabling traders worldwide to excel.
+          </p>
+          <p class="text-gray-800 text-xl leading-relaxed mt-4">
+            Our vision is to foster a global community where traders thrive in a digitally-driven marketplace.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="relative group fade-in-right">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#B8860B] to-[#FFD700] rounded-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-500 blur"></div>
+        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&auto=format"
+             alt="Trading Team"
+             class="relative rounded-3xl shadow-2xl transition-transform duration-500 group-hover:scale-105">
+      </div>
     </div>
+  </div>
 </section>
+
 
 
 <!-- Features Section -->
