@@ -117,10 +117,11 @@
 <div class="my-24 flex justify-center px-4">
   <div class="max-w-5xl w-full">
     <!-- عنوان بالای ویدیو -->
-    <div class="text-center mb-8 fade-in">
-      <h3 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent mb-3">
+    <div class="text-center mb-16 fade-in">
+      <h2 class="text-5xl font-bold bg-gradient-to-r from-[#B8860B] to-[#FFD700] bg-clip-text text-transparent mb-6">
         Watch Our Introduction
-      </h3>
+      </h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-[#B8860B] to-[#FFD700] rounded-full mx-auto mb-8"></div>
     </div>
 
     <!-- ویدیو پلیر -->
