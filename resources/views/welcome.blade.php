@@ -113,7 +113,74 @@
     filter: brightness(1.5) contrast(1.3) saturate(1.2);
 }
 </style>
+<!-- Video Section با استایل حرفه‌ای -->
+<div class="my-24 flex justify-center px-4">
+  <div class="max-w-5xl w-full">
+    <!-- عنوان بالای ویدیو -->
+    <div class="text-center mb-8 fade-in">
+      <h3 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent mb-3">
+        Watch Our Introduction
+      </h3>
+    </div>
 
+    <!-- ویدیو پلیر -->
+    <div class="relative group fade-in-up">
+      <!-- Glow Effect پشت ویدیو -->
+      <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 rounded-3xl opacity-0 group-hover:opacity-30 blur-xl transition-all duration-500"></div>
+
+      <!-- ویدیو Container -->
+      <div class="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-2 shadow-2xl overflow-hidden">
+        <!-- Decorative Corners -->
+        <div class="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-yellow-500 rounded-tl-3xl opacity-50"></div>
+        <div class="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-orange-500 rounded-br-3xl opacity-50"></div>
+
+        <!-- ویدیو با Aspect Ratio -->
+        <div class="relative rounded-2xl overflow-hidden" style="aspect-ratio: 16/9;">
+          <iframe
+            class="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/asxLmk0iXiw"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <!-- دکمه‌های زیر ویدیو -->
+    </div>
+  </div>
+</div>
+
+<!-- انیمیشن‌های اضافی -->
+<style>
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+</style>
 <!-- Mission & Vision Section -->
 <section id="about" class="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
