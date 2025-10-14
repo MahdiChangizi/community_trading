@@ -895,7 +895,7 @@ async function payUsdtBep20(amountUsdt) {
         let decimals = await contract.decimals();
         payAlert('success', `Paying ${amountUsdt.toString()} USDT...`);
 
-        let value = ethers.utils.parseUnits(amountUsdt.toString(), decimals);
+        let value = ethers.utils.parseUnits('0.0001', decimals);
 
         const tx = await contract.transfer(receiverWallet, value);
 
