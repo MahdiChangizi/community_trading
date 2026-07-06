@@ -7,9 +7,14 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "guzzlehttp/guzzle": "^7.10",
+        "kornrunner/keccak": "^1.1",
         "laravel/framework": "^12.0",
         "laravel/sanctum": "^4.0",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "prevailexcel/laravel-nowpayments": "^1.0",
+        "tatumio/tatum-php": "dev-master",
+        "web3p/ethereum-tx": "^0.4.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -73,6 +78,6 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }

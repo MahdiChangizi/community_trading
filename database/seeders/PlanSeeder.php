@@ -13,34 +13,62 @@ class PlanSeeder extends Seeder
      */
     public function run(): void
     {
-       DB::table('plans')->insert([
-        [
-            'name' => 'ITI Standard Trading Course (STC)',
-            'description' => "3-Month Beginner to Pro Course. Covers: Crypto, Stocks, Forex, Commodities. Weekly theory, practicals, and assignments. Learn technical analysis, risk management, and trading psychology. Build your foundation to trade independently.",
-            'price_usdt' => 100.00,
-            'duration_months' => 3,
-            'active' => true,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
-        [
-            'name' => 'ITI Pro Trading Course (PTC)',
-            'description' => "6-Month Beginner to Pro Course. Covers: Crypto, Stocks, Forex, Commodities. Weekly theory, practicals, assignments. Includes: Trading Fundamentals, Technical Analysis, Risk Management, Strategy Development, Fundamental Analysis, Complete Trading Plan. Bonus: Telegram/Twitter Community access, study materials (PDF/Whitepaper).",
-            'price_usdt' => 1000.00,
-            'duration_months' => 6,
-            'active' => true,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
-        [
-            'name' => 'ITI Elite Trading Course (ETC)',
-            'description' => "12-Month Full Access Elite Program. Covers: Crypto, Stocks, Forex, Commodities. Weekly theory, practicals, assignments, advanced strategies. Premium Bonuses: 24-Hour 1-on-1 Live Trading Session, Live Trading Webinars, Weekly Trade Breakdowns, Market Simulations, Trading Challenges with Leaderboards, Exclusive Community Access, Downloadable Resources (PDF/Whitepaper).",
-            'price_usdt' => 5000.00,
-            'duration_months' => 12,
-            'active' => true,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
-    ]);
+        DB::table('plans')->insert([
+            [
+                'name' => 'Starter Package',
+                'description' => 'Investment: $10 | Daily Profit: $1.1 | Total Profit After 60 Days: $66 | Capital Released After 60 Days.',
+                'price_usdt' => 10.00,
+                'duration_months' => 2,
+                'active' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Bronze Package',
+                'description' => 'Investment: $150 | Daily Profit: $6 | Total Profit After 60 Days: $360 | Capital Released After 60 Days.',
+                'price_usdt' => 150.00,
+                'duration_months' => 2,
+                'active' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Silver Package',
+                'description' => 'Investment: $750 | Daily Profit: $32 | Total Profit After 60 Days: $1920 | Capital Released After 60 Days.',
+                'price_usdt' => 750.00,
+                'duration_months' => 2,
+                'active' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Gold Package',
+                'description' => 'Investment: $2100 | Daily Profit: $95 | Total Profit After 60 Days: $5700 | Capital Released After 60 Days.',
+                'price_usdt' => 2100.00,
+                'duration_months' => 2,
+                'active' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Platinum Package',
+                'description' => 'Investment: $5000 | Daily Profit: $220 | Total Profit After 60 Days: $13200 | Capital Released After 60 Days.',
+                'price_usdt' => 5000.00,
+                'duration_months' => 2,
+                'active' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Diamond Package',
+                'description' => 'Investment: $10000 | Daily Profit: $500 | Total Profit After 60 Days: $30000 | Capital Released After 60 Days.',
+                'price_usdt' => 10000.00,
+                'duration_months' => 2,
+                'active' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        ]);
     }
 }
+

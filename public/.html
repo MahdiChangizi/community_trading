@@ -1,0 +1,8 @@
+const token = "token-here";
+function decodeBase64Url(input) {
+  input = input.replace(/-/g, '+').replace(/_/g, '/');
+  while (input.length % 4) input += '=';
+  return atob(input);
+}
+const decoded = decodeBase64Url(token);
+console.log(decoded);

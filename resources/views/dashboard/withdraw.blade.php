@@ -3,7 +3,11 @@
 
 <main class="min-h-screen flex justify-center items-start p-6 bg-gray-50">
     <div class="w-full max-w-lg bg-white shadow-lg p-10 border border-gray-100 hover:border-gray-200">
-
+        @if(session('success'))
+            <div class="bg-green-100 border border-green-400 text-green-800 px-6 py-4 rounded-xl shadow-md mb-6 text-center font-semibold transition-transform transform hover:scale-105">
+                {{ session('success') }}
+            </div>
+        @endif
         <h1 class="text-3xl font-extrabold text-black mb-8 text-center tracking-tight">
             Withdrawal USDT
         </h1>

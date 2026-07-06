@@ -82,48 +82,6 @@ class AdminRewardController extends Controller
         return view('dashboard.withdraw', compact('data'));
     }
 
-    public function withdrawal_usdt(Request $request){
-        $user = User::where('id', Auth::user()->id)->first();
-        $data = $request->validate([
-            'wallet' => 'required|string',
-            'amount' => 'required|numeric|min:0|max:' . $user->wallet->usdt_balance
-        ]);
-
-        // withdrawa user money to his usdt_bep20 wallet
-        // API Keys از env
-        $apiKey = env('COINBASE_API_KEY');
-        $apiSecret = env('COINBASE_API_SECRET');
-        $passphrase = env('COINBASE_PASSPHRASE');
-
-        $timestamp = time();
-        $method = 'POST';
-        $path = '/withdrawals/crypto';
-        $body = json_encode([
-            'amount' => (string)$data['amount'],
-            'currency' => 'USDT',
-            'crypto_address' => $data['wallet'],
-            'network' => 'bep20' // اگه شبکه رو بخواد مشخص کنی
-        ]);
-
-        // sign با HMAC SHA256
-        $sign = base64_encode(hash_hmac('sha256', $timestamp.$method.$path.$body, $apiSecret, true));
-
-        $response = Http::withHeaders([
-            'Content-Type' => 'application/json',
-            'CB-ACCESS-KEY' => $apiKey,
-            'CB-ACCESS-PASSPHRASE' => $passphrase,
-            'CB-ACCESS-SIGN' => $sign,
-            'CB-ACCESS-TIMESTAMP' => $timestamp,
-        ])->post('https://api.exchange.coinbase.com'.$path, $body);
-
-        if ($response->failed()) {
-            return back()->withErrors(['withdraw' => 'Coinbase API error: '.$response->body()]);
-        }
-
-        $result = $response->json();
-
-    }
-
     public function users() {
         $data = User::select(["id", "uid", "status", "is_admin", "name", "email", "ref_code"])
         ->with("wallet")
@@ -131,4 +89,44 @@ class AdminRewardController extends Controller
 
         return view("dashboard.users", compact('data'));
     }
+
+    public function withdrawal_usdt(Request $request)
+    {
+        $request->validate([
+            'wallet' => 'required|string',
+            'amount' => 'required|numeric'
+        ]);
+
+        try {
+            $response = Http::post('http://localhost:3000/send', [
+                'to' => $request->wallet,
+                'amount' => $request->amount
+            ]);
+
+            $data = $response->json();
+
+            if (isset($data['error'])) {
+                return response()->json([
+                    'status' => false,
+                    'message' => $data['error']
+                ], 400);
+            }
+
+            $user = Auth::user();
+            $wallet = $user->wallet;
+
+            $wallet->usdt_balance = 0.00;
+            $wallet->save();
+
+            return back()->with('success', 'USDT withdrawal was successful!');
+
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => $e->getMessage()
+            ], 500);
+        }
+    }
+
+
 }
