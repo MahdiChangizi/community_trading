@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In - CryptoTrade Community</title>
+    <title>Sign In - bitorex</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -233,7 +233,7 @@
 
         <!-- Footer -->
         <div class="text-center mt-8 text-sm text-gray-500 fade-in" style="animation-delay: 0.4s;">
-            <p>&copy; 2024 CryptoTrade Community. All rights reserved.</p>
+            <p>&copy; 2024 bitorex. All rights reserved.</p>
         </div>
     </div>
 

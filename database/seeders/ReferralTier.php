@@ -17,19 +17,19 @@ class ReferralTier extends Seeder
     foreach (range(1, 6) as $planId) {
         $tiers[] = [
             'level' => 1,
-            'percent' => 10,
+            'percent' => 5,
             'plan_id' => $planId,
         ];
 
         $tiers[] = [
             'level' => 2,
-            'percent' => 4,
+            'percent' => 3,
             'plan_id' => $planId,
         ];
 
         $tiers[] = [
             'level' => 3,
-            'percent' => 2,
+            'percent' => 1,
             'plan_id' => $planId,
         ];
     }

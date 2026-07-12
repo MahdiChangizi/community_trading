@@ -40,32 +40,32 @@
 
 
     <!-- Hero Content -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <div class="fade-in">
-            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-                Welcome to <span class="bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">INTERNATIONAL TRADE AND IT</span>
-                <span class="block text-2xl md:text-3xl mt-2">The home of Millionaires</span>
-            </h1>
-            <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-                Join our structured programs to learn trading across Crypto, Stocks, Forex and Commodities — theory, live practice and psychology included.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <a href="/dashboard" class="group bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-10 py-5 rounded-2xl text-lg font-bold shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center">
-                    <svg class="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                    </svg>
-                    TRADE CRYPTO
-                </a>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+    <div class="fade-in">
+        <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+            Welcome to <span class="bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">BITOREX</span>
+            <span class="block text-2xl md:text-3xl mt-2">Where Millionaires Are Made</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
+            Build your investment portfolio with our structured programs — from capital growth and daily earnings to secure trading and long-term wealth creation.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <a href="/dashboard" class="group bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-10 py-5 rounded-2xl text-lg font-bold shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center">
+                <svg class="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+                START INVESTING
+            </a>
 
-                <a href="#about" class="group border-2 border-gray-300 text-gray-700 px-10 py-5 rounded-2xl text-lg font-semibold hover:border-purple-400 hover:text-purple-600 transition-all duration-300 flex items-center">
-                    Learn More
-                    <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </a>
-            </div>
+            <a href="#about" class="group border-2 border-gray-300 text-gray-700 px-10 py-5 rounded-2xl text-lg font-semibold hover:border-yellow-400 hover:text-yellow-600 transition-all duration-300 flex items-center">
+                Learn More
+                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
         </div>
     </div>
+</div>
 </section>
 
 <!-- Coin Flying Animation Styles -->
@@ -113,44 +113,6 @@
     filter: brightness(1.5) contrast(1.3) saturate(1.2);
 }
 </style>
-<!-- Video Section با استایل حرفه‌ای -->
-<div class="my-24 flex justify-center px-4">
-  <div class="max-w-5xl w-full">
-    <!-- عنوان بالای ویدیو -->
-    <div class="text-center mb-16 fade-in">
-      <h2 class="text-5xl font-bold bg-gradient-to-r from-[#B8860B] to-[#FFD700] bg-clip-text text-transparent mb-6">
-        Watch Our Introduction
-      </h2>
-      <div class="w-24 h-1 bg-gradient-to-r from-[#B8860B] to-[#FFD700] rounded-full mx-auto mb-8"></div>
-    </div>
-
-    <!-- ویدیو پلیر -->
-    <div class="relative group fade-in-up">
-      <!-- Glow Effect پشت ویدیو -->
-      <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 rounded-3xl opacity-0 group-hover:opacity-30 blur-xl transition-all duration-500"></div>
-
-      <!-- ویدیو Container -->
-      <div class="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-2 shadow-2xl overflow-hidden">
-        <!-- Decorative Corners -->
-        <div class="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-yellow-500 rounded-tl-3xl opacity-50"></div>
-        <div class="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-orange-500 rounded-br-3xl opacity-50"></div>
-
-        <!-- ویدیو با Aspect Ratio -->
-        <div class="relative rounded-2xl overflow-hidden" style="aspect-ratio: 16/9;">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/asxLmk0iXiw"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-
-      <!-- دکمه‌های زیر ویدیو -->
-    </div>
-  </div>
-</div>
 
 <!-- انیمیشن‌های اضافی -->
 <style>
@@ -190,7 +152,7 @@
       <div class="space-y-8 fade-in-left">
         <div>
           <h2 class="text-5xl font-bold bg-gradient-to-r from-[#B8860B] to-[#FFD700] bg-clip-text text-transparent mb-6">
-            Mission & Vision
+            Our Mission & Vision
           </h2>
           <div class="w-24 h-1 bg-gradient-to-r from-[#B8860B] to-[#FFD700] rounded-full mb-8"></div>
         </div>
@@ -198,20 +160,20 @@
         <!-- Mission -->
         <div>
           <p class="text-gray-800 text-xl leading-relaxed font-medium">
-            To establish a global trading and ITI training academy that empowers 1 million traders <span class="text-[#B8860B] font-semibold">around the world</span> by 2025 - 2026.
+            Building an investment platform as the first step — creating income-generating betting opportunities using major global and crypto market news and analysis (like the money market), enabling trading capabilities, and constructing a centralized exchange.
           </p>
           <p class="text-[#B8860B] text-xl font-bold leading-relaxed mt-4">
-            We aim to equip individuals with the knowledge and tools to achieve a monthly income of 1 lac to 1c+.
+            We aim to empower individuals with the tools to achieve daily earnings, secure capital growth, and build long-term wealth through strategic investments.
           </p>
         </div>
 
         <!-- Vision -->
         <div class="pt-8">
           <p class="text-gray-800 text-xl leading-relaxed">
-            To be the premier international academy that bridges the gap between trading and technology, enabling traders worldwide to excel.
+            To be the premier investment and trading platform that bridges capital growth with advanced market analytics, creating a trusted ecosystem for investors worldwide.
           </p>
           <p class="text-gray-800 text-xl leading-relaxed mt-4">
-            Our vision is to foster a global community where traders thrive in a digitally-driven marketplace.
+            Our vision is to foster a global community where investors thrive through transparent, secure, and profitable investment opportunities.
           </p>
         </div>
       </div>
@@ -248,9 +210,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                     </svg>
                 </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Advanced Analytics</h3>
-                <p class="text-gray-600 leading-relaxed">Real-time market analysis and AI-powered insights to help you make informed trading decisions.</p>
-            </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Advanced Market Analytics</h3>
+                <p class="text-gray-600 leading-relaxed">Real-time market analysis and generating high returns on your capital — a trusted lending platform for reliable individuals with high-profit percentages on specified dates.</p>
+                </div>
 
             <!-- Feature 2 -->
             <div class="group p-8 bg-gradient-to-br from-purple-50 to-violet-50 rounded-3xl border border-purple-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 fade-in">

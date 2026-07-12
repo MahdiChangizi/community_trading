@@ -30,11 +30,11 @@
                 <h4 class="text-lg font-semibold mb-4 text-[#B76E79]">Account & Support</h4>
                 <ul class="space-y-2">
                     @auth
-                        <li><a href="{{ route('dashboard') }}" class="text-gray-400 hover:text-white transition-colors text-sm">Dashboard</a></li>
-                        <li><a href="{{ route('profile.edit') }}" class="text-gray-400 hover:text-white transition-colors text-sm">My Profile</a></li>
+                    <li><a href="{{ route('dashboard') }}" class="text-gray-400 hover:text-white transition-colors text-sm">Dashboard</a></li>
+                    <li><a href="{{ route('profile.edit') }}" class="text-gray-400 hover:text-white transition-colors text-sm">My Profile</a></li>
                     @else
-                        <li><a href="{{ route('login') }}" class="text-gray-400 hover:text-white transition-colors text-sm">Sign In</a></li>
-                        <li><a href="{{ route('register') }}" class="text-gray-400 hover:text-white transition-colors text-sm">Join Now</a></li>
+                    <li><a href="{{ route('login') }}" class="text-gray-400 hover:text-white transition-colors text-sm">Sign In</a></li>
+                    <li><a href="{{ route('register') }}" class="text-gray-400 hover:text-white transition-colors text-sm">Join Now</a></li>
                     @endauth
                     <li><a href="/#faq" class="text-gray-400 hover:text-white transition-colors text-sm">FAQ</a></li>
                     <li><a href="/#contact" class="text-gray-400 hover:text-white transition-colors text-sm">Help Center</a></li>
@@ -46,29 +46,29 @@
 </footer>
 
 <style>
-/* Footer link hover effect */
-footer a {
-    position: relative;
-    display: inline-block;
-}
+    /* Footer link hover effect */
+    footer a {
+        position: relative;
+        display: inline-block;
+    }
 
-footer a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 1px;
-    bottom: -2px;
-    left: 0;
-    background-color: currentColor;
-    transition: width 0.3s ease;
-}
+    footer a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -2px;
+        left: 0;
+        background-color: currentColor;
+        transition: width 0.3s ease;
+    }
 
-footer a:hover::after {
-    width: 100%;
-}
+    footer a:hover::after {
+        width: 100%;
+    }
 
-/* Smooth scroll */
-html {
-    scroll-behavior: smooth;
-}
+    /* Smooth scroll */
+    html {
+        scroll-behavior: smooth;
+    }
 </style>

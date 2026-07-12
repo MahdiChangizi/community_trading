@@ -127,7 +127,7 @@ function payAlert(type, message) {
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Our Mission</h3>
                     <p class="text-xl text-gray-200 leading-relaxed">
-                        Equip you to <span class="text-yellow-400 font-bold">trade independently</span> using advanced technical analysis, fundamental research, and proven psychological strategies
+                        Building an investment platform as the first step — creating income-generating betting opportunities using major global and crypto market news and analysis (like the money market), enabling trading capabilities, and constructing a centralized exchange.
                     </p>
                 </div>
             </div>
@@ -149,39 +149,39 @@ function payAlert(type, message) {
                             <span class="text-2xl font-black text-white">1</span>
                         </div>
                         <div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-1">Trading Fundamentals & Market Basics</h3>
-                            <p class="text-sm text-blue-600 font-semibold">Month 1 • Foundation Building</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-1">Getting Started</h3>
+                            <p class="text-sm text-blue-600 font-semibold">Month 1 • Foundation</p>
                         </div>
                     </div>
-                    <p class="text-gray-700 font-medium mb-4">Build a solid foundation across all markets</p>
+                    <p class="text-gray-700 font-medium mb-4">Take your first confident step toward capital growth</p>
                     <ul class="space-y-2.5 text-gray-600 text-sm">
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>What is trading? Trader vs investor mindset</span>
+                            <span>Create an account in minutes</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Understanding Crypto, Stocks, Forex, Commodities, and Indices</span>
+                            <span>Select your investment plan</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Trader types: Scalper, Day, Swing, Position trading</span>
+                            <span>Easy deposit with digital currencies</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>How exchanges and brokers work (CEX vs DEX)</span>
+                            <span>Real-time balance monitoring</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Order types: Market, Limit, Stop, OCO explained</span>
+                            <span>Start earning daily income</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Platform mastery: TradingView, MetaTrader, Binance, Bybit</span>
+                            <span>Professional user dashboard</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Crypto essentials: Blockchain, wallets, on-chain vs off-chain</span>
+                            <span>24/7 customer support</span>
                         </li>
                     </ul>
                     <div class="mt-6 pt-5 border-t border-gray-200">
@@ -199,43 +199,35 @@ function payAlert(type, message) {
                             <span class="text-2xl font-black text-white">2</span>
                         </div>
                         <div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-1">Technical Analysis Essentials</h3>
-                            <p class="text-sm text-green-600 font-semibold">Month 2 • Chart Mastery</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-1">Daily Earnings</h3>
+                            <p class="text-sm text-green-600 font-semibold">Month 2 • Growth</p>
                         </div>
                     </div>
-                    <p class="text-gray-700 font-medium mb-4">Learn to read and analyze price movements on any chart</p>
+                    <p class="text-gray-700 font-medium mb-4">Your capital updates daily on the dashboard (boosted by referrals)</p>
                     <ul class="space-y-2.5 text-gray-600 text-sm">
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Candlestick patterns (Doji, Hammer, Engulfing, etc.)</span>
+                            <span>Daily income calculation</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Chart patterns (Triangles, Head & Shoulders, Wedges)</span>
+                            <span>Full payment history</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Support & Resistance zones (static and dynamic)</span>
+                            <span>Easy profit withdrawal</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Trend identification (higher highs/lows analysis)</span>
+                            <span>Transparent transaction reports</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Volume & volatility fundamentals</span>
+                            <span>Increase capital at any time</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Key indicators: Moving Averages (SMA/EMA), RSI, MACD</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Bollinger Bands & Fibonacci Retracement techniques</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Multi-timeframe analysis across all asset classes</span>
+                            <span>Full asset management</span>
                         </li>
                     </ul>
                     <div class="mt-6 pt-5 border-t border-gray-200">
@@ -253,43 +245,31 @@ function payAlert(type, message) {
                             <span class="text-2xl font-black text-white">3</span>
                         </div>
                         <div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-1">Risk Management & Trading Psychology</h3>
-                            <p class="text-sm text-purple-600 font-semibold">Month 3 • Mindset & Protection</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-1">Capital Security</h3>
+                            <p class="text-sm text-purple-600 font-semibold">Month 3 • Protection</p>
                         </div>
                     </div>
-                    <p class="text-gray-700 font-medium mb-4">Protect your capital and build the winning trader mindset</p>
+                    <p class="text-gray-700 font-medium mb-4">Protecting your assets is our priority — we trade with your capital as a trusted lending company with high profit percentages.</p>
                     <ul class="space-y-2.5 text-gray-600 text-sm">
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Risk per trade percentage models</span>
+                            <span>We trade with your capital</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Risk-reward ratio optimization (1:2, 1:3+)</span>
+                            <span>We are a lending company for trustworthy individuals</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Position sizing calculation methods</span>
+                            <span>High profit percentage</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Stop-loss and take-profit placement strategies</span>
+                            <span>Execute more crypto trades with your capital</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Understanding compounding and drawdown management</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Trading journal setup and performance tracking</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Emotional discipline and avoiding FOMO & revenge trading</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Crypto-specific psychology: handling extreme volatility</span>
+                            <span>User account protection</span>
                         </li>
                     </ul>
                     <div class="mt-6 pt-5 border-t border-gray-200">
@@ -307,51 +287,31 @@ function payAlert(type, message) {
                             <span class="text-2xl font-black text-white">4</span>
                         </div>
                         <div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-1">Strategy Development & Backtesting</h3>
-                            <p class="text-sm text-orange-600 font-semibold">Month 4 • System Building</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-1">Investment Plans</h3>
+                            <p class="text-sm text-orange-600 font-semibold">Month 4 • Strategy</p>
                         </div>
                     </div>
-                    <p class="text-gray-700 font-medium mb-4">Build and test proven trading strategies across all markets</p>
+                    <p class="text-gray-700 font-medium mb-4">Select a plan tailored to your financial goals</p>
                     <ul class="space-y-2.5 text-gray-600 text-sm">
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Strategy components: Entry, Exit, Confirmation, Risk</span>
+                            <span>Flexible investment options</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Breakout trading strategies</span>
+                            <span>Upgrade your plan at any time</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Pullback and retest strategies</span>
+                            <span>Run multiple plans simultaneously</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Moving Average crossover systems</span>
+                            <span>Smart capital management</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>RSI/MACD divergence setups</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Fibonacci and structure confluence trading</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Smart money concepts and ICT methodology</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Scalping vs swing trading approaches</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Backtesting techniques (manual + TradingView replay)</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>DeFi vs centralized exchange strategy differences</span>
+                            <span>Performance analytics for your capital</span>
                         </li>
                     </ul>
                     <div class="mt-6 pt-5 border-t border-gray-200">
@@ -369,47 +329,31 @@ function payAlert(type, message) {
                             <span class="text-2xl font-black text-white">5</span>
                         </div>
                         <div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-1">Fundamental & Sentiment Analysis</h3>
-                            <p class="text-sm text-red-600 font-semibold">Month 5 • Market Intelligence</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-1">Income & Withdrawals</h3>
+                            <p class="text-sm text-red-600 font-semibold">Month 5 • Earnings</p>
                         </div>
                     </div>
-                    <p class="text-gray-700 font-medium mb-4">Add macroeconomic and news-based understanding to your trading</p>
+                    <p class="text-gray-700 font-medium mb-4">Effortless income and withdrawal management</p>
                     <ul class="space-y-2.5 text-gray-600 text-sm">
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Economic indicators (GDP, CPI, interest rates, NFP)</span>
+                            <span>Fast withdrawals</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Central banks & monetary policy (Forex & commodities)</span>
+                            <span>Complete payment history</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Earnings reports analysis for stocks</span>
+                            <span>Daily profit reports</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Tokenomics and whitepaper evaluation for crypto</span>
+                            <span>User-controlled wallet management</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>On-chain metrics: active addresses, volume, exchange flows</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Market sentiment tools: Fear & Greed Index</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Advanced tools: CoinGlass, CryptoQuant, COT Report</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Using news events to plan high-probability trades</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                            <span>Combining fundamental + technical analysis strategies</span>
+                            <span>Financial support</span>
                         </li>
                     </ul>
                     <div class="mt-6 pt-5 border-t border-gray-200">
@@ -427,91 +371,89 @@ function payAlert(type, message) {
                             <span class="text-2xl font-black text-gray-900">6</span>
                         </div>
                         <div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-1">Trading Plan, Execution & Going Live</h3>
-                            <p class="text-sm text-yellow-600 font-semibold">Month 6 • Professional Launch</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-1">Long-Term Growth</h3>
+                            <p class="text-sm text-yellow-600 font-semibold">Month 6 • Scaling</p>
                         </div>
                     </div>
-                    <p class="text-gray-700 font-medium mb-5">Finalize your trading plan and start real or challenge trading</p>
+                    <p class="text-gray-700 font-medium mb-5">Develop your capital for the future</p>
 
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <h4 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
                                 <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"/></svg>
-                                Trading Plan Development
+                                Growth Strategies
                             </h4>
                             <ul class="space-y-2 text-gray-600 text-sm">
                                 <li class="flex items-start gap-2">
                                     <svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                                    <span>Complete strategy documentation</span>
+                                    <span>Gradual capital increase</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                                    <span>Setup criteria and entry rules</span>
+                                    <span>Reinvest profits for higher returns</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                                    <span>Goals and performance targets</span>
+                                    <span>Portfolio management</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                                    <span>Risk and money management protocols</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                                    <span>Daily routine and journaling system</span>
+                                    <span>Performance stats and analytics</span>
                                 </li>
                             </ul>
                         </div>
 
                         <div>
                             <h4 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
-                                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 020 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/></svg>
-Going Live & Scaling
-</h4>
-<ul class="space-y-2 text-gray-600 text-sm">
-<li class="flex items-start gap-2">
-<svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-<span>Choosing your primary market focus</span>
-</li>
-<li class="flex items-start gap-2">
-<svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-<span>Live trading pre-flight checklist</span>
-</li>
-<li class="flex items-start gap-2">
-<svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-<span>Trading challenges (FTMO, MyForexFunds)</span>
-</li>
-<li class="flex items-start gap-2">
-<svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-<span>Crypto portfolio management (spot vs futures)</span>
-</li>
-<li class="flex items-start gap-2">
-<svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-<span>Psychology of live trading</span>
-</li>
-<li class="flex items-start gap-2">
-<svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-<span>Capital scaling & compounding strategies</span>
-</li>
-<li class="flex items-start gap-2">
-<svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-<span>Avoiding overtrading and burnout</span>
-</li>
-<li class="flex items-start gap-2">
-<svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-<span>Multiple income streams from trading</span>
-</li>
-</ul>
-</div>
-</div><div class="mt-6 pt-5 border-t border-gray-200">
-                    <div class="flex items-center gap-2 text-yellow-600 font-semibold">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/></svg>
-                        <span>Final Project: Submit full trading plan + journal + backtest results</span>
+                                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/></svg>
+                            Going Live & Scaling
+                            </h4>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                    <span>Choosing your primary market focus</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                    <span>Live trading pre-flight checklist</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                    <span>Trading challenges (FTMO, MyForexFunds)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                    <span>Crypto portfolio management (spot vs futures)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                    <span>Psychology of live trading</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                    <span>Capital scaling & compounding strategies</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                    <span>Avoiding overtrading and burnout</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                    <span>Multiple income streams from trading</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><div class="mt-6 pt-5 border-t border-gray-200">
+                        <div class="flex items-center gap-2 text-yellow-600 font-semibold">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/></svg>
+                            <span>Final Project: Submit full trading plan + journal + backtest results</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
+
     </div>
 
     <!-- Bottom CTA -->

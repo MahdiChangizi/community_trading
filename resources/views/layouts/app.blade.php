@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>CryptoTrade Community - Premium Trading Platform</title>
+    <title>bitorex - Premium Trading Platform</title>
     <link rel="icon" type="image/x-icon" href="{{asset("images/Logo-bg.png")}}">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
@@ -40,14 +41,26 @@
         }
 
         @keyframes cryptoFloat {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-10px) rotate(2deg); }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-10px) rotate(2deg);
+            }
         }
 
 
         @keyframes scroll {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
         }
 
         .fade-in {
@@ -73,13 +86,14 @@
         }
 
         .btn-primary {
-    background: linear-gradient(135deg, #FFD700, #FFA500);
-    color: #fff;
-    border: none;
-}
-.btn-primary:hover {
-    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
-}
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #fff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+        }
 
 
         .counter {
@@ -95,8 +109,8 @@
         }
 
         .shape {
-        background: linear-gradient(45deg, #FFD700, #FFA500);
-     }
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+        }
 
 
         .shape:nth-child(1) {
@@ -124,30 +138,45 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px) translateX(0px); }
-            25% { transform: translateY(-20px) translateX(10px); }
-            50% { transform: translateY(-10px) translateX(-10px); }
-            75% { transform: translateY(-30px) translateX(5px); }
+
+            0%,
+            100% {
+                transform: translateY(0px) translateX(0px);
+            }
+
+            25% {
+                transform: translateY(-20px) translateX(10px);
+            }
+
+            50% {
+                transform: translateY(-10px) translateX(-10px);
+            }
+
+            75% {
+                transform: translateY(-30px) translateX(5px);
+            }
         }
+
         /* Custom scrollbar */
-    ::-webkit-scrollbar {
-        width: 8px;
-    }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
 
-    ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-    }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
 
-    ::-webkit-scrollbar-thumb {
-        background: linear-gradient(to bottom, #ffd700, #ffd700);
-        border-radius: 4px;
-    }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #ffd700, #ffd700);
+            border-radius: 4px;
+        }
 
-    ::-webkit-scrollbar-thumb:hover {
-        background: linear-gradient(to bottom, #ffd700, #ffd700);
-    }
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #ffd700, #ffd700);
+        }
     </style>
 </head>
+
 <body class="bg-white text-gray-800 font-inter">
     @include('components.navbar')
 
@@ -155,6 +184,5 @@
 
     @include('components.footer')
 </body>
+
 </html>
-
-

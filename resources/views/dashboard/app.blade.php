@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Dashboard - CryptoTrade Community</title>
+    <title>User Dashboard - bitorex</title>
     <link rel="icon" type="image/x-icon" href="{{asset("images/Logo-bg.png")}}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -138,20 +139,42 @@
             margin-left: 10px;
         }
 
-        .referral-level-1 { border-color: #FFD700; }
-        .referral-level-2 { border-color: #FFA500; }
-        .referral-level-3 { border-color: #df6a6a; }
-        .referral-level-4 { border-color: #d7df6a; }
-        .referral-level-5 { border-color: #9ca3af; }
+        .referral-level-1 {
+            border-color: #FFD700;
+        }
+
+        .referral-level-2 {
+            border-color: #FFA500;
+        }
+
+        .referral-level-3 {
+            border-color: #df6a6a;
+        }
+
+        .referral-level-4 {
+            border-color: #d7df6a;
+        }
+
+        .referral-level-5 {
+            border-color: #9ca3af;
+        }
 
         .copy-animation {
             animation: copySuccess 0.3s ease-in-out;
         }
 
         @keyframes copySuccess {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         .wallet-address {
@@ -262,6 +285,7 @@
         }
     </style>
 </head>
+
 <body class="bg-gray-50 text-gray-800 font-inter">
     <!-- Mobile Sidebar Overlay -->
     <div class="sidebar-overlay fixed inset-0 z-40 lg:hidden" onclick="closeSidebar()"></div>
@@ -321,7 +345,10 @@
             navigator.clipboard.writeText(address).then(() => {
                 // Show success feedback
                 const event = new CustomEvent('showToast', {
-                    detail: { message: 'Address copied to clipboard!', type: 'success' }
+                    detail: {
+                        message: 'Address copied to clipboard!',
+                        type: 'success'
+                    }
                 });
                 window.dispatchEvent(event);
             });
@@ -406,4 +433,5 @@
         });
     </script>
 </body>
+
 </html>
