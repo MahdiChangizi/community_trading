@@ -14,7 +14,7 @@ class ReferralTier extends Seeder
 {
     $tiers = [];
 
-    foreach (range(1, 6) as $planId) {
+    foreach (range(1, 4) as $planId) {
         $tiers[] = [
             'level' => 1,
             'percent' => 5,

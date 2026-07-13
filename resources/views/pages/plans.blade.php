@@ -533,16 +533,23 @@ function payAlert(type, message) {
                     ]
                 ];
                 $color = $colors[$index % 3];
+
+                // پلن ۸۰۰ دلاری موقتا غیرفعال است
+                $isTemporarilyDisabled = ((float) $plan->price_usdt === 800.0);
             @endphp
 
             <div class="relative group">
 
-                <div class="bg-white rounded-2xl shadow-xl border-2 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden {{ $color['popular'] ? 'ring-2 ring-purple-200' : '' }}" style="border-color: {{ $color['border'] }}">
+                <div class="bg-white rounded-2xl shadow-xl border-2 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden {{ $color['popular'] ? 'ring-2 ring-purple-200' : '' }} {{ $isTemporarilyDisabled ? 'opacity-70 grayscale-[30%]' : '' }}" style="border-color: {{ $color['border'] }}">
 
                     <!-- Header Section -->
                     <div class="text-white p-8 relative overflow-hidden" style="background: {{ $color['gradient'] }}">
                         <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
                         <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
+
+                        @if ($isTemporarilyDisabled)
+                        <div></div>
+                        @endif
 
                         <div class="relative z-10">
                             <h3 class="text-2xl font-bold mb-3 leading-tight">{{ $plan->name }}</h3>
@@ -588,7 +595,14 @@ function payAlert(type, message) {
                         </div>
 
                         <!-- CTA Button -->
-                        @if (!Auth::check())
+                        @if ($isTemporarilyDisabled)
+                        <button type="button" disabled
+                                class="w-full bg-gray-300 text-gray-500 py-4 rounded-xl font-semibold text-lg cursor-not-allowed">
+                            <span class="flex items-center justify-center gap-2">
+                                Temporarily Unavailable
+                            </span>
+                        </button>
+                        @elseif (!Auth::check())
                         <button onclick="window.location.href='{{ route('login') }}'"
                                 class="w-full text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group"
                                 style="background: {{ $color['gradient'] }}">

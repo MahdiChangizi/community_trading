@@ -117,7 +117,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                 </svg>
             </div>
-            <h1 class="text-3xl font-bold gradient-text">CryptoTrade</h1>
+            <h1 class="text-3xl font-bold gradient-text">bitorex</h1>
             <p class="text-gray-600 mt-2">Premium Trading Community</p>
         </div>
 

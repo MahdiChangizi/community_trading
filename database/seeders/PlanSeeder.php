@@ -49,25 +49,7 @@ class PlanSeeder extends Seeder
                 'active' => true,
                 'created_at' => now(),
                 'updated_at' => now(),
-            ],
-            [
-                'name' => 'Platinum Package',
-                'description' => 'Investment: $2100 | Daily Profit: $95 | Total Profit After 180 Days: $17100 | Capital Released After 180 Days.',
-                'price_usdt' => 2100.00,
-                'duration_months' => 6,
-                'active' => true,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'name' => 'Diamond Package',
-                'description' => 'Investment: $5000 | Daily Profit: $220 | Total Profit After 180 Days: $39600 | Capital Released After 180 Days.',
-                'price_usdt' => 5000.00,
-                'duration_months' => 6,
-                'active' => true,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            ]
         ]);
     }
 }

@@ -696,12 +696,16 @@
                         ]
                     ];
                     $color = $colors[$index % 3];
+                    $isTemporarilyDisabled = ((float) $plan->price_usdt === 800.0);
                 @endphp
 
                 <div class="relative group">
 
-
+                    @if ($isTemporarilyDisabled)
+                    <div class="block bg-white rounded-2xl shadow-xl border-2 overflow-hidden opacity-60 cursor-not-allowed pointer-events-none {{ $color['popular'] ? 'ring-2 ring-purple-200' : '' }}" style="border-color: {{ $color['border'] }}">
+                    @else
                     <a href="/plans" class="block bg-white rounded-2xl shadow-xl border-2 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden {{ $color['popular'] ? 'ring-2 ring-purple-200' : '' }}" style="border-color: {{ $color['border'] }}">
+                    @endif
 
                         <!-- Header Section -->
                         <div class="text-white p-8 relative overflow-hidden" style="background: {{ $color['gradient'] }}">
@@ -752,7 +756,7 @@
                             </div>
 
                             <!-- CTA Button -->
-                            <button class="w-full text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group"
+                            <button {{ $isTemporarilyDisabled ? 'disabled' : '' }} class="w-full text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group"
                                     style="background: {{ $color['gradient'] }}">
                                 <span class="flex items-center justify-center gap-2">
                                     View Details
@@ -780,7 +784,11 @@
                                 </div>
                             </div>
                         </div>
+                    @if ($isTemporarilyDisabled)
+                    </div>
+                    @else
                     </a>
+                    @endif
                 </div>
             @endforeach
         </div>
