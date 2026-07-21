@@ -9,7 +9,7 @@
                 <div class="mb-4">
                     <img class="h-16 w-auto object-contain" src="{{ asset('images/Logo-bg.png') }}" alt="Community Trading Logo" loading="lazy">
                 </div>
-                <p class="text-gray-400 text-sm leading-relaxed">Empowering traders worldwide with expert knowledge, proven strategies, and a supportive community.</p>
+                <p class="text-gray-400 text-sm leading-relaxed">Bitorex | Smart Future, Secure Investment</p>
             </div>
 
             <!-- Column 2: Quick Links -->
@@ -18,7 +18,7 @@
                 <ul class="space-y-2">
                     <li><a href="/#" class="text-gray-400 hover:text-white transition-colors text-sm">Home</a></li>
                     <li><a href="/referral" class="text-gray-400 hover:text-white transition-colors text-sm">Referral Program</a></li>
-                    <li><a href="/plans" class="text-gray-400 hover:text-white transition-colors text-sm">Iti Course Plan</a></li>
+                    <li><a href="/plans" class="text-gray-400 hover:text-white transition-colors text-sm">Bitorex Investment Plans</a></li>
                     <li><a href="{{ route('community') }}" class="text-gray-400 hover:text-white transition-colors text-sm">Iti Community Plan</a></li>
                     <li><a href="/#about" class="text-gray-400 hover:text-white transition-colors text-sm">About Us</a></li>
                     <li><a href="/#contact" class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>

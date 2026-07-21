@@ -80,10 +80,10 @@
         <!-- Title -->
         <div class="text-center mb-20" data-aos="zoom-in">
             <h2 class="text-5xl font-extrabold text-black">
-                Community Milestones
+                Achievements and indicators of society
             </h2>
             <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
-                A journey shaped by our community’s passion and breakthroughs in trading innovation.
+                A journey shaped by our passion and progress for our community at Winrates Business.
             </p>
         </div>
 
@@ -95,7 +95,7 @@
                 <div class="absolute -left-3 w-6 h-6 rounded-full bg-gradient-to-r from-primary-green to-green-500 shadow-lg ring-4 ring-primary-green/30 group-hover:scale-110 transition"></div>
                 <div class="bg-white/60 backdrop-blur-xl border border-white/40 shadow-xl rounded-2xl p-6 transition transform group-hover:-translate-y-1">
                     <h3 class="text-xl font-bold text-gray-900">
-                        Community Launch <span class="text-sm text-gray-500 font-medium">(Jan 2023)</span>
+                        Community Launch <span class="text-sm text-gray-500 font-medium">(July)</span>
                     </h3>
                     <p class="mt-2 text-gray-700">
                         The very first step in building our global trader network.
@@ -108,10 +108,10 @@
                 <div class="absolute -left-3 w-6 h-6 rounded-full bg-gradient-to-r from-primary-purple to-purple-500 shadow-lg ring-4 ring-primary-purple/30 group-hover:scale-110 transition"></div>
                 <div class="bg-white/60 backdrop-blur-xl border border-white/40 shadow-xl rounded-2xl p-6 transition transform group-hover:-translate-y-1">
                     <h3 class="text-xl font-bold text-gray-900">
-                        Premium Features <span class="text-sm text-gray-500 font-medium">(Mar 2023)</span>
+                        Premium Features <span class="text-sm text-gray-500 font-medium"></span>
                     </h3>
                     <p class="mt-2 text-gray-700">
-                        Exclusive analytics and real-time alerts for subscribed members.
+                        Weekly win rate of the team's progress with trading and taking profits.
                     </p>
                 </div>
             </div>
@@ -121,26 +121,14 @@
                 <div class="absolute -left-3 w-6 h-6 rounded-full bg-gradient-to-r from-primary-red to-rose-500 shadow-lg ring-4 ring-primary-red/30 group-hover:scale-110 transition"></div>
                 <div class="bg-white/60 backdrop-blur-xl border border-white/40 shadow-xl rounded-2xl p-6 transition transform group-hover:-translate-y-1">
                     <h3 class="text-xl font-bold text-gray-900">
-                        Global Expansion <span class="text-sm text-gray-500 font-medium">(Sep 2024)</span>
+                        Global Expansion <span class="text-sm text-gray-500 font-medium"></span>
                     </h3>
                     <p class="mt-2 text-gray-700">
-                        Welcoming traders from over 50 countries worldwide.
+                        Welcoming businessmen to receive loans to more than 50 countries around the world
                     </p>
                 </div>
             </div>
 
-            <!-- Milestone -->
-            <div class="ml-6 relative group" data-aos="fade-right" data-aos-delay="400">
-                <div class="absolute -left-3 w-6 h-6 rounded-full bg-gradient-to-r from-gray-400 to-gray-300 shadow-lg ring-4 ring-gray-300/40 group-hover:scale-110 transition"></div>
-                <div class="bg-white/60 backdrop-blur-xl border border-white/40 shadow-xl rounded-2xl p-6 transition transform group-hover:-translate-y-1">
-                    <h3 class="text-xl font-bold text-gray-900">
-                        AI Trading Bot <span class="text-sm text-gray-500 font-medium">(Q4 2024)</span>
-                    </h3>
-                    <p class="mt-2 text-gray-700">
-                        Smart automation tools for faster and smarter trading.
-                    </p>
-                </div>
-            </div>
         </div>
 
         <!-- Stats Section -->
@@ -179,53 +167,55 @@
                 📄 Study Resources
             </h2>
             <p class="text-lg text-gray-600">
-                Download our whitepapers, course outlines, and community plans
+                Download official reports, weekly, monthly and 6-month win rates, and general association programs.
             </p>
         </div>
 
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <!-- PDF 1 -->
-            <a href="{{asset('pdfs/ITI ACCADEMY PRESENTATION.pdf')}}" target="_blank"
-               class="group flex flex-col items-start p-6 bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-               data-aos="fade-up" data-aos-delay="100">
-                <div class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-indigo-500 to-blue-500 text-white mb-4">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-1">ITI Course Outline</h3>
-                <p class="text-sm text-gray-600 mb-3">Full 6-month syllabus overview</p>
-                <span class="text-primary-green font-medium group-hover:underline">Download PDF →</span>
-            </a>
 
-            <!-- PDF 2 -->
-            <a href="{{asset('pdfs/ITI MILLIONAIRE PLAN.pdf')}}" target="_blank"
-               class="group flex flex-col items-start p-6 bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-               data-aos="fade-up" data-aos-delay="200">
-                <div class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 text-white mb-4">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-1">ITI Millionaire Plan</h3>
-                <p class="text-sm text-gray-600 mb-3">Community growth and wealth strategy</p>
-                <span class="text-primary-green font-medium group-hover:underline">Download PDF →</span>
-            </a>
-
-            <!-- PDF 3 -->
-            <a href="{{asset('pdfs/ITI RANK PLAN.pdf')}}" target="_blank"
-               class="group flex flex-col items-start p-6 bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-               data-aos="fade-up" data-aos-delay="300">
-                <div class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 text-white mb-4">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-1">ITI Rank Plan</h3>
-                <p class="text-sm text-gray-600 mb-3">Ranking system and benefits explained</p>
-                <span class="text-primary-green font-medium group-hover:underline">Download PDF →</span>
-            </a>
+    <!-- Weekly -->
+    <a href="{{ asset('pdfs/ITI ACCADEMY PRESENTATION.pdf') }}" target="_blank"
+       class="group flex flex-col items-start p-6 bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+       data-aos="fade-up" data-aos-delay="100">
+        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-indigo-500 to-blue-500 text-white mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+            </svg>
         </div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-1">Weekly Win Rate</h3>
+        <p class="text-sm text-gray-600 mb-3">Soon</p>
+        <span class="text-primary-green font-medium group-hover:underline">Download PDF →</span>
+    </a>
+
+    <!-- Monthly -->
+    <a href="{{ asset('pdfs/ITI MILLIONAIRE PLAN.pdf') }}" target="_blank"
+       class="group flex flex-col items-start p-6 bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+       data-aos="fade-up" data-aos-delay="200">
+        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 text-white mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+            </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-1">Monthly Win Rate</h3>
+        <p class="text-sm text-gray-600 mb-3">Soon</p>
+        <span class="text-primary-green font-medium group-hover:underline">Download PDF →</span>
+    </a>
+
+    <!-- 6 Months -->
+    <a href="{{ asset('pdfs/ITI RANK PLAN.pdf') }}" target="_blank"
+       class="group flex flex-col items-start p-6 bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+       data-aos="fade-up" data-aos-delay="300">
+        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 text-white mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+            </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-1">6-Month Win Rate</h3>
+        <p class="text-sm text-gray-600 mb-3">Soon</p>
+        <span class="text-primary-green font-medium group-hover:underline">Download PDF →</span>
+    </a>
+
+</div>
     </div>
 </section>
 

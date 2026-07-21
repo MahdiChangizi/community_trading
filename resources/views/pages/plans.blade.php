@@ -59,59 +59,26 @@
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
                 </svg>
-                PROFESSIONAL TRADING EDUCATION
+                Trust is the foundation of every investment.
             </div>
 
-            <h1 class="text-5xl md:text-6xl font-black bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 bg-clip-text text-transparent mb-5 leading-tight">
-                ITI ACADEMY
-            </h1>
+            
 
             <div class="flex items-center justify-center gap-3 mb-4">
                 <div class="h-1 w-12 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"></div>
                 <p class="text-2xl md:text-3xl font-bold text-gray-800">
-                    6-Month Beginner to Pro Trader Course
+                    Join the 6-month investment plan with confidence and earn daily income.
                 </p>
                 <div class="h-1 w-12 bg-gradient-to-r from-orange-500 to-yellow-400 rounded-full"></div>
             </div>
 
             <p class="text-lg text-gray-600 font-medium">
-                Master Crypto • Stocks • Forex • Commodities
+                Build your financial future today.
             </p>
         </div>
 
         <!-- Course Format Cards -->
-        <div class="grid md:grid-cols-3 gap-6 mb-20 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
-                    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z" />
-                        <path d="M3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762z" />
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Weekly Theory</h3>
-                <p class="text-gray-600 leading-relaxed">Comprehensive lessons covering all essential trading concepts and strategies</p>
-            </div>
-
-            <div class="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
-                    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" />
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Practical Application</h3>
-                <p class="text-gray-600 leading-relaxed">Real-world trading scenarios and live market analysis sessions</p>
-            </div>
-
-            <div class="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
-                    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" />
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Weekly Assignments</h3>
-                <p class="text-gray-600 leading-relaxed">Hands-on tasks to reinforce learning and build your trading skills</p>
-            </div>
-        </div>
+        
 
         <!-- Goal Statement -->
         <div class="max-w-4xl mx-auto mb-20" data-aos="fade-up" data-aos-delay="150">
@@ -147,7 +114,10 @@
                 <h3 class="text-2xl font-bold text-gray-900">Ready to Start Your Journey?</h3>
             </div>
             <p class="text-gray-600 text-lg text-center leading-relaxed">
-                Transform from beginner to professional trader in just 6 months. Choose your plan below and take the first step toward financial independence.
+                In just 6 months
+Choose your plan below and take the first step towards financial independence.
+
+In just 6 months
             </p>
             <div class="flex items-center gap-6 text-sm text-gray-500 mt-2">
                 <div class="flex items-center gap-2">
@@ -180,11 +150,9 @@
     <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16" data-aos="fade-up">
             <h2 class="text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-4">
-                Choose Your Trading Journey
+                Choose your trading plan
             </h2>
-            <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-                Transform your trading skills with our comprehensive courses designed for every level
-            </p>
+            
         </div>
 
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="100">

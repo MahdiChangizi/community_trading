@@ -198,7 +198,7 @@
             <h2 class="text-5xl font-bold text-gray-900 mb-6">Why Choose Our Platform</h2>
             <div class="w-24 h-1 bg-gradient-to-r from-[#FFD7D7] to-[#B76E79] rounded-full mx-auto mb-6"></div>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                Discover the tools and features that make us the preferred choice for crypto traders worldwide
+                By utilizing modern technologies, high security and professional services, we have provided you with a fast, simple and secure digital investment experience. Our goal is to create a transparent, reliable and efficient platform so that you can add and manage your capital with more confidence and benefit from the platform’s opportunities.
             </p>
         </div>
 
@@ -211,7 +211,7 @@
                     </svg>
                 </div>
                 <h3 class="text-2xl font-bold text-gray-900 mb-4">Advanced Market Analytics</h3>
-                <p class="text-gray-600 leading-relaxed">Real-time market analysis and generating high returns on your capital — a trusted lending platform for reliable individuals with high-profit percentages on specified dates.</p>
+                <p class="text-gray-600 leading-relaxed">Real-time market analysis and generating high returns from your capital</p>
                 </div>
 
             <!-- Feature 2 -->
@@ -221,8 +221,8 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
                     </svg>
                 </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Expert Mentorship</h3>
-                <p class="text-gray-600 leading-relaxed">Learn from seasoned traders with personalized guidance and proven strategies.</p>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Lending platform for trusted individuals</h3>
+                <p class="text-gray-600 leading-relaxed">With a high profit percentage for our team, along with an official, international contract with a specific date.</p>
             </div>
 
             <!-- Feature 3 -->
@@ -269,7 +269,7 @@
                         </div>
                         <div>
                             <h3 class="text-2xl font-bold text-gray-900 mb-1">Getting Started</h3>
-                            <p class="text-sm text-blue-600 font-semibold">Month 1 • Foundation</p>
+                            <p class="text-sm text-blue-600 font-semibold">Foundation</p>
                         </div>
                     </div>
                     <p class="text-gray-700 font-medium mb-4">Take your first confident step toward capital growth</p>
@@ -303,12 +303,6 @@
                             <span>24/7 customer support</span>
                         </li>
                     </ul>
-                    <div class="mt-6 pt-5 border-t border-gray-200">
-                        <div class="flex items-center gap-2 text-blue-600 font-semibold">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/></svg>
-                            <span>Assignment: Open demo accounts & master charting tools</span>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Month 2 -->
@@ -319,7 +313,7 @@
                         </div>
                         <div>
                             <h3 class="text-2xl font-bold text-gray-900 mb-1">Daily Earnings</h3>
-                            <p class="text-sm text-green-600 font-semibold">Month 2 • Growth</p>
+                            <p class="text-sm text-green-600 font-semibold">Growth</p>
                         </div>
                     </div>
                     <p class="text-gray-700 font-medium mb-4">Your capital updates daily on the dashboard (boosted by referrals)</p>
@@ -349,12 +343,6 @@
                             <span>Full asset management</span>
                         </li>
                     </ul>
-                    <div class="mt-6 pt-5 border-t border-gray-200">
-                        <div class="flex items-center gap-2 text-green-600 font-semibold">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/></svg>
-                            <span>Assignment: Identify trends, patterns & S/R on various charts</span>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Month 3 -->
@@ -365,7 +353,7 @@
                         </div>
                         <div>
                             <h3 class="text-2xl font-bold text-gray-900 mb-1">Capital Security</h3>
-                            <p class="text-sm text-purple-600 font-semibold">Month 3 • Protection</p>
+                            <p class="text-sm text-purple-600 font-semibold">Protection</p>
                         </div>
                     </div>
                     <p class="text-gray-700 font-medium mb-4">Protecting your assets is our priority — we trade with your capital as a trusted lending company with high profit percentages.</p>
@@ -391,12 +379,6 @@
                             <span>User account protection</span>
                         </li>
                     </ul>
-                    <div class="mt-6 pt-5 border-t border-gray-200">
-                        <div class="flex items-center gap-2 text-purple-600 font-semibold">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/></svg>
-                            <span>Assignment: Create risk management plan & trading journal</span>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Month 4 -->
@@ -407,7 +389,7 @@
                         </div>
                         <div>
                             <h3 class="text-2xl font-bold text-gray-900 mb-1">Investment Plans</h3>
-                            <p class="text-sm text-orange-600 font-semibold">Month 4 • Strategy</p>
+                            <p class="text-sm text-orange-600 font-semibold">Strategy</p>
                         </div>
                     </div>
                     <p class="text-gray-700 font-medium mb-4">Select a plan tailored to your financial goals</p>
@@ -433,12 +415,6 @@
                             <span>Performance analytics for your capital</span>
                         </li>
                     </ul>
-                    <div class="mt-6 pt-5 border-t border-gray-200">
-                        <div class="flex items-center gap-2 text-orange-600 font-semibold">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/></svg>
-                            <span>Assignment: Backtest strategies on crypto and forex markets</span>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Month 5 -->
@@ -449,7 +425,7 @@
                         </div>
                         <div>
                             <h3 class="text-2xl font-bold text-gray-900 mb-1">Income & Withdrawals</h3>
-                            <p class="text-sm text-red-600 font-semibold">Month 5 • Earnings</p>
+                            <p class="text-sm text-red-600 font-semibold">Earnings</p>
                         </div>
                     </div>
                     <p class="text-gray-700 font-medium mb-4">Effortless income and withdrawal management</p>
@@ -475,12 +451,6 @@
                             <span>Financial support</span>
                         </li>
                     </ul>
-                    <div class="mt-6 pt-5 border-t border-gray-200">
-                        <div class="flex items-center gap-2 text-red-600 font-semibold">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/></svg>
-                            <span>Assignment: Write comprehensive market analysis report</span>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Month 6 -->
@@ -491,7 +461,7 @@
                         </div>
                         <div>
                             <h3 class="text-2xl font-bold text-gray-900 mb-1">Long-Term Growth</h3>
-                            <p class="text-sm text-yellow-600 font-semibold">Month 6 • Scaling</p>
+                            <p class="text-sm text-yellow-600 font-semibold">Scaling</p>
                         </div>
                     </div>
                     <p class="text-gray-700 font-medium mb-5">Develop your capital for the future</p>
@@ -561,11 +531,6 @@
                                     <span>Multiple income streams from trading</span>
                                 </li>
                             </ul>
-                        </div>
-                    </div><div class="mt-6 pt-5 border-t border-gray-200">
-                        <div class="flex items-center gap-2 text-yellow-600 font-semibold">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/></svg>
-                            <span>Final Project: Submit full trading plan + journal + backtest results</span>
                         </div>
                     </div>
                 </div>
@@ -867,7 +832,7 @@
             <h2 class="text-5xl font-bold text-gray-900 mb-6">Choose Your Plan</h2>
             <div class="w-24 h-1 bg-gradient-to-r from-[#B76E79] to-[#FFD7D7] rounded-full mx-auto mb-6"></div>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                Select the perfect plan for your trading journey. Start free and upgrade as you grow.
+                Our investment plans are designed to meet the needs of investors at different levels. Choose the right plan and benefit from our daily income services.
             </p>
         </div>
 
