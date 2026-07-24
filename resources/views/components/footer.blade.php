@@ -19,7 +19,7 @@
                     <li><a href="/#" class="text-gray-400 hover:text-white transition-colors text-sm">Home</a></li>
                     <li><a href="/referral" class="text-gray-400 hover:text-white transition-colors text-sm">Referral Program</a></li>
                     <li><a href="/plans" class="text-gray-400 hover:text-white transition-colors text-sm">Bitorex Investment Plans</a></li>
-                    <li><a href="{{ route('community') }}" class="text-gray-400 hover:text-white transition-colors text-sm">Iti Community Plan</a></li>
+                    <li><a href="{{ route('community') }}" class="text-gray-400 hover:text-white transition-colors text-sm">Bitorex Community Plan</a></li>
                     <li><a href="/#about" class="text-gray-400 hover:text-white transition-colors text-sm">About Us</a></li>
                     <li><a href="/#contact" class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
                 </ul>
