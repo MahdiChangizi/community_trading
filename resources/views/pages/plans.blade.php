@@ -62,7 +62,7 @@
                 Trust is the foundation of every investment.
             </div>
 
-            
+
 
             <div class="flex items-center justify-center gap-3 mb-4">
                 <div class="h-1 w-12 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"></div>
@@ -78,7 +78,7 @@
         </div>
 
         <!-- Course Format Cards -->
-        
+
 
         <!-- Goal Statement -->
         <div class="max-w-4xl mx-auto mb-20" data-aos="fade-up" data-aos-delay="150">
@@ -115,9 +115,9 @@
             </div>
             <p class="text-gray-600 text-lg text-center leading-relaxed">
                 In just 6 months
-Choose your plan below and take the first step towards financial independence.
+                Choose your plan below and take the first step towards financial independence.
 
-In just 6 months
+                In just 6 months
             </p>
             <div class="flex items-center gap-6 text-sm text-gray-500 mt-2">
                 <div class="flex items-center gap-2">
@@ -152,7 +152,7 @@ In just 6 months
             <h2 class="text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-4">
                 Choose your trading plan
             </h2>
-            
+
         </div>
 
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="100">
@@ -369,7 +369,7 @@ In just 6 months
     let selectedPlanPrice = null;
     let userWallet = null;
     let provider, signer;
-    const receiverWallet = "0xEce72a1F95a7923c3aCe9D06f760FAF912d1390d";
+    const receiverWallet = "0xaF38dF8A0D2f5ACAAce806558B70301a7319C478";
     const usdtBep20Address = "0x55d398326f99059fF775485246999027B3197955";
 
     function openPurchaseModal(planId, planName, planPrice) {

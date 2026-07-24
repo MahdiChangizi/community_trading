@@ -59,7 +59,7 @@
 
     amountInput.addEventListener('input', () => {
         if (parseFloat(amountInput.value) > maxBalance) {
-            amountInput.value = maxBalance.toFixed(2); // خودکار محدود کنه
+            amountInput.value = maxBalance.toFixed(2);
         }
     });
 </script>

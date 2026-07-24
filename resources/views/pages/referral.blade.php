@@ -10,36 +10,36 @@
   </h1>
   <p class="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
     Success on Bitorex becomes more valuable when you share it with others. By inviting friends and expanding your network, you will not only benefit from the platform’s services, but also receive special referral program rewards.
-(Every invitation is an opportunity for growth and more income.)
+    (Every invitation is an opportunity for growth and more income.)
 </section>
 
 <!-- How It Works -->
 <section class="py-24 bg-gray-50">
   <div class="max-w-6xl mx-auto px-6 text-center">
-  <h2 class="text-4xl font-extrabold mb-16" data-aos="zoom-in">
-    How <span class="text-[#ffa500]">Referral Works</span>
-  </h2>
+    <h2 class="text-4xl font-extrabold mb-16" data-aos="zoom-in">
+      How <span class="text-[#ffa500]">Referral Works</span>
+    </h2>
 
-  <div class="grid md:grid-cols-3 gap-10">
-    <div class="bg-white rounded-2xl shadow-xl p-10" data-aos="fade-up" data-aos-delay="0">
-      <h3 class="text-2xl font-bold mb-3">Level 1</h3>
-      <p class="text-4xl font-extrabold text-yellow-500 mb-4">5%</p>
-      <p class="text-gray-600">Earn 5% from your direct referrals.</p>
-    </div>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-white rounded-2xl shadow-xl p-10" data-aos="fade-up" data-aos-delay="0">
+        <h3 class="text-2xl font-bold mb-3">Level 1</h3>
+        <p class="text-4xl font-extrabold text-yellow-500 mb-4">5%</p>
+        <p class="text-gray-600">Earn 5% from your direct referrals.</p>
+      </div>
 
-    <div class="bg-white rounded-2xl shadow-xl p-10" data-aos="fade-up" data-aos-delay="150">
-      <h3 class="text-2xl font-bold mb-3">Level 2</h3>
-      <p class="text-4xl font-extrabold text-yellow-500 mb-4">3%</p>
-      <p class="text-gray-600">Earn 3% from your second-level referrals.</p>
-    </div>
+      <div class="bg-white rounded-2xl shadow-xl p-10" data-aos="fade-up" data-aos-delay="150">
+        <h3 class="text-2xl font-bold mb-3">Level 2</h3>
+        <p class="text-4xl font-extrabold text-yellow-500 mb-4">3%</p>
+        <p class="text-gray-600">Earn 3% from your second-level referrals.</p>
+      </div>
 
-    <div class="bg-white rounded-2xl shadow-xl p-10" data-aos="fade-up" data-aos-delay="300">
-      <h3 class="text-2xl font-bold mb-3">Level 3</h3>
-      <p class="text-4xl font-extrabold text-yellow-500 mb-4">1%</p>
-      <p class="text-gray-600">Earn 1% from your third-level referrals.</p>
+      <div class="bg-white rounded-2xl shadow-xl p-10" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-2xl font-bold mb-3">Level 3</h3>
+        <p class="text-4xl font-extrabold text-yellow-500 mb-4">1%</p>
+        <p class="text-gray-600">Earn 1% from your third-level referrals.</p>
+      </div>
     </div>
   </div>
-</div>
 </section>
 
 <!-- Benefits -->
@@ -51,7 +51,7 @@
     <div class="grid md:grid-cols-3 gap-12">
       <div class="bg-gray-50 rounded-2xl shadow-lg p-12" data-aos="fade-up" data-aos-delay="0">
         <div class="text-5xl mb-6">💸</div>
-        <h3 class="text-2xl font-bold mb-3">Monthly Cashback</h3>
+        <h3 class="text-2xl font-bold mb-3">Moment Cashback</h3>
         <p class="text-gray-700">Direct and immediate payment to your account upon activation. Your users can invest in any of the plans.</p>
       </div>
       <div class="bg-gray-50 rounded-2xl shadow-lg p-12" data-aos="fade-up" data-aos-delay="150">
