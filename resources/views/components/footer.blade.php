@@ -21,7 +21,7 @@
                     <li><a href="/plans" class="text-gray-400 hover:text-white transition-colors text-sm">Bitorex Investment Plans</a></li>
                     <li><a href="{{ route('community') }}" class="text-gray-400 hover:text-white transition-colors text-sm">Bitorex Community Plan</a></li>
                     <li><a href="/#about" class="text-gray-400 hover:text-white transition-colors text-sm">About Us</a></li>
-                    <li><a href="/#contact" class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                    <li><a href="https://t.me/bitorex_Exchange" class="text-gray-400 hover:text-white transition-colors text-sm">Telegram Chanel</a></li>
                 </ul>
             </div>
 
